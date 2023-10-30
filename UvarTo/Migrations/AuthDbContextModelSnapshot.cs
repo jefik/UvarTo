@@ -180,11 +180,11 @@ namespace UvarTo.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("navchar(100)");
+                        .HasColumnType("nvarchar(100))");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("navchar(100)");
+                        .HasColumnType("nvarchar(100))");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
