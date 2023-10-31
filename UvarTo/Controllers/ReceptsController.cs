@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using UvarTo.Data;
+using UvarTo.Data.Migrations;
 using UvarTo.Models;
 
 namespace UvarTo.Controllers
@@ -13,10 +15,12 @@ namespace UvarTo.Controllers
     public class ReceptsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        IWebHostEnvironment hostingenvironment;
 
-        public ReceptsController(ApplicationDbContext context)
+        public ReceptsController(ApplicationDbContext context, IWebHostEnvironment hc) 
         {
             _context = context;
+            hostingenvironment = hc;
         }
 
         // GET: Recepts
@@ -60,21 +64,68 @@ namespace UvarTo.Controllers
             return View();
         }
 
+        private string UploadFile(recipeviewmodel recipe1)
+        {
+            String filename = "";
+            if (recipe1.photo != null)
+            {
+                String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+                filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
+                String filepath = Path.Combine(uploadfolder, filename);
+                recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
+                using (var fileStream = new FileStream(filepath, FileMode.Create))
+                {
+                    recipe1.photo.CopyTo(fileStream);
+                }
+            }
+            return filename;
+        }
+        // NEFUNKČNÍ NA UPLOAD IMAGE
+        [HttpPost]
+        public IActionResult Create(recipeviewmodel recipe1)
+        {
+            String filename = "";
+            if (recipe1.photo != null)
+            {
+                String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+                filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
+                String filepath = Path.Combine(uploadfolder, filename);
+                recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
+                //using (var fileStream = new FileStream(filepath, FileMode.Create))
+                //{
+                //    recipe1.photo.CopyTo(fileStream);
+                //}
+            }
+            Recept r = new Recept
+            {
+                Id = recipe1.Id,
+                Difficulty = recipe1.Difficulty,
+                CookTime = recipe1.CookTime,
+                RecipeName = recipe1.RecipeName,
+                RecipeCategory = recipe1.RecipeCategory,
+                ImageUrl = filename
+            };
+            _context.Recept.Add(r);
+            _context.SaveChanges();
+            ViewBag.success = "Recept Přidán";
+            return View();
+        }
+
         // POST: Recepts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory")] Recept recept)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(recept);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(recept);
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Create([Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory")] Recept recept)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Add(recept);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(recept);
+        //}
 
         // GET: Recepts/Edit/5
         public async Task<IActionResult> Edit(int? id)

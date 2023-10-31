@@ -1,53 +1,135 @@
 ﻿@model IEnumerable<UvarTo.Models.Recept>
 
+
+
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Recepty</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Difficulty)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CookTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecipeName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecipeCategory)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Difficulty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CookTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecipeName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecipeCategory)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Toggle Filter Button -->
+            <button id="toggleFilterButton" class="btn btn-primary" onclick="toggleFilterForm()">Toggle Filter</button>
+            <form id="filterForm" style="display: none;">
+            <!-- Filter Form -->
+            
+                <div class="form-group">
+                    <label for="difficultyFilter">Náročnost:</label>
+                    <select id="difficultyFilter" class="form-control">
+                        <option value="">Všechny</option>
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cookTimeRangeFilter">Doba přípravy (minuty):</label>
+                    <input type="range" id="cookTimeRangeFilter" min="0" max="120" step="1">
+                    <span id="cookTimeRangeValue">0</span> minut
+                </div>
+                
+                <div class="form-group">
+                    <label for="categoryFilter">Kategorie:</label>
+                    <select id="categoryFilter" class="form-control">
+                        <option value="">Všechny</option>
+                        <!-- Replace with your category options -->
+                        <option value="Vegan">Veganské</option>
+                        <option value="Vegetariánské">Vegetariánské</option>
+                        <option value="Bezlepkové">Bezlepkové</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" onclick="filterRecipes()">Filtrovat</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <!-- Display Filtered Recipes -->
+            @foreach (var item in Model)
+            {
+                <div class="recipe" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="@item.ImageUrl" alt="Image" class="img-fluid">
+                        </div>
+
+                        <div class="col-md-8">
+                            <p>@item.RecipeCategory</p>
+                            <h3>@item.RecipeName</h3>
+                            <p>Náročnost: @item.Difficulty / 10</p>
+                            <p>Doba přípravy: @item.CookTime Minut</p>
+
+                            <div>
+                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+     </div>
+ </div>
+
+
+
+@section Scripts {
+    <script>
+        function filterRecipes() {
+            var difficultyFilter = $("#difficultyFilter").val();
+            var minTimeFilter = $("#cookTimeRangeFilter").attr("min");
+            var maxTimeFilter = $("#cookTimeRangeFilter").val();
+            var categoryFilter = $("#categoryFilter").val();
+
+            // Display the selected cook time
+            $("#cookTimeRangeValue").text(maxTimeFilter);
+
+            $(".recipe").each(function () {
+                var recipe = $(this);
+                var recipeDifficulty = recipe.data("difficulty");
+                var recipeCookTime = recipe.data("cook-time");
+                var recipeCategory = recipe.data("category");
+
+                // Check if the recipe matches the filter criteria
+                var difficultyMatch = difficultyFilter === "" || recipeDifficulty === parseInt(difficultyFilter);
+                var minTimeMatch = minTimeFilter === "" || recipeCookTime >= parseInt(minTimeFilter);
+                var maxTimeMatch = maxTimeFilter === "" || recipeCookTime <= parseInt(maxTimeFilter);
+                var categoryMatch = categoryFilter === "" || recipeCategory === categoryFilter;
+
+                if (difficultyMatch && minTimeMatch && maxTimeMatch && categoryMatch) {
+                    recipe.show();
+                } else {
+                    recipe.hide();
+                }
+            });
+        }
+
+        // Update the displayed value when the slider value changes
+        $("#cookTimeRangeFilter").on("input", function () {
+            $("#cookTimeRangeValue").text($(this).val());
+        });
+
+        function toggleFilterForm() {
+            var filterForm = document.getElementById("filterForm");
+            var toggleButton = document.getElementById("toggleFilterButton");
+
+            if (filterForm.style.display === "none") {
+                filterForm.style.display = "block";
+                toggleButton.textContent = "Hide Filter";
+            } else {
+                filterForm.style.display = "none";
+                toggleButton.textContent = "Show Filter";
+            }
+        }
+    </script>
 }
-    </tbody>
-</table>

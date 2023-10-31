@@ -261,3 +261,4 @@ C:\Users\Honza\source\repos\UvarTo\UvarTo\obj\Debug\net7.0\refint\UvarTo.dll
 C:\Users\Honza\source\repos\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.pdb
 C:\Users\Honza\source\repos\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.genruntimeconfig.cache
 C:\Users\Honza\source\repos\UvarTo\UvarTo\obj\Debug\net7.0\ref\UvarTo.dll
+C:\Users\Honza\source\repos\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Recepts\Index.cshtml.rz.scp.css
