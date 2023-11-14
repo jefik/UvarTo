@@ -64,52 +64,94 @@ namespace UvarTo.Controllers
             return View();
         }
 
-        private string UploadFile(recipeviewmodel recipe1)
+        //private string UploadFile(recipeviewmodel recipe1)
+        //{
+        //    String filename = "";
+        //    if (recipe1.photo != null)
+        //    {
+        //        String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+        //        filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
+        //        String filepath = Path.Combine(uploadfolder, filename);
+        //        recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
+        //        //using (var fileStream = new FileStream(filepath, FileMode.Create))
+        //        //{
+        //        //    recipe1.photo.CopyTo(fileStream);
+        //        //}
+        //    }
+        //    return filename;
+        //}
+        // NEFUNKČNÍ NA UPLOAD IMAGE
+
+        [HttpPost]
+        public async Task<IActionResult> Create(recipeviewmodel recipe1)
         {
-            String filename = "";
-            if (recipe1.photo != null)
+            if (ModelState.IsValid)
             {
-                String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
-                filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
-                String filepath = Path.Combine(uploadfolder, filename);
-                recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
-                using (var fileStream = new FileStream(filepath, FileMode.Create))
+                if (recipe1.photo != null)
                 {
-                    recipe1.photo.CopyTo(fileStream);
+                    string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
+                    string filePath = Path.Combine(uploadFolder, uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await recipe1.photo.CopyToAsync(stream);
+                    }
+
+                    Recept r = new Recept
+                    {
+                        // Set other properties here
+                        Id = recipe1.Id,
+                        Difficulty = recipe1.Difficulty,
+                        CookTime = recipe1.CookTime,
+                        RecipeName = recipe1.RecipeName,
+                        RecipeCategory = recipe1.RecipeCategory,
+                        ImageUrl = uniqueFileName
+                    };
+
+                    _context.Recept.Add(r);
+                    await _context.SaveChangesAsync();
+                    ViewBag.Success = "Recept Přidán";
+                    return View();
+                }
+                else
+                {
+                    ModelState.AddModelError("Photo", "Please select a file.");
                 }
             }
-            return filename;
+
+            return View(recipe1);
         }
-        // NEFUNKČNÍ NA UPLOAD IMAGE
-        [HttpPost]
-        public IActionResult Create(recipeviewmodel recipe1)
-        {
-            String filename = "";
-            if (recipe1.photo != null)
-            {
-                String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
-                filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
-                String filepath = Path.Combine(uploadfolder, filename);
-                recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
-                //using (var fileStream = new FileStream(filepath, FileMode.Create))
-                //{
-                //    recipe1.photo.CopyTo(fileStream);
-                //}
-            }
-            Recept r = new Recept
-            {
-                Id = recipe1.Id,
-                Difficulty = recipe1.Difficulty,
-                CookTime = recipe1.CookTime,
-                RecipeName = recipe1.RecipeName,
-                RecipeCategory = recipe1.RecipeCategory,
-                ImageUrl = filename
-            };
-            _context.Recept.Add(r);
-            _context.SaveChanges();
-            ViewBag.success = "Recept Přidán";
-            return View();
-        }
+
+        //[HttpPost]
+        //public IActionResult Create(recipeviewmodel recipe1)
+        //{
+        //String filename = "";
+        //if (recipe1.photo == null)
+        //{
+        //    String uploadfolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+        //    filename = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
+        //    String filepath = Path.Combine(uploadfolder, filename);
+        //    recipe1.photo.CopyTo(new FileStream(filepath, FileMode.Create));
+        //    //using (var fileStream = new FileStream(filepath, FileMode.Create))
+        //    //{
+        //    //    recipe1.photo.CopyTo(fileStream);
+        //    //}
+        //}
+        //Recept r = new Recept
+        //{
+        //    Id = recipe1.Id,
+        //    Difficulty = recipe1.Difficulty,
+        //    CookTime = recipe1.CookTime,
+        //    RecipeName = recipe1.RecipeName,
+        //    RecipeCategory = recipe1.RecipeCategory,
+        //    ImageUrl = filename
+        //};
+        //_context.Recept.Add(r);
+        //_context.SaveChanges();
+        //ViewBag.success = "Recept Přidán";
+        //return View();
+        //}
 
         // POST: Recepts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

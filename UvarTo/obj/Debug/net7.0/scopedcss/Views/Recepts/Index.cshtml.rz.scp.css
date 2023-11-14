@@ -10,3 +10,42 @@ div.row[b-15aloij7iv] {
 h3[b-15aloij7iv] {
     
 }
+#toggleFilterButton[b-15aloij7iv] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+.form-group button[b-15aloij7iv] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Style the range slider */
+.form-group #cookTimeRangeFilter[b-15aloij7iv] {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, black) no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+
+    /* Style the thumb (the draggable part of the slider) */
+    .form-group #cookTimeRangeFilter[b-15aloij7iv]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove the default styles on Safari */
+        width: 20px; /* Set the thumb width as needed */
+        height: 20px; /* Set the thumb height as needed */
+        background: black; /* Set the thumb color to black */
+        border: 10px solid #000000; /* Add a border for the thumb */
+        border-radius: 50%; /* Create a round thumb */
+        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    }
+
+/* Style the range value span */
+.form-group #cookTimeRangeValue[b-15aloij7iv] {
+    color: black; /* Set the text color to black to match the slider */
+}
