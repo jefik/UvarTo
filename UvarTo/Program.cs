@@ -9,11 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 var defaultConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-builder.Services.AddDbContext<AuthDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(defaultConnectionString));
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<AuthDbContext>();
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(defaultConnectionString));

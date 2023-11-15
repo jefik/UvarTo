@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\NováSložka\**" />
+    <Content Remove="wwwroot\NováSložka\**" />
+    <EmbeddedResource Remove="wwwroot\NováSložka\**" />
+    <None Remove="wwwroot\NováSložka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
@@ -22,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Jidelnicek\" />
+    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
