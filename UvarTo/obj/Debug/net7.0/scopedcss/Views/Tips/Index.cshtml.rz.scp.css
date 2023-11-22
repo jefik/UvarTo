@@ -1,0 +1,51 @@
+body[b-50r9s28lb8] {
+}
+div.row p[b-50r9s28lb8] {
+    margin: 0px;
+}
+div.row[b-50r9s28lb8] {
+    border: solid black 2px;
+    margin-top: 5px;
+}
+h3[b-50r9s28lb8] {
+    
+}
+#toggleFilterButton[b-50r9s28lb8] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+.form-group button[b-50r9s28lb8] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Style the range slider */
+.form-group #cookTimeRangeFilter[b-50r9s28lb8] {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, black) no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+
+    /* Style the thumb (the draggable part of the slider) */
+    .form-group #cookTimeRangeFilter[b-50r9s28lb8]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove the default styles on Safari */
+        width: 20px; /* Set the thumb width as needed */
+        height: 20px; /* Set the thumb height as needed */
+        background: black; /* Set the thumb color to black */
+        border: 10px solid #000000; /* Add a border for the thumb */
+        border-radius: 50%; /* Create a round thumb */
+        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    }
+
+/* Style the range value span */
+.form-group #cookTimeRangeValue[b-50r9s28lb8] {
+    color: black; /* Set the text color to black to match the slider */
+}

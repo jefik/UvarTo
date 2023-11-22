@@ -28,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Jidelnicek\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>

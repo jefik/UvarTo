@@ -48,12 +48,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects_Visual/UvarTo/UvarTo/Views/Home/Jidelnicek.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxKaWRlbG5pY2VrLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Projects_Visual/UvarTo/UvarTo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/ShowSearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcU2hvd1NlYXJjaEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/ShowSearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xTaG93U2VhcmNoRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects_Visual/UvarTo/UvarTo/Views/Recepts/Create.cshtml]
@@ -88,6 +124,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/ShowSearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xTaG93U2VhcmNoRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects_Visual/UvarTo/UvarTo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +152,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Ingredients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dclfueewfr
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Jidelnicek/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmlkZWxuaWNla1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-96ubwscl2o
+
 [D:/Projects_Visual/UvarTo/UvarTo/Views/Recepts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-15aloij7iv
@@ -103,3 +167,7 @@ build_metadata.AdditionalFiles.CssScope = b-15aloij7iv
 [D:/Projects_Visual/UvarTo/UvarTo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lgk3iki9ve
+
+[D:/Projects_Visual/UvarTo/UvarTo/Views/Tips/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-50r9s28lb8

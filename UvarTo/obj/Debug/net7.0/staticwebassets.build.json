@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J9cj0nSXi2uPHAZTln3au5iw1jhXkJ6DelUxMz94DDM=",
+  "Hash": "q36hxmrwDLivjOSsueTtR8w6ctebFGq6EJe5nwJv3YU=",
   "Source": "UvarTo",
   "BasePath": "_content/UvarTo",
   "Mode": "Default",
@@ -1105,12 +1105,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects_Visual\\UvarTo\\UvarTo\\wwwroot\\images\\2fb95cda-631a-4ca5-9868-a4c54f832d9d_IMG_3212.jpg",
+      "Identity": "D:\\Projects_Visual\\UvarTo\\UvarTo\\wwwroot\\images\\e1ce2fc0-dcc5-42ba-94e7-9d788216db04_IMG_3212.jpg",
       "SourceId": "UvarTo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects_Visual\\UvarTo\\UvarTo\\wwwroot\\",
       "BasePath": "_content/UvarTo",
-      "RelativePath": "images/2fb95cda-631a-4ca5-9868-a4c54f832d9d_IMG_3212.jpg",
+      "RelativePath": "images/e1ce2fc0-dcc5-42ba-94e7-9d788216db04_IMG_3212.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,7 +1119,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2fb95cda-631a-4ca5-9868-a4c54f832d9d_IMG_3212.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\e1ce2fc0-dcc5-42ba-94e7-9d788216db04_IMG_3212.jpg"
     },
     {
       "Identity": "D:\\Projects_Visual\\UvarTo\\UvarTo\\wwwroot\\js\\site.js",
