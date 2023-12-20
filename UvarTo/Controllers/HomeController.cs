@@ -29,7 +29,7 @@ namespace UvarTo.Controllers
         {
             return View();
         }
-        public IActionResult Jidelnicek()
+        public IActionResult Foodmenu()
         {
             return View();
         }

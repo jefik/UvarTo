@@ -525,7 +525,7 @@ D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\refint\UvarTo.dll
 D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.pdb
 D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.genruntimeconfig.cache
 D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\ref\UvarTo.dll
-D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Jidelnicek\Index.cshtml.rz.scp.css
-D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Recepts\Index.cshtml.rz.scp.css
 D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Ingredients\Index.cshtml.rz.scp.css
 D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Tips\Index.cshtml.rz.scp.css
+D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Foodmenu\Index.cshtml.rz.scp.css
+D:\Projects_Visual\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Recipes\Index.cshtml.rz.scp.css

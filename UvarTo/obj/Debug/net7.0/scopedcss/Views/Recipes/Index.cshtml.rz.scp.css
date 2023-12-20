@@ -1,23 +1,23 @@
-body[b-15aloij7iv] {
+body[b-ybe5yi1jvh] {
 }
-div.row p[b-15aloij7iv] {
+div.row p[b-ybe5yi1jvh] {
     margin: 0px;
 }
-div.row[b-15aloij7iv] {
+div.row[b-ybe5yi1jvh] {
     border: solid black 2px;
     margin-top: 5px;
 }
-h3[b-15aloij7iv] {
+h3[b-ybe5yi1jvh] {
     
 }
-#toggleFilterButton[b-15aloij7iv] {
+#toggleFilterButton[b-ybe5yi1jvh] {
     margin: 15px;
     padding: 15px;
     border: 0;
     background-color: black;
     color: white;
 }
-.form-group button[b-15aloij7iv] {
+.form-group button[b-ybe5yi1jvh] {
     margin: 15px;
     padding: 15px;
     border: 0;
@@ -26,7 +26,7 @@ h3[b-15aloij7iv] {
 }
 
 /* Style the range slider */
-.form-group #cookTimeRangeFilter[b-15aloij7iv] {
+.form-group #cookTimeRangeFilter[b-ybe5yi1jvh] {
     width: 100%;
     height: 10px;
     background: linear-gradient(to right, black, black) no-repeat;
@@ -35,7 +35,7 @@ h3[b-15aloij7iv] {
 }
 
     /* Style the thumb (the draggable part of the slider) */
-    .form-group #cookTimeRangeFilter[b-15aloij7iv]::-webkit-slider-thumb {
+    .form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
         -webkit-appearance: none; /* Remove the default styles on Safari */
         width: 20px; /* Set the thumb width as needed */
         height: 20px; /* Set the thumb height as needed */
@@ -46,6 +46,6 @@ h3[b-15aloij7iv] {
     }
 
 /* Style the range value span */
-.form-group #cookTimeRangeValue[b-15aloij7iv] {
+.form-group #cookTimeRangeValue[b-ybe5yi1jvh] {
     color: black; /* Set the text color to black to match the slider */
 }

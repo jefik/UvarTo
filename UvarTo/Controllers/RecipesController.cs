@@ -12,35 +12,35 @@ using UvarTo.Models;
 
 namespace UvarTo.Controllers
 {
-    public class ReceptsController : Controller
+    public class RecipesController : Controller
     {
         private readonly ApplicationDbContext _context;
         IWebHostEnvironment hostingenvironment;
 
-        public ReceptsController(ApplicationDbContext context, IWebHostEnvironment hc) 
+        public RecipesController(ApplicationDbContext context, IWebHostEnvironment hc) 
         {
             _context = context;
             hostingenvironment = hc;
         }
 
-        // GET: Recepts
+        // GET: Recipes
         public async Task<IActionResult> Index()
         {
               return _context.Recept != null ? 
                           View(await _context.Recept.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Recept'  is null.");
         }
-        // GET: Recepts/ShowSearchForm
+        // GET: Recipes/ShowSearchForm
         public async Task<IActionResult> ShowSearchForm()
         {
             return View();
         }
-        // POST: Recepts/ShowSearchResults
+        // POST: Recipes/ShowSearchResults
         public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
         {
             return View("Index",await _context.Recept.Where( j => j.RecipeName.Contains(SearchPhrase)).ToListAsync());
         }
-        // GET: Recepts/Details/5
+        // GET: Recipes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Recept == null)
@@ -58,7 +58,7 @@ namespace UvarTo.Controllers
             return View(recept);
         }
 
-        // GET: Recepts/Create
+        // GET: Recipes/Create
         public IActionResult Create()
         {
             return View();
@@ -98,7 +98,7 @@ namespace UvarTo.Controllers
                         await recipe1.photo.CopyToAsync(stream);
                     }
 
-                    Recept r = new Recept
+                    Recipes r = new Recipes
                     {
                         // Set other properties here
                         Id = recipe1.Id,
@@ -190,9 +190,9 @@ namespace UvarTo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory")] Recept recept)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory")] Recipes recipes)
         {
-            if (id != recept.Id)
+            if (id != recipes.Id)
             {
                 return NotFound();
             }
@@ -201,12 +201,12 @@ namespace UvarTo.Controllers
             {
                 try
                 {
-                    _context.Update(recept);
+                    _context.Update(recipes);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ReceptExists(recept.Id))
+                    if (!ReceptExists(recipes.Id))
                     {
                         return NotFound();
                     }
@@ -217,10 +217,10 @@ namespace UvarTo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(recept);
+            return View(recipes);
         }
 
-        // GET: Recepts/Delete/5
+        // GET: Recipes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Recept == null)

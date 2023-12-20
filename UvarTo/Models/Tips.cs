@@ -4,7 +4,7 @@
     {
         public int id { get; set; }
         public string TipName { get; set; }
-        public string ImageUrl { get; set; }
+        public string TipText { get; set; }
 
         public Tips()
         {

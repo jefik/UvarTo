@@ -1,3 +1,55 @@
+/* _content/UvarTo/Views/Foodmenu/Index.cshtml.rz.scp.css */
+body[b-jijk7slnkp] {
+}
+div.row p[b-jijk7slnkp] {
+    margin: 0px;
+}
+div.row[b-jijk7slnkp] {
+    border: solid black 2px;
+    margin-top: 5px;
+}
+h3[b-jijk7slnkp] {
+    
+}
+#toggleFilterButton[b-jijk7slnkp] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+.form-group button[b-jijk7slnkp] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Style the range slider */
+.form-group #cookTimeRangeFilter[b-jijk7slnkp] {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, black) no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+
+    /* Style the thumb (the draggable part of the slider) */
+    .form-group #cookTimeRangeFilter[b-jijk7slnkp]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove the default styles on Safari */
+        width: 20px; /* Set the thumb width as needed */
+        height: 20px; /* Set the thumb height as needed */
+        background: black; /* Set the thumb color to black */
+        border: 10px solid #000000; /* Add a border for the thumb */
+        border-radius: 50%; /* Create a round thumb */
+        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    }
+
+/* Style the range value span */
+.form-group #cookTimeRangeValue[b-jijk7slnkp] {
+    color: black; /* Set the text color to black to match the slider */
+}
 /* _content/UvarTo/Views/Ingredients/Index.cshtml.rz.scp.css */
 body[b-dclfueewfr] {
 }
@@ -50,27 +102,27 @@ h3[b-dclfueewfr] {
 .form-group #cookTimeRangeValue[b-dclfueewfr] {
     color: black; /* Set the text color to black to match the slider */
 }
-/* _content/UvarTo/Views/Jidelnicek/Index.cshtml.rz.scp.css */
-body[b-96ubwscl2o] {
+/* _content/UvarTo/Views/Recipes/Index.cshtml.rz.scp.css */
+body[b-ybe5yi1jvh] {
 }
-div.row p[b-96ubwscl2o] {
+div.row p[b-ybe5yi1jvh] {
     margin: 0px;
 }
-div.row[b-96ubwscl2o] {
+div.row[b-ybe5yi1jvh] {
     border: solid black 2px;
     margin-top: 5px;
 }
-h3[b-96ubwscl2o] {
+h3[b-ybe5yi1jvh] {
     
 }
-#toggleFilterButton[b-96ubwscl2o] {
+#toggleFilterButton[b-ybe5yi1jvh] {
     margin: 15px;
     padding: 15px;
     border: 0;
     background-color: black;
     color: white;
 }
-.form-group button[b-96ubwscl2o] {
+.form-group button[b-ybe5yi1jvh] {
     margin: 15px;
     padding: 15px;
     border: 0;
@@ -79,7 +131,7 @@ h3[b-96ubwscl2o] {
 }
 
 /* Style the range slider */
-.form-group #cookTimeRangeFilter[b-96ubwscl2o] {
+.form-group #cookTimeRangeFilter[b-ybe5yi1jvh] {
     width: 100%;
     height: 10px;
     background: linear-gradient(to right, black, black) no-repeat;
@@ -88,7 +140,7 @@ h3[b-96ubwscl2o] {
 }
 
     /* Style the thumb (the draggable part of the slider) */
-    .form-group #cookTimeRangeFilter[b-96ubwscl2o]::-webkit-slider-thumb {
+    .form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
         -webkit-appearance: none; /* Remove the default styles on Safari */
         width: 20px; /* Set the thumb width as needed */
         height: 20px; /* Set the thumb height as needed */
@@ -99,59 +151,7 @@ h3[b-96ubwscl2o] {
     }
 
 /* Style the range value span */
-.form-group #cookTimeRangeValue[b-96ubwscl2o] {
-    color: black; /* Set the text color to black to match the slider */
-}
-/* _content/UvarTo/Views/Recepts/Index.cshtml.rz.scp.css */
-body[b-15aloij7iv] {
-}
-div.row p[b-15aloij7iv] {
-    margin: 0px;
-}
-div.row[b-15aloij7iv] {
-    border: solid black 2px;
-    margin-top: 5px;
-}
-h3[b-15aloij7iv] {
-    
-}
-#toggleFilterButton[b-15aloij7iv] {
-    margin: 15px;
-    padding: 15px;
-    border: 0;
-    background-color: black;
-    color: white;
-}
-.form-group button[b-15aloij7iv] {
-    margin: 15px;
-    padding: 15px;
-    border: 0;
-    background-color: black;
-    color: white;
-}
-
-/* Style the range slider */
-.form-group #cookTimeRangeFilter[b-15aloij7iv] {
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, black, black) no-repeat;
-    border: none; 
-    cursor: pointer;
-}
-
-    /* Style the thumb (the draggable part of the slider) */
-    .form-group #cookTimeRangeFilter[b-15aloij7iv]::-webkit-slider-thumb {
-        -webkit-appearance: none; /* Remove the default styles on Safari */
-        width: 20px; /* Set the thumb width as needed */
-        height: 20px; /* Set the thumb height as needed */
-        background: black; /* Set the thumb color to black */
-        border: 10px solid #000000; /* Add a border for the thumb */
-        border-radius: 50%; /* Create a round thumb */
-        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
-    }
-
-/* Style the range value span */
-.form-group #cookTimeRangeValue[b-15aloij7iv] {
+.form-group #cookTimeRangeValue[b-ybe5yi1jvh] {
     color: black; /* Set the text color to black to match the slider */
 }
 /* _content/UvarTo/Views/Shared/_Layout.cshtml.rz.scp.css */

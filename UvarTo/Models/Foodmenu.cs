@@ -1,10 +1,10 @@
 ﻿namespace UvarTo.Models
 {
-    public class Jidelnicek
+    public class Foodmenu
     {
         public int id { get; set; }
-        public string JidelnicekName { get; set; }
-        Jidelnicek()
+        public string FoodmenuName { get; set; }
+        Foodmenu()
         {
 
         }

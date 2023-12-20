@@ -1,6 +1,6 @@
 ﻿namespace UvarTo.Models
 {
-    public class Recept
+    public class Recipes
     {
         public int Id { get; set; }
         public string Difficulty { get; set; }
@@ -8,7 +8,7 @@
         public string RecipeName { get; set; }
         public string RecipeCategory { get; set; }
         public string ImageUrl { get; set; }
-        public Recept()
+        public Recipes()
         {
             
         }

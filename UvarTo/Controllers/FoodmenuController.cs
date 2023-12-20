@@ -2,7 +2,7 @@
 
 namespace UvarTo.Controllers
 {
-    public class JidelnicekController : Controller
+    public class FoodmenuController : Controller
     {
         public IActionResult Index()
         {
