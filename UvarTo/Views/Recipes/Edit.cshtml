@@ -1,5 +1,4 @@
-﻿@model UvarTo.Models.Recipes
-
+﻿@model UvarTo.Models.recipeviewmodel
 @{
     ViewData["Title"] = "Edit";
 }
@@ -8,9 +7,10 @@
 
 <h4>Recipes</h4>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -32,6 +32,11 @@
                 <label asp-for="RecipeCategory" class="control-label"></label>
                 <input asp-for="RecipeCategory" class="form-control" />
                 <span asp-validation-for="RecipeCategory" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="photo" class="control-label"></label>
+                <input asp-for="photo" class="form-control" />
+                <span asp-validation-for="photo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

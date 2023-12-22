@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S/oC4SeuX+hXqKJhv/sCpwEQzX4bIcImr9l555N7Z4Ab685Ct5cEVHpNdtq1YosNb88lfpf3ZkZh91/oxnTrUA==",
+  "dgSpecHash": "SX06LrFKD0lynDdLz0OC0mi9IovaRuKwa/df7gIecWQyuhiyYW2vU2ne8SAirce/vOjCpsgE8LOBY5pw6hetLg==",
   "success": true,
-  "projectFilePath": "D:\\Projects_Visual\\UvarTo\\UvarTo\\UvarTo.csproj",
+  "projectFilePath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\UvarTo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\merak\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\merak\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

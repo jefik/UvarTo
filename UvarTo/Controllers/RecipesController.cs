@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -92,7 +93,7 @@ namespace UvarTo.Controllers
                     string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
                     string uniqueFileName = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
                     string filePath = Path.Combine(uploadFolder, uniqueFileName);
-
+                
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await recipe1.photo.CopyToAsync(stream);
@@ -106,7 +107,7 @@ namespace UvarTo.Controllers
                         CookTime = recipe1.CookTime,
                         RecipeName = recipe1.RecipeName,
                         RecipeCategory = recipe1.RecipeCategory,
-                        ImageUrl = uniqueFileName
+                        ImageUrl = @"\images\" + uniqueFileName
                     };
 
                     _context.Recept.Add(r);
@@ -177,12 +178,30 @@ namespace UvarTo.Controllers
                 return NotFound();
             }
 
-            var recept = await _context.Recept.FindAsync(id);
-            if (recept == null)
+            var existingRecept = await _context.Recept.FindAsync(id);
+            if (existingRecept == null)
             {
                 return NotFound();
             }
-            return View(recept);
+
+            var viewModel = new recipeviewmodel
+            {
+                // Populate the properties of the recipeviewmodel
+                Id = existingRecept.Id,
+                // Assign other properties from existingRecept to recipeviewmodel
+                // ...
+                // For example:
+                Difficulty = existingRecept.Difficulty,
+                CookTime = existingRecept.CookTime,
+                RecipeName = existingRecept.RecipeName,
+                RecipeCategory = existingRecept.RecipeCategory,
+                // ...
+
+                // Initialize PhotoModel with null or any default values as needed
+                photo = null
+            };
+
+            return View(viewModel);
         }
 
         // POST: Recepts/Edit/5
@@ -190,7 +209,129 @@ namespace UvarTo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory")] Recipes recipes)
+        public async Task<IActionResult> Edit(int id, recipeviewmodel recipes)
+        {
+            if (id != recipes.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var existingRecipe = await _context.Recept.FindAsync(recipes.Id);
+                if (existingRecipe == null)
+                {
+                    return NotFound();
+                }
+
+                // If the user uploaded a new image
+                if (recipes.photo != null)
+                {
+                    string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + recipes.photo.FileName;
+                    string filePath = Path.Combine(hostingenvironment.WebRootPath, "images", uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await recipes.photo.CopyToAsync(stream);
+                    }
+
+                    string imageUrl = @"\images\" + uniqueFileName;
+                    // Update other properties
+                    existingRecipe.Difficulty = recipes.Difficulty;
+                    existingRecipe.CookTime = recipes.CookTime;
+                    existingRecipe.RecipeName = recipes.RecipeName;
+                    existingRecipe.RecipeCategory = recipes.RecipeCategory;
+                    existingRecipe.ImageUrl = imageUrl;
+                }
+
+                _context.Update(existingRecipe);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(recipes);
+        }
+        /*
+        public async Task<IActionResult> Edit(int id, recipeviewmodel recipes)
+        {
+            if (id != recipes.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var existingRecipe = await _context.Recept.FindAsync(recipes.Id);
+                if (existingRecipe == null)
+                {
+                    return NotFound();
+                }
+                
+                // If the user uploaded a new image
+                if (recipes.photo != null)
+                {
+                    string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + recipes.photo.FileName;
+                    string filePath = Path.Combine(hostingenvironment.WebRootPath, "images", uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await recipes.photo.CopyToAsync(stream);
+                    }
+
+                    string ImageUrl = @"\images\" + uniqueFileName;
+                    // Update other properties
+                    existingRecipe.Difficulty = recipes.Difficulty;
+                    existingRecipe.CookTime = recipes.CookTime;
+                    existingRecipe.RecipeName = recipes.RecipeName;
+                    existingRecipe.RecipeCategory = recipes.RecipeCategory;
+                    existingRecipe.ImageUrl = ImageUrl;
+                }
+
+                
+
+                _context.Update(existingRecipe);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(recipes);
+        }
+      */
+        /* public async Task<IActionResult> Edit(Recipes recipes)
+         {
+
+             if (ModelState.IsValid)
+             {
+                 var existingRecipe = await _context.Recept.FindAsync(recipes.Id);
+                 if (existingRecipe == null)
+                 {
+                     return NotFound();
+                 }
+
+                 // If the user changed the ImageUrl and it's not already prefixed with "\images\"
+                 if (existingRecipe.ImageUrl != recipes.ImageUrl && !recipes.ImageUrl.StartsWith("\\images\\"))
+                 {
+                     recipes.ImageUrl = "\\images\\" + recipes.ImageUrl;
+                 }
+
+                 // Map properties from viewModel to existingRecipe
+                 existingRecipe.Difficulty = recipes.Difficulty;
+                 existingRecipe.CookTime = recipes.CookTime;
+                 existingRecipe.RecipeName = recipes.RecipeName;
+                 existingRecipe.RecipeCategory = recipes.RecipeCategory;
+                 existingRecipe.ImageUrl = recipes.ImageUrl;
+
+                 _context.Update(existingRecipe);
+                 await _context.SaveChangesAsync();
+                 return RedirectToAction(nameof(Index));
+             }
+
+             return View(recipes);
+         }*/
+        /*
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Difficulty,CookTime,RecipeName,RecipeCategory,ImageUrl")] Recipes recipes)
         {
             if (id != recipes.Id)
             {
@@ -219,7 +360,7 @@ namespace UvarTo.Controllers
             }
             return View(recipes);
         }
-
+        */
         // GET: Recipes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

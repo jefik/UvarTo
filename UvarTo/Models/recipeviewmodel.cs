@@ -1,4 +1,4 @@
-﻿namespace UvarTo
+﻿namespace UvarTo.Models
 {
     public class recipeviewmodel
     {
