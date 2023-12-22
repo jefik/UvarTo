@@ -11,6 +11,9 @@ namespace UvarTo.Data
             : base(options)
         {
         }
-        public DbSet<UvarTo.Models.Recipes> Recept { get; set; } = default!;
+        public DbSet<Recipes> Recept { get; set; }
+        public DbSet<Foodmenu> Foodmenu { get; set; }
+        public DbSet<Tips> Tips { get; set; }
+        
     }
 }

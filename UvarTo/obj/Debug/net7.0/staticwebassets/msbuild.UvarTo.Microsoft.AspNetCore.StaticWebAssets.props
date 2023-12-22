@@ -64,6 +64,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\30b9f99a-785d-4279-b2ee-4ab4a84829fd_karbanatek.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>UvarTo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UvarTo</BasePath>
+      <RelativePath>images/3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\6882f399-f53f-481b-86aa-7cc85619cfa2_0164fb8f7a89180bda88369f9e4e67a5.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>UvarTo</SourceId>

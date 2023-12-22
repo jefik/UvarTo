@@ -31,15 +31,19 @@ namespace UvarTo.Controllers
                           View(await _context.Recept.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Recept'  is null.");
         }
-        // GET: Recipes/ShowSearchForm
-        public async Task<IActionResult> ShowSearchForm()
+        // GET: Recepts/ShowSearchForm
+        public IActionResult Search()
         {
-            return View();
+            return View("Search");
         }
-        // POST: Recipes/ShowSearchResults
+        // POST: Recepts/ShowSearchResults
         public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
         {
-            return View("Index",await _context.Recept.Where( j => j.RecipeName.Contains(SearchPhrase)).ToListAsync());
+            var searchResults = await _context.Recept
+            .Where(j => j.RecipeName.Contains(SearchPhrase))
+            .ToListAsync();
+
+            return View("Search", searchResults);
         }
         // GET: Recipes/Details/5
         public async Task<IActionResult> Details(int? id)

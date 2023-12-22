@@ -1,0 +1,48 @@
+﻿@model List<Recipes>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div class="form-group">
+                <label for="searchPhrase" class="control-label"></label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model != null)
+{
+    @if (Model.Any())
+    {
+        <ul>
+            @foreach (var item in Model)
+            {
+                <div class="recipe" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="@item.ImageUrl" alt="Image" class="img-fluid">
+                        </div>
+
+                        <div class="col-md-8">
+                            <p>@item.RecipeCategory</p>
+                            <h3>@item.RecipeName</h3>
+                            <p>Náročnost: @item.Difficulty / 10</p>
+                            <p>Doba přípravy: @item.CookTime Minut</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </ul>
+        <div>
+            <a asp-action="ShowSearchForm">Back to List</a>
+        </div>
+    }
+    else
+    {
+        <p>No recipes found.</p>
+    }
+}
