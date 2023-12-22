@@ -1,5 +1,5 @@
-﻿@* @model UvarTo.Models.Tips  *@
-@model recipeviewmodel 
+﻿@*@model UvarTo.Models.Recipes *@
+@model UvarTo.Models.Tips
 
 @{
     ViewData["Title"] = "Create";
@@ -7,44 +7,23 @@
 
 <h1>Create</h1>
 
-<h4>Tips a tricks</h4>
+<h4>Tips and tricks</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Difficulty" class="control-label"></label>
-                <input asp-for="Difficulty" class="form-control" />
-                <span asp-validation-for="Difficulty" class="text-danger"></span>
+                <label asp-for="TipName" class="control-label"></label>
+                <input asp-for="TipName" class="form-control" />
+                <span asp-validation-for="TipName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CookTime" class="control-label"></label>
-                <input asp-for="CookTime" class="form-control" />
-                <span asp-validation-for="CookTime" class="text-danger"></span>
+                <label asp-for="TipText" class="control-label"></label>
+                <input asp-for="TipText" class="form-control" />
+                <span asp-validation-for="TipText" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="RecipeName" class="control-label"></label>
-                <input asp-for="RecipeName" class="form-control" />
-                <span asp-validation-for="RecipeName" class="text-danger"></span>
-            </div>
-             <div class="form-group">
-                <label asp-for="RecipeCategory" class="control-label"></label>
-                <input asp-for="RecipeCategory" class="form-control" />
-                <span asp-validation-for="RecipeCategory" class="text-danger"></span>
-            </div> 
-             <div class="form-group">
-                <label asp-for="photo" class="control-label"></label>
-                <input asp-for="photo" class="form-control" />
-                <span asp-validation-for="photo" class="text-danger"></span>
-            </div> 
             
-            @*  <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>  *@
-
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -57,5 +36,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

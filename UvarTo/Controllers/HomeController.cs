@@ -16,14 +16,21 @@ namespace UvarTo.Controllers
         public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
         {
             _logger = logger;
-            this._userManager= userManager;
+            this._userManager = userManager;
         }
 
         public IActionResult Index()
         {
-            ViewData["UserID"] = _userManager.GetUserId(this.User);
+            ApplicationUser user = _userManager.GetUserAsync(User).Result;
+
+            // Check if the user is not null to avoid null reference exceptions
+            if (user != null)
+            {
+                ViewData["UserFirstName"] = user.FirstName;
+            }
             return View();
         }
+
 
         public IActionResult Privacy()
         {

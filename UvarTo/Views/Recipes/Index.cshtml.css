@@ -1,21 +1,27 @@
 ﻿body {
 }
+
 div.row p {
     margin: 0px;
 }
+
 div.row {
     border: solid black 2px;
     margin-top: 5px;
 }
+
 h3 {
-    
 }
+
 #toggleFilterButton {
     margin: 15px;
     padding: 15px;
     border: 0;
     background-color: black;
     color: white;
+}
+.button{
+    margin-top: 8px;
 }
 .form-group button {
     margin: 15px;
@@ -30,7 +36,7 @@ h3 {
     width: 100%;
     height: 10px;
     background: linear-gradient(to right, black, black) no-repeat;
-    border: none; 
+    border: none;
     cursor: pointer;
 }
 

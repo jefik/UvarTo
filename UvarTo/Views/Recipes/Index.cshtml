@@ -10,7 +10,7 @@
 <h1>Recipes</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
 </p>
 
 <div class="container">
@@ -65,13 +65,14 @@
                         <div class="col-md-8">
                             <p>@item.RecipeCategory</p>
                             <h3>@item.RecipeName</h3>
+                            <p>@item.RecipeText</p>
                             <p>Náročnost: @item.Difficulty / 10</p>
                             <p>Doba přípravy: @item.CookTime Minut</p>
 
-                            <div>
-                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <div class="button">
+                                <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
                             </div>
                         </div>
                     </div>

@@ -21,3 +21,19 @@ body {
   margin-bottom: 60px;
 }
 
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+.btn-custom:focus,    
+.btn-custom:active,
+.btn-custom:hover {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }

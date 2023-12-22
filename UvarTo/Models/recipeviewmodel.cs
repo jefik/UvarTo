@@ -7,6 +7,7 @@
         public string CookTime { get; set; }
         public string RecipeName { get; set; }
         public string RecipeCategory { get; set; }
+        public string RecipeText { get; set; }
         public IFormFile photo { get; set; }
     }
 }

@@ -9,35 +9,22 @@
 <div>
     <h4>Tips and tricks</h4>
     <hr />
-    @*<dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Difficulty)
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipName)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Difficulty)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CookTime)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipText)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CookTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RecipeName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RecipeName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RecipeCategory)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RecipeCategory)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipText)
         </dd>
     </dl>
-</div>
-<div>
+
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
-    *@
+    

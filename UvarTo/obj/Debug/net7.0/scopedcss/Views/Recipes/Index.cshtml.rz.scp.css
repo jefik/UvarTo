@@ -1,21 +1,27 @@
 body[b-ybe5yi1jvh] {
 }
+
 div.row p[b-ybe5yi1jvh] {
     margin: 0px;
 }
+
 div.row[b-ybe5yi1jvh] {
     border: solid black 2px;
     margin-top: 5px;
 }
+
 h3[b-ybe5yi1jvh] {
-    
 }
+
 #toggleFilterButton[b-ybe5yi1jvh] {
     margin: 15px;
     padding: 15px;
     border: 0;
     background-color: black;
     color: white;
+}
+.button[b-ybe5yi1jvh]{
+    margin-top: 8px;
 }
 .form-group button[b-ybe5yi1jvh] {
     margin: 15px;
@@ -30,7 +36,7 @@ h3[b-ybe5yi1jvh] {
     width: 100%;
     height: 10px;
     background: linear-gradient(to right, black, black) no-repeat;
-    border: none; 
+    border: none;
     cursor: pointer;
 }
 

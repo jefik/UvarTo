@@ -2,7 +2,7 @@
 {
     public class Tips
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string TipName { get; set; }
         public string TipText { get; set; }
 

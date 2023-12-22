@@ -11655,25 +11655,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Honza\\.nuget\\packages\\": {},
+    "C:\\Users\\merak\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Honza\\source\\repos\\UvarToSkoroHotovo\\UvarTo-master\\UvarTo\\UvarTo.csproj",
+      "projectUniqueName": "A:\\kkk\\UvarTo - Zaloha\\UvarTo\\UvarTo\\UvarTo.csproj",
       "projectName": "UvarTo",
-      "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToSkoroHotovo\\UvarTo-master\\UvarTo\\UvarTo.csproj",
-      "packagesPath": "C:\\Users\\Honza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Honza\\source\\repos\\UvarToSkoroHotovo\\UvarTo-master\\UvarTo\\obj\\",
+      "projectPath": "A:\\kkk\\UvarTo - Zaloha\\UvarTo\\UvarTo\\UvarTo.csproj",
+      "packagesPath": "C:\\Users\\merak\\.nuget\\packages\\",
+      "outputPath": "A:\\kkk\\UvarTo - Zaloha\\UvarTo\\UvarTo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Honza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\merak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
