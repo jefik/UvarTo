@@ -40,6 +40,11 @@ h3 {
     cursor: pointer;
 }
 
+.recipe-text {
+    max-height: 50px; /* Change this value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
     /* Style the thumb (the draggable part of the slider) */
     .form-group #cookTimeRangeFilter::-webkit-slider-thumb {
         -webkit-appearance: none; /* Remove the default styles on Safari */

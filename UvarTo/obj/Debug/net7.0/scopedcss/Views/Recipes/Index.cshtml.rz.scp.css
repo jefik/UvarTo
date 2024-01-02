@@ -40,6 +40,11 @@ h3[b-ybe5yi1jvh] {
     cursor: pointer;
 }
 
+.recipe-text[b-ybe5yi1jvh] {
+    max-height: 50px; /* Change this value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
     /* Style the thumb (the draggable part of the slider) */
     .form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
         -webkit-appearance: none; /* Remove the default styles on Safari */
