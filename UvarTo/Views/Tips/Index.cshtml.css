@@ -1,51 +1,142 @@
-﻿body {
+﻿
+div h2 {
+    text-align: center;
 }
-div.row p {
-    margin: 0px;
+::placeholder {
+    color: gray;
 }
+
 div.row {
-    border: solid black 2px;
+    border: 2px solid black;
     margin-top: 5px;
 }
-h3 {
-    
-}
-#toggleFilterButton {
-    margin: 15px;
-    padding: 15px;
-    border: 0;
-    background-color: black;
-    color: white;
-}
-.form-group button {
-    margin: 15px;
-    padding: 15px;
-    border: 0;
-    background-color: black;
-    color: white;
+
+div #main {
+    border: 0px solid black;
 }
 
-/* Style the range slider */
-.form-group #cookTimeRangeFilter {
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, black, black) no-repeat;
-    border: none; 
-    cursor: pointer;
+
+
+
+
+div.col-md-8 h3.recipe-name-link {
+    color: black;
+    text-decoration: none;
 }
 
-    /* Style the thumb (the draggable part of the slider) */
-    .form-group #cookTimeRangeFilter::-webkit-slider-thumb {
-        -webkit-appearance: none; /* Remove the default styles on Safari */
-        width: 20px; /* Set the thumb width as needed */
-        height: 20px; /* Set the thumb height as needed */
-        background: black; /* Set the thumb color to black */
-        border: 10px solid #000000; /* Add a border for the thumb */
-        border-radius: 50%; /* Create a round thumb */
-        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+
+    div.col-md-8 h3.recipe-name-link:hover {
+        color: darkgray;
     }
 
-/* Style the range value span */
-.form-group #cookTimeRangeValue {
-    color: black; /* Set the text color to black to match the slider */
+
+div.col-md-8 a {
+    color: black !important;
+    text-decoration: none !important;
 }
+
+
+    div.col-md-8 a:hover {
+        color: darkgray !important;
+    }
+
+
+:-ms-input-placeholder {
+    color: gray;
+}
+
+::-ms-input-placeholder {
+    color: gray;
+}
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom:hover {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+.search-button {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+div h2 {
+    text-align: center;
+}
+
+::placeholder {
+    color: gray;
+}
+
+div.row {
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+div #main {
+    border: 0px solid black;
+}
+
+
+
+.tips-name-link a {
+    color: black;
+    text-decoration: none;
+}
+
+div h3.tips-name-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+div.col-md-8 h3.tips-name-link:hover {
+    color: darkgray;
+}
+
+
+div.col-md-8 a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover {
+        color: darkgray !important;
+    }

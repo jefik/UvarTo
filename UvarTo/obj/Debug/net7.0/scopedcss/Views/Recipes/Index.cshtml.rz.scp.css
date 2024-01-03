@@ -10,8 +10,6 @@ div.row[b-ybe5yi1jvh] {
     margin-top: 5px;
 }
 
-h3[b-ybe5yi1jvh] {
-}
 
 #toggleFilterButton[b-ybe5yi1jvh] {
     margin: 15px;
@@ -60,3 +58,52 @@ h3[b-ybe5yi1jvh] {
 .form-group #cookTimeRangeValue[b-ybe5yi1jvh] {
     color: black; /* Set the text color to black to match the slider */
 }
+
+
+
+
+div h2[b-ybe5yi1jvh] {
+    text-align: center;
+}
+
+[b-ybe5yi1jvh]::placeholder {
+    color: gray;
+}
+
+div.row[b-ybe5yi1jvh] {
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+div #main[b-ybe5yi1jvh] {
+    border: 0px solid black;
+}
+
+
+
+.recipe-name-link a[b-ybe5yi1jvh] {
+    color: black;
+    text-decoration: none;
+}
+div h3.recipe-name-link[b-ybe5yi1jvh] {
+    color: black;
+    text-decoration: none;
+}
+
+
+div.col-md-8 h3.recipe-name-link:hover[b-ybe5yi1jvh] {
+    color: darkgray;
+}
+
+
+div.col-md-8 a[b-ybe5yi1jvh] {
+color: black !important;
+text-decoration: none !important;
+}
+
+
+div.col-md-8 a:hover[b-ybe5yi1jvh] {
+    color: darkgray !important;
+}
+
+

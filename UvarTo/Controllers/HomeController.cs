@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using UvarTo.Areas.Identity.Data;
+using UvarTo.Data;
 using UvarTo.Models;
+
 
 namespace UvarTo.Controllers
 {
@@ -12,14 +15,34 @@ namespace UvarTo.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager, ApplicationDbContext context)
         {
             _logger = logger;
             this._userManager = userManager;
+            _context = context;
         }
 
-        public IActionResult Index()
+        //public IActionResult Index()
+        //{
+        //    ApplicationUser user = _userManager.GetUserAsync(User).Result;
+
+        //    // Check if the user is not null to avoid null reference exceptions
+        //    if (user != null)
+        //    {
+        //        ViewData["UserFirstName"] = user.FirstName;
+        //    }
+
+
+        //    return View();
+        //}
+
+        // GET: Recipes
+
+        
+        
+        public async Task<IActionResult> Index()
         {
             ApplicationUser user = _userManager.GetUserAsync(User).Result;
 
@@ -28,7 +51,10 @@ namespace UvarTo.Controllers
             {
                 ViewData["UserFirstName"] = user.FirstName;
             }
+
+
             return View();
+
         }
 
 

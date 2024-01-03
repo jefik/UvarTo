@@ -32,12 +32,21 @@ namespace UvarTo.Controllers
                         Problem("Entity set 'ApplicationDbContext.Tips'  is null.");
         }
 
+       
         // GET: Tips/ShowSearchForm
         public IActionResult Search()
         {
-            return View("Search");
+            return View("Index");
         }
-        
+        // POST: Tips/ShowSearchResults
+        public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
+        {
+            var searchResults = await _context.Tips
+            .Where(j => j.TipName.Contains(SearchPhrase))
+            .ToListAsync();
+
+            return View("Index", searchResults);
+        }
         // GET: Tips/Details/5
         public async Task<IActionResult> Details(int? id)
         {
