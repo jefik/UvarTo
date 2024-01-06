@@ -7,7 +7,7 @@ div h2[b-50r9s28lb8] {
 }
 
 div.row[b-50r9s28lb8] {
-    border: 2px solid black;
+   
     margin-top: 5px;
 }
 
@@ -104,10 +104,6 @@ div h2[b-50r9s28lb8] {
     color: gray;
 }
 
-div.row[b-50r9s28lb8] {
-    border: 2px solid black;
-    margin-top: 5px;
-}
 
 div #main[b-50r9s28lb8] {
     border: 0px solid black;
@@ -140,3 +136,15 @@ div.col-md-8 a[b-50r9s28lb8] {
     div.col-md-8 a:hover[b-50r9s28lb8] {
         color: darkgray !important;
     }
+
+
+.no-border[b-50r9s28lb8] {
+    border: 0px solid black;
+}
+.text-right-md[b-50r9s28lb8] {
+    text-align: right;
+}
+
+.text-right-md p[b-50r9s28lb8] {
+    margin-right: 0; 
+}

@@ -5,10 +5,19 @@ div.row p[b-ybe5yi1jvh] {
     margin: 0px;
 }
 
-div.row[b-ybe5yi1jvh] {
-    border: solid black 2px;
+div.row[b-ybe5yi1jvh] { 
     margin-top: 5px;
 }
+.no-border[b-ybe5yi1jvh] {
+    border: 0px solid black;
+}
+.text-right-md[b-ybe5yi1jvh] {
+    text-align: right;
+}
+
+    .text-right-md p[b-ybe5yi1jvh] {
+        margin-right: 0;
+    }
 
 
 #toggleFilterButton[b-ybe5yi1jvh] {
@@ -43,16 +52,16 @@ div.row[b-ybe5yi1jvh] {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-    /* Style the thumb (the draggable part of the slider) */
-    .form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
-        -webkit-appearance: none; /* Remove the default styles on Safari */
-        width: 20px; /* Set the thumb width as needed */
-        height: 20px; /* Set the thumb height as needed */
-        background: black; /* Set the thumb color to black */
-        border: 10px solid #000000; /* Add a border for the thumb */
-        border-radius: 50%; /* Create a round thumb */
-        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
-    }
+/* Style the thumb (the draggable part of the slider) */
+.form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove the default styles on Safari */
+    width: 20px; /* Set the thumb width as needed */
+    height: 20px; /* Set the thumb height as needed */
+    background: black; /* Set the thumb color to black */
+    border: 10px solid #000000; /* Add a border for the thumb */
+    border-radius: 50%; /* Create a round thumb */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+}
 
 /* Style the range value span */
 .form-group #cookTimeRangeValue[b-ybe5yi1jvh] {
@@ -71,7 +80,6 @@ div h2[b-ybe5yi1jvh] {
 }
 
 div.row[b-ybe5yi1jvh] {
-    border: 2px solid black;
     margin-top: 5px;
 }
 
@@ -97,8 +105,8 @@ div.col-md-8 h3.recipe-name-link:hover[b-ybe5yi1jvh] {
 
 
 div.col-md-8 a[b-ybe5yi1jvh] {
-color: black !important;
-text-decoration: none !important;
+    color: black !important;
+    text-decoration: none !important;
 }
 
 

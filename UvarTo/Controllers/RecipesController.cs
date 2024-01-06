@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,35 @@ namespace UvarTo.Controllers
             _context = context;
             hostingenvironment = hc;
         }
+
+
+
+        //else
+        //    var userItems = _context.Recept.Where(item => item.Id == userId).ToList();
+
+        //return View(userItems);
+        private string GetCurrentId()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return userId;
+        }
+        public async Task<IActionResult> UserItems()
+        {
+
+            var userIdString = GetCurrentId();
+            //var userId = Convert.ToInt32(userIdString);
+            //var userIdGuid = new Guid(userIdString); // Convert the string to a Guid
+            //var userId = userIdGuid.GetHashCode(); // Convert Guid to int
+            var userItems = _context.Recept.Where(item => item.userId == userIdString).ToList();
+
+            ViewBag.UserIdString = userIdString;
+            //ViewBag.UserIdGuid = userIdGuid;
+            //ViewBag.UserId = userId;
+            return View("userItems", userItems);
+
+
+        }
+
 
         // GET: Recipes
         public async Task<IActionResult> Index()
@@ -72,9 +103,8 @@ namespace UvarTo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(recipeviewmodel recipe1)
         {
-            if (ModelState.IsValid)
-            {
-                if (recipe1.photo != null)
+            var userId = GetCurrentId();
+            if (recipe1.photo != null)
                 {
                     string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
                     string uniqueFileName = Guid.NewGuid().ToString() + "_" + recipe1.photo.FileName;
@@ -89,6 +119,7 @@ namespace UvarTo.Controllers
                     {
                         // Set other properties here
                         Id = recipe1.Id,
+                        userId = userId,
                         Difficulty = recipe1.Difficulty,
                         CookTime = recipe1.CookTime,
                         RecipeName = recipe1.RecipeName,
@@ -106,7 +137,7 @@ namespace UvarTo.Controllers
                 {
                     ModelState.AddModelError("Photo", "Please select a file.");
                 }
-            }
+            
 
             return View(recipe1);
         }

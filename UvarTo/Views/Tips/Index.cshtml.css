@@ -7,7 +7,7 @@ div h2 {
 }
 
 div.row {
-    border: 2px solid black;
+   
     margin-top: 5px;
 }
 
@@ -104,10 +104,6 @@ div h2 {
     color: gray;
 }
 
-div.row {
-    border: 2px solid black;
-    margin-top: 5px;
-}
 
 div #main {
     border: 0px solid black;
@@ -140,3 +136,15 @@ div.col-md-8 a {
     div.col-md-8 a:hover {
         color: darkgray !important;
     }
+
+
+.no-border {
+    border: 0px solid black;
+}
+.text-right-md {
+    text-align: right;
+}
+
+.text-right-md p {
+    margin-right: 0; 
+}

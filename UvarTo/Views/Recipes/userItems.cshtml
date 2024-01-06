@@ -1,0 +1,33 @@
+﻿@model List<Recipes>
+<h2>User Items</h2>
+<a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Recipes</a>
+
+@foreach (var item in Model)
+{
+    <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="max-width: auto; height: 258px;">
+            </div>
+
+            <div class="col-md-8">
+                <p>@item.RecipeCategory</p>
+                @* <h3>@item.RecipeName</h3> *@
+                @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
+                <h3 class="recipe-name-link">
+                    <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
+                </h3>
+                <p>Popias: @item.RecipeText</p>
+                <p>Náročnost: @item.Difficulty</p>
+                <p>Doba přípravy: @item.CookTime Minut</p>
+                
+                    <div class="button">
+                        <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+}

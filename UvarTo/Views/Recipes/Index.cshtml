@@ -11,12 +11,27 @@
 }
 
 <h1>Recipes</h1>
-
-<p>
-    <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
-</p>
-
 <div class="container">
+    <div class="row no-border">
+        @if (User.IsInRole("Admin") || User.IsInRole("User"))
+        {
+            <div class="col-md-4">
+                <p>
+                    <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
+                </p>
+            </div>
+        }
+
+        @if (User.IsInRole("Admin") || User.IsInRole("User"))
+        {
+            <div class="col-md-4 offset-md-4 text-right-md">
+                <!-- Add offset for the second column -->
+                <p>
+                    <a asp-action="UserItems" asp-controller="Recipes" class="btn btn-primary btn-block btn-custom">View My Recipes</a>
+                </p>
+            </div>
+        }
+    </div>
     <div class="row">
         <div class="col-md-3">
             <!-- Toggle Filter Button -->
@@ -75,11 +90,13 @@
                             <p>Popias: @item.RecipeText</p>
                             <p>Náročnost: @item.Difficulty</p>
                             <p>Doba přípravy: @item.CookTime Minut</p>
+                            @if (User.IsInRole("Admin")){
                             <div class="button">
                                 <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
                                 <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
                                 <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
                             </div>
+                                }
                         </div>
                     </div>
                 </div>

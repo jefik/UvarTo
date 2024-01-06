@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,27 @@ namespace UvarTo.Controllers
             _context = context;
             hostingenvironment = hc;
         }
+        private string GetCurrentId()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return userId;
+        }
+        public async Task<IActionResult> UserItems()
+        {
 
+            var userIdString = GetCurrentId();
+            //var userId = Convert.ToInt32(userIdString);
+            //var userIdGuid = new Guid(userIdString); // Convert the string to a Guid
+            //var userId = userIdGuid.GetHashCode(); // Convert Guid to int
+            var userItems = _context.Tips.Where(item => item.userId == userIdString).ToList();
+
+            ViewBag.UserIdString = userIdString;
+            //ViewBag.UserIdGuid = userIdGuid;
+            //ViewBag.UserId = userId;
+            return View("userItems", userItems);
+
+
+        }
         // GET: Tips
         public async Task<IActionResult> Index()
         {
@@ -74,25 +95,27 @@ namespace UvarTo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Tips tips)
         {
-            if (ModelState.IsValid)
-            {
+            var userId = GetCurrentId();
+            
 
-                    Tips t = new Tips
-                    {
-                        // Set other properties here
-                        Id = tips.Id,
-                        TipName = tips.TipName,
-                        TipText = tips.TipText,
-                    };
+
+                Tips t = new Tips
+                {
+                    // Set other properties here
+                    Id = tips.Id,
+                    userId = userId,
+                    TipName = tips.TipName,
+                    TipText = tips.TipText                 
+                };
 
                     _context.Tips.Add(t);
                     await _context.SaveChangesAsync();
                     ViewBag.Success = "Tip Added";
                     return RedirectToAction(nameof(Index));
 
-            }
+            
 
-            return View(tips);
+            //return View(tips);
         }
 
         // GET: Tips/Edit/5

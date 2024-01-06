@@ -1,4 +1,10 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using UvarTo.Areas.Identity.Data;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
     var userFirstName = ViewData["UserFirstName"] as string;
 }
@@ -8,7 +14,24 @@
     <h1 class="display-4">Welcome on UvarTo
 
     </h1>
-    <p>Welcome! @userFirstName</p>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <h1>Vítejte admine! @userFirstName</h1>
+    }
+    else if (User.IsInRole("User"))
+    {
+        <h1>Welcome @userFirstName</h1>
+    }
+    else
+    {
+     <h5>
+         We can see you have no account on our website <br>
+            in order to be able to share your amazing recipes, menus and tips or tricks with the world, you must register
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+     </h5> 
+    }
+    
 </div>
     @* 
     POKUS O ZOBRAZENÍ 3 TABLES VE 3 SLOUPCÍCH NEFUNKČNÍ    

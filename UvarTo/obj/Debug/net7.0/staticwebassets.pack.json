@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Search.css"
     },
     {
+      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToGit\\UvarTo\\UvarTo\\wwwroot\\css\\Tips.css",
+      "PackagePath": "staticwebassets\\css\\Tips.css"
+    },
+    {
       "Id": "C:\\Users\\Honza\\source\\repos\\UvarToGit\\UvarTo\\UvarTo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,0 +1,84 @@
+﻿
+div h2 {
+    text-align: center;
+}
+
+::placeholder {
+    color: gray;
+}
+
+div.row {
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+div #main {
+    border: 0px solid black;
+}
+
+
+
+
+
+div.col-md-8 h3.recipe-name-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+    div.col-md-8 h3.recipe-name-link:hover {
+        color: darkgray;
+    }
+
+
+div.col-md-8 a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover {
+        color: darkgray !important;
+    }
+
+
+:-ms-input-placeholder {
+    color: gray;
+}
+
+::-ms-input-placeholder {
+    color: gray;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+.search-button {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+.no-border {
+    border: 5px solid red;
+}

@@ -1,7 +1,14 @@
-﻿@model IEnumerable<UvarTo.Models.Tips>
+﻿@using Microsoft.AspNetCore.Identity
+@using UvarTo.Areas.Identity.Data;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@model IEnumerable<UvarTo.Models.Tips>
 
 <head>
-    <link href="@Url.Content("~/css/Search.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/Tips.css")" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -10,69 +17,63 @@
 }
 
 
-
 <div class="container">
-  
-        <div class="row justify-content-center" id="main">
-        <p>
-            <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
-        </p>
+    <div class="row justify-content-md-center no-border">
         <h2>Tips and tricks</h2>
-            <!-- Search Box -->
-            @* <form id="searchForm" class="mb-3 search-form">
-                <label for="searchQuery" class="search-input">Search Tip:</label>
-                <div class="input-group">
-                    <input type="text" id="searchQuery" name="searchQuery" class="form-control search-input">
-                    <div class="input-group-append search-button">
-                        <button type="button" class="btn btn-primary btn-custom" onclick="searchTips()">Search</button>
-                    </div>
+        <!-- Search Box -->
+        <div class="col-md-4">
+            <form asp-action="ShowSearchResults" class="search-form">
+                <div class="form-group search-input">
+                    <label for="searchPhrase" class="control-label"></label>
+                    <input name="SearchPhrase" class="form-control" placeholder="Any time-saving tip or trick hmm.." />
                 </div>
-            </form> *@
-            <div class="col-md-4">
-                <form asp-action="ShowSearchResults" class="search-form">
-                    <div class="form-group search-input">
-                        <label for="searchPhrase" class="control-label"></label>
-                        <input name="SearchPhrase" class="form-control" placeholder="Any time saving tip or trick hmm.." />
-                    </div>
-                    <div class="form-group search-button">
-                        <input type="submit" value="Search" class="btn btn-primary btn-block btn-custom" />
-                    </div>
-                </form>
-            </div>
+                <div class="form-group search-button">
+                    <input type="submit" value="Search" class="btn btn-primary btn-block btn-custom" />
+                </div>
+            </form>
         </div>
-
-
-        <!-- Display Filtered Tips -->
-        @if (Model.Any())
+    </div>
+    <div class="row no-border">
+        @if (User.IsInRole("Admin") || User.IsInRole("User"))
         {
+            <div class="col-md-4">
+                <p>                
+                    <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
+                </p>
+            </div>
+        }
+
+        @if (User.IsInRole("Admin") || User.IsInRole("User"))
+        {
+            <div class="col-md-4 offset-md-4 text-right-md">
+                <!-- Add offset for the second column -->
+                <p>
+                    <a asp-action="UserItems" asp-controller="Tips" class="btn btn-primary btn-block btn-custom">View My Tips and Tricks</a>
+                </p>
+            </div>
+        }
+    </div>
+
+    <!-- Display Filtered Tips -->
+    @if (Model.Any())
+    {
         <div id="tipsContainer">
             @foreach (var item in Model)
             {
                 <div class="row">
-                
-
                     <div class="col-md-8">
-                        <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>    
+                        <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
                         <p>@item.TipText</p>
-
-                        <div class="button">
-                            <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
-                        </div>
                     </div>
                 </div>
             }
         </div>
-        }
-        else {
+    }
+    else
+    {
         <!-- Message for No Tips Found -->
         <div style="text-align: center;">
             <p>Not any tip or trick found</p>
         </div>
-        }
+    }
 </div>
-
-@section Scripts {
-    
-}

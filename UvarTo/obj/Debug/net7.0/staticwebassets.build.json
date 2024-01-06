@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zuZDtcZqB2t+FhPlnEFDWR9xdVIjdNMeYnaQVKHgbQQ=",
+  "Hash": "/w8+lMT0yac24dFWttrzX5Me76Wi/wsV5T5BBM3diEg=",
   "Source": "UvarTo",
   "BasePath": "_content/UvarTo",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Honza\\source\\repos\\UvarToGit\\UvarTo\\UvarTo\\wwwroot\\css\\Tips.css",
+      "SourceId": "UvarTo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Honza\\source\\repos\\UvarToGit\\UvarTo\\UvarTo\\wwwroot\\",
+      "BasePath": "_content/UvarTo",
+      "RelativePath": "css/Tips.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Tips.css"
     },
     {
       "Identity": "C:\\Users\\Honza\\source\\repos\\UvarToGit\\UvarTo\\UvarTo\\wwwroot\\favicon.ico",
