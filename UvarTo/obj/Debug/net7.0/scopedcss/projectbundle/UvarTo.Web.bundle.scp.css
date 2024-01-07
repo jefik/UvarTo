@@ -1,0 +1,374 @@
+/* _content/UvarTo.Web/Views/Foodmenu/Index.cshtml.rz.scp.css */
+body[b-81a448qa2j] {
+}
+div.row p[b-81a448qa2j] {
+    margin: 0px;
+}
+div.row[b-81a448qa2j] {
+    border: solid black 2px;
+    margin-top: 5px;
+}
+h3[b-81a448qa2j] {
+    
+}
+#toggleFilterButton[b-81a448qa2j] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+.form-group button[b-81a448qa2j] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Style the range slider */
+.form-group #cookTimeRangeFilter[b-81a448qa2j] {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, black) no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+
+    /* Style the thumb (the draggable part of the slider) */
+    .form-group #cookTimeRangeFilter[b-81a448qa2j]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove the default styles on Safari */
+        width: 20px; /* Set the thumb width as needed */
+        height: 20px; /* Set the thumb height as needed */
+        background: black; /* Set the thumb color to black */
+        border: 10px solid #000000; /* Add a border for the thumb */
+        border-radius: 50%; /* Create a round thumb */
+        cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    }
+
+/* Style the range value span */
+.form-group #cookTimeRangeValue[b-81a448qa2j] {
+    color: black; /* Set the text color to black to match the slider */
+}
+/* _content/UvarTo.Web/Views/Recipes/Index.cshtml.rz.scp.css */
+body[b-pirlzu5q3t] {
+}
+
+div.row p[b-pirlzu5q3t] {
+    margin: 0px;
+}
+
+div.row[b-pirlzu5q3t] {
+    margin-top: 5px;
+}
+
+.no-border[b-pirlzu5q3t] {
+    border: 0px solid black;
+}
+
+.text-right-md[b-pirlzu5q3t] {
+    text-align: right;
+}
+
+    .text-right-md p[b-pirlzu5q3t] {
+        margin-right: 0;
+    }
+
+
+#toggleFilterButton[b-pirlzu5q3t] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+.button[b-pirlzu5q3t] {
+    margin-top: 8px;
+}
+
+.form-group button[b-pirlzu5q3t] {
+    margin: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Style the range slider */
+.form-group #cookTimeRangeFilter[b-pirlzu5q3t] {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, black, black) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.recipe-text[b-pirlzu5q3t] {
+    max-height: 50px; /* Change this value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Style the thumb (the draggable part of the slider) */
+.form-group #cookTimeRangeFilter[b-pirlzu5q3t]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove the default styles on Safari */
+    width: 20px; /* Set the thumb width as needed */
+    height: 20px; /* Set the thumb height as needed */
+    background: black; /* Set the thumb color to black */
+    border: 10px solid #000000; /* Add a border for the thumb */
+    border-radius: 50%; /* Create a round thumb */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+}
+
+/* Style the range value span */
+.form-group #cookTimeRangeValue[b-pirlzu5q3t] {
+    color: black; /* Set the text color to black to match the slider */
+}
+
+
+
+
+div h2[b-pirlzu5q3t] {
+    text-align: center;
+}
+
+[b-pirlzu5q3t]::placeholder {
+    color: gray;
+}
+
+div.row[b-pirlzu5q3t] {
+    margin-top: 5px;
+}
+
+div #main[b-pirlzu5q3t] {
+    border: 0px solid black;
+}
+
+
+
+.recipe-name-link a[b-pirlzu5q3t] {
+    color: black;
+    text-decoration: none;
+}
+
+div h3.recipe-name-link[b-pirlzu5q3t] {
+    color: black;
+    text-decoration: none;
+}
+
+
+div.col-md-8 h3.recipe-name-link:hover[b-pirlzu5q3t] {
+    color: darkgray;
+}
+
+
+div.col-md-8 a[b-pirlzu5q3t] {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover[b-pirlzu5q3t] {
+        color: darkgray !important;
+    }
+/* _content/UvarTo.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-5m88q5hqm9] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-5m88q5hqm9] {
+  color: #0077cc;
+}
+
+.btn-primary[b-5m88q5hqm9] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-5m88q5hqm9], .nav-pills .show > .nav-link[b-5m88q5hqm9] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-5m88q5hqm9] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-5m88q5hqm9] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-5m88q5hqm9] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-5m88q5hqm9] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-5m88q5hqm9] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/UvarTo.Web/Views/Tips/Index.cshtml.rz.scp.css */
+
+div h2[b-sglxkwq506] {
+    text-align: center;
+}
+
+[b-sglxkwq506]::placeholder {
+    color: gray;
+}
+
+div.row[b-sglxkwq506] {
+    margin-top: 5px;
+}
+
+div #main[b-sglxkwq506] {
+    border: 0px solid black;
+}
+
+
+
+
+
+div.col-md-8 h3.recipe-name-link[b-sglxkwq506] {
+    color: black;
+    text-decoration: none;
+}
+
+
+    div.col-md-8 h3.recipe-name-link:hover[b-sglxkwq506] {
+        color: darkgray;
+    }
+
+
+div.col-md-8 a[b-sglxkwq506] {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover[b-sglxkwq506] {
+        color: darkgray !important;
+    }
+
+
+:-ms-input-placeholder[b-sglxkwq506] {
+    color: gray;
+}
+
+[b-sglxkwq506]::-ms-input-placeholder {
+    color: gray;
+}
+
+.btn-custom[b-sglxkwq506] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-sglxkwq506],
+    .btn-custom:active[b-sglxkwq506],
+    .btn-custom:hover[b-sglxkwq506] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-sglxkwq506] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-sglxkwq506] {
+    box-shadow: none;
+    border-color: black;
+}
+
+.search-form[b-sglxkwq506] {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search-input[b-sglxkwq506] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+.search-button[b-sglxkwq506] {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+div h2[b-sglxkwq506] {
+    text-align: center;
+}
+
+[b-sglxkwq506]::placeholder {
+    color: gray;
+}
+
+
+div #main[b-sglxkwq506] {
+    border: 0px solid black;
+}
+
+
+
+.tips-name-link a[b-sglxkwq506] {
+    color: black;
+    text-decoration: none;
+}
+
+div h3.tips-name-link[b-sglxkwq506] {
+    color: black;
+    text-decoration: none;
+}
+
+
+div.col-md-8 h3.tips-name-link:hover[b-sglxkwq506] {
+    color: darkgray;
+}
+
+
+div.col-md-8 a[b-sglxkwq506] {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover[b-sglxkwq506] {
+        color: darkgray !important;
+    }
+
+
+.no-border[b-sglxkwq506] {
+    border: 0px solid black;
+}
+
+.text-right-md[b-sglxkwq506] {
+    text-align: right;
+}
+
+    .text-right-md p[b-sglxkwq506] {
+        margin-right: 0;
+    }

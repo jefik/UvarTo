@@ -1,31 +1,30 @@
-﻿@model UvarTo.Models.Tips
+﻿@model UvarTo.Domain.Entities.Tips
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<div class="container">
-    <h1>@Html.DisplayFor(model => model.TipName)</h1>
+<h1>Details</h1>
 
-    <div>
-        <hr />
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="my-3">Description</h3>
-                <p>@Html.DisplayFor(model => model.TipText)</p>
-                @if (User.IsInRole("Admin"))
-                {
-                    <div class="btn btn-primary btn-custom col-md-5" style="margin-top: 8px;">
-                        @* <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: white; text-decoration: none">Edit</a> |
-                    <a asp-action="Index" style="color: white; text-decoration: none">Back to List</a> *@
-                        <a asp-action="Edit" asp-route-id="@Model.Id" style="color: white">Edit</a> |
-                        <a asp-action="Delete" asp-route-id="@Model.Id" style="color: white">Delete</a>
-                    </div>
-                }
+<div>
+    <h4>Tips and tricks</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipText)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TipText)
+        </dd>
+    </dl>
 
-            </div>
-
-        </div>
-
-    </div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
 </div>
+    

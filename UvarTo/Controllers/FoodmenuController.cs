@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace UvarTo.Controllers
+namespace UvarTo.Web.Controllers
 {
     public class FoodmenuController : Controller
     {

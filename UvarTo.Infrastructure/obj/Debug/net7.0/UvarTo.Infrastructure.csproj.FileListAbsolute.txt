@@ -1,0 +1,15 @@
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.csproj.AssemblyReference.cache
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.AssemblyInfoInputs.cache
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.AssemblyInfo.cs
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.csproj.CoreCompileInputs.cache
+A:\kkk\UvarTo\UvarTo.Infrastructure\bin\Debug\net7.0\UvarTo.Infrastructure.deps.json
+A:\kkk\UvarTo\UvarTo.Infrastructure\bin\Debug\net7.0\UvarTo.Infrastructure.dll
+A:\kkk\UvarTo\UvarTo.Infrastructure\bin\Debug\net7.0\UvarTo.Infrastructure.pdb
+A:\kkk\UvarTo\UvarTo.Infrastructure\bin\Debug\net7.0\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo.Infrastructure\bin\Debug\net7.0\UvarTo.Domain.pdb
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.csproj.CopyComplete
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.dll
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\refint\UvarTo.Infrastructure.dll
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\UvarTo.Infrastructure.pdb
+A:\kkk\UvarTo\UvarTo.Infrastructure\obj\Debug\net7.0\ref\UvarTo.Infrastructure.dll

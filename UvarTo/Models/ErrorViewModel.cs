@@ -1,4 +1,4 @@
-namespace UvarTo.Models
+namespace UvarTo.Web.Models
 {
     public class ErrorViewModel
     {

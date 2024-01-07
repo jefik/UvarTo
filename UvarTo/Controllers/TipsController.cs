@@ -1,83 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
+using UvarTo.Domain.Entities;
+using UvarTo.Application.Implementation;
+using UvarTo.Application.Abstraction;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using UvarTo.Data;
-using UvarTo.Data.Migrations;
-using UvarTo.Models;
+
 
 namespace UvarTo.Controllers
 {
     public class TipsController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        IWebHostEnvironment hostingenvironment;
+        private readonly ITipsService _tipsService;
+        private readonly ISearchTService _searchTService;
+        
+        public TipsController(ISearchTService searchTService, ITipsService tipsService)
+        {
+            _searchTService = searchTService;
+            _tipsService = tipsService;
+        }
 
-        public TipsController(ApplicationDbContext context, IWebHostEnvironment hc)
-        {
-            _context = context;
-            hostingenvironment = hc;
-        }
-        private string GetCurrentId()
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            return userId;
-        }
         public async Task<IActionResult> UserItems()
         {
+            var userId = _tipsService.GetCurrentId(); // Implement the logic to get the current user's ID here
 
-            var userIdString = GetCurrentId();
-            //var userId = Convert.ToInt32(userIdString);
-            //var userIdGuid = new Guid(userIdString); // Convert the string to a Guid
-            //var userId = userIdGuid.GetHashCode(); // Convert Guid to int
-            var userItems = _context.Tips.Where(item => item.userId == userIdString).ToList();
+            var userItems = _tipsService.UserItems(userId);
 
-            ViewBag.UserIdString = userIdString;
-            //ViewBag.UserIdGuid = userIdGuid;
-            //ViewBag.UserId = userId;
+            ViewBag.UserIdString = userId;
             return View("userItems", userItems);
-
-
         }
-        // GET: Tips
-        public async Task<IActionResult> Index()
-        {
-            return _context.Tips != null ?
-                        View(await _context.Tips.ToListAsync()) :
-                        Problem("Entity set 'ApplicationDbContext.Tips'  is null.");
-        }
-
-       
-        // GET: Tips/ShowSearchForm
         public IActionResult Search()
         {
-            return View("Index");
+            return View();
         }
-        // POST: Tips/ShowSearchResults
-        public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
-        {
-            var searchResults = await _context.Tips
-            .Where(j => j.TipName.Contains(SearchPhrase))
-            .ToListAsync();
 
+        [HttpPost]
+        public async Task<IActionResult> ShowSearchResults(string searchPhrase)
+        {
+            var searchResults = await _searchTService.GetTSearchResults(searchPhrase);
             return View("Index", searchResults);
         }
-        // GET: Tips/Details/5
+        public async Task<IActionResult> Index()
+        {
+            var tips = await _tipsService.GetAllTips();
+
+            if (tips != null)
+            {
+                return View(tips);
+            }
+            else
+            {
+                return Problem("Entity set 'ApplicationDbContext.Tips' is null.");
+            }
+        }
+
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Tips == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var tips = await _context.Tips
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var tips = await _tipsService.GetTipById(id.Value);
+
             if (tips == null)
             {
                 return NotFound();
@@ -86,7 +69,6 @@ namespace UvarTo.Controllers
             return View(tips);
         }
 
-        // GET: Tips/Create
         public IActionResult Create()
         {
             return View();
@@ -95,38 +77,22 @@ namespace UvarTo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Tips tips)
         {
-            var userId = GetCurrentId();
+            
+                await _tipsService.AddTip(tips);
+                ViewBag.Success = "Tip added";
+                return RedirectToAction(nameof(Index));
             
 
-
-                Tips t = new Tips
-                {
-                    // Set other properties here
-                    Id = tips.Id,
-                    userId = userId,
-                    TipName = tips.TipName,
-                    TipText = tips.TipText                 
-                };
-
-                    _context.Tips.Add(t);
-                    await _context.SaveChangesAsync();
-                    ViewBag.Success = "Tip Added";
-                    return RedirectToAction(nameof(Index));
-
-            
-
-            //return View(tips);
+            return View(tips);
         }
-
-        // GET: Tips/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Tips == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var existingTip = await _context.Tips.FindAsync(id);
+            var existingTip = await _tipsService.GetTipById(id.Value);
             if (existingTip == null)
             {
                 return NotFound();
@@ -135,17 +101,12 @@ namespace UvarTo.Controllers
             var tips = new Tips
             {
                 Id = existingTip.Id,
-                // Assign other properties from existingTip to Tips
-                
                 TipName = existingTip.TipName,
-                TipText = existingTip.TipText,
-                                
+                TipText = existingTip.TipText
             };
 
             return View(tips);
         }
-
-        // POST: Tips/Edit/5
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -158,36 +119,27 @@ namespace UvarTo.Controllers
 
             if (ModelState.IsValid)
             {
-                var existingTip = await _context.Tips.FindAsync(tips.Id);
-                if (existingTip == null)
+                var result = await _tipsService.UpdateTip(tips);
+                if (result)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
                 {
                     return NotFound();
                 }
-
-                
-                    // Update other properties
-                    existingTip.TipName = tips.TipName;
-                    existingTip.TipText = tips.TipText;
-                    
-                
-
-                _context.Update(existingTip);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
             }
 
             return View(tips);
         }
-        // GET: Tips/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Tips == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var tips = await _context.Tips
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var tips = await _tipsService.GetTipById(id.Value);
             if (tips == null)
             {
                 return NotFound();
@@ -196,28 +148,19 @@ namespace UvarTo.Controllers
             return View(tips);
         }
 
-        // POST: Tips/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Tips == null)
+            var result = await _tipsService.DeleteTip(id);
+            if (result)
             {
-                return Problem("Entity set 'ApplicationDbContext.Tips'  is null.");
+                return RedirectToAction(nameof(Index));
             }
-            var tips = await _context.Tips.FindAsync(id);
-            if (tips != null)
+            else
             {
-                _context.Tips.Remove(tips);
+                return Problem("Entity set 'ApplicationDbContext.Tips' is null.");
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool TipsExists(int id)
-        {
-            return (_context.Tips?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

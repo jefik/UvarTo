@@ -1,4 +1,4 @@
-﻿@model UvarTo.Models.Recipes
+﻿@model UvarTo.Domain.Entities.Recipes
 
 @{
     ViewData["Title"] = "Details";
@@ -21,16 +21,11 @@
                 <hr/>
                 <h3 class="my-3">Recipe description</h3>
                 <p>@Html.DisplayFor(model => model.RecipeText)</p>    
-                @if (User.IsInRole("Admin"))
-                {
-                <div class="btn btn-primary btn-custom col-md-5" style="margin-top: 8px;">
-                    @* <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: white; text-decoration: none">Edit</a> |
-                    <a asp-action="Index" style="color: white; text-decoration: none">Back to List</a> *@
-                    <a asp-action="Edit" asp-route-id="@Model.Id" style="color: white">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@Model.Id" style="color: white">Delete</a>
-                </div>
-                }
 
+                <div class="btn btn-primary btn-custom col-md-5" style="margin-top: 8px;">
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: white; text-decoration: none">Edit</a> |
+                    <a asp-action="Index" style="color: white; text-decoration: none">Back to List</a>
+                </div>
             </div>
         
     </div>

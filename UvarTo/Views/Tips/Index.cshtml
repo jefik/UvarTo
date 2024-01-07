@@ -1,11 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@using UvarTo.Areas.Identity.Data;
+@using UvarTo.Infrastructure.Identity;
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
-
-@model IEnumerable<UvarTo.Models.Tips>
+@model IEnumerable<UvarTo.Domain.Entities.Tips>
 
 <head>
     <link href="@Url.Content("~/css/Tips.css")" rel="stylesheet" type="text/css" />
@@ -37,7 +36,7 @@
         @if (User.IsInRole("Admin") || User.IsInRole("User"))
         {
             <div class="col-md-4">
-                <p>                
+                <p>
                     <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
                 </p>
             </div>
@@ -77,3 +76,4 @@
         </div>
     }
 </div>
+

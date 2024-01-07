@@ -1,7 +1,6 @@
-﻿@model IEnumerable<UvarTo.Models.Recipes>
+﻿@model IEnumerable<UvarTo.Domain.Entities.Recipes>
 <head>
     <link href="@Url.Content("~/css/Search.css")" rel="stylesheet" type="text/css" />
-
 </head>
 
 
@@ -37,8 +36,8 @@
             <!-- Toggle Filter Button -->
             <button id="toggleFilterButton" class="btn btn-primary" onclick="toggleFilterForm()">Toggle Filter</button>
             <form id="filterForm" style="display: none;">
-            <!-- Filter Form -->
-            
+                <!-- Filter Form -->
+
                 <div class="form-group">
                     <label for="difficultyFilter">Náročnost:</label>
                     <select id="difficultyFilter" class="form-control">
@@ -54,7 +53,7 @@
                     <input type="range" id="cookTimeRangeFilter" min="0" max="120" step="1">
                     <span id="cookTimeRangeValue">0</span> minut
                 </div>
-                
+
                 <div class="form-group">
                     <label for="categoryFilter">Kategorie:</label>
                     <select id="categoryFilter" class="form-control">
@@ -77,7 +76,7 @@
                 <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="max-width: auto; height: 258px;">
+                            <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
                         </div>
 
                         <div class="col-md-8">
@@ -87,23 +86,24 @@
                             <h3 class="recipe-name-link">
                                 <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                             </h3>
-                            <p>Popias: @item.RecipeText</p>
+                            <p class="recipe-text">Popis: @item.RecipeText</p>
                             <p>Náročnost: @item.Difficulty</p>
                             <p>Doba přípravy: @item.CookTime Minut</p>
-                            @if (User.IsInRole("Admin")){
-                            <div class="button">
-                                <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
-                                <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
-                                <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
-                            </div>
-                                }
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <div class="button">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
             }
         </div>
-     </div>
- </div>
+    </div>
+</div>
 
 
 

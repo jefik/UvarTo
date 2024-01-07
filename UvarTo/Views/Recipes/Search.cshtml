@@ -25,13 +25,13 @@
     {
         @if (Model.Any())
         {
-            <div class="col-md-12">
+            <div class="col-md-9">
                 @foreach (var item in Model)
                 {
                     <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="max-width: auto; height: 258px;">
+                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
                             </div>
 
                             <div class="col-md-8">
@@ -41,7 +41,7 @@
                                 <h3 class="recipe-name-link">
                                     <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                                 </h3>
-                                <p>Popis: @item.RecipeText</p>
+                                <p class="recipe-text card-text">Popis: @item.RecipeText</p>
                                 <p>Náročnost: @item.Difficulty</p>
                                 <p>Doba přípravy: @item.CookTime Minut</p>
                             </div>

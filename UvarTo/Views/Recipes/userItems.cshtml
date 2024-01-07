@@ -1,5 +1,6 @@
 ﻿@model List<Recipes>
 <h2>User Items</h2>
+<p>User ID: @ViewBag.UserIdString</p>
 <a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Recipes</a>
 
 @foreach (var item in Model)
@@ -7,7 +8,7 @@
     <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
         <div class="row">
             <div class="col-md-4">
-                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="max-width: auto; height: 258px;">
+                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
             </div>
 
             <div class="col-md-8">

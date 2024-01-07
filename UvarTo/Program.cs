@@ -1,58 +1,76 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Globalization;
-using UvarTo.Areas.Identity.Data;
-using UvarTo.Data;
-public class Program { 
-    public static async Task Main(string[] args) {
+using UvarTo.Infrastructure.Identity;
+using UvarTo.Infrastructure.Database;
+using UvarTo.Application.Abstraction;
+using UvarTo.Application.Implementation;
 
-    var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
-    // Add services to the container.
+// Add services to the container.
 
-    var defaultConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+var defaultConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-    builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(defaultConnectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(defaultConnectionString));
 
-    builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-        .AddRoles<IdentityRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-    builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(defaultConnectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(defaultConnectionString));
 
-    // NA HESLO
-    builder.Services.Configure<IdentityOptions>(options =>
-    {
-        options.Password.RequireUppercase = false;
-    });
+// NA HESLO
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireUppercase = false;
+});
 
-    var app = builder.Build();
+builder.Services.AddScoped<IRecipesService, RecipesService>();
 
-    // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseMigrationsEndPoint();
-    }
-    else
-    {
-        app.UseExceptionHandler("/Home/Error");
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts();
-    }
-       
-        app.UseHttpsRedirection();
-    app.UseStaticFiles();
+builder.Services.AddScoped<ISearchRService, SearchRService>();
 
-    app.UseRouting();
+builder.Services.AddScoped<ISearchTService, SearchTService>();
 
-    app.UseAuthorization();
+builder.Services.AddScoped<ITipsService, TipsService>();
 
-    app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-    app.MapRazorPages();
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "recipes",
+    pattern: "Recipes/{action=Index}/{id?}",
+    defaults: new { controller = "Recipes" });
+app.MapControllerRoute(
+    name: "tips",
+    pattern: "Tips/{action=Index}/{id?}",
+    defaults: new { controller = "Tips" });
+
+app.MapRazorPages();
 
     // ROLE
     using (var scope = app.Services.CreateScope())
@@ -62,9 +80,9 @@ public class Program {
         foreach (var role in roles)
         {
             if (!await roleManager.RoleExistsAsync(role))
-                    await roleManager.CreateAsync(new IdentityRole(role));
+                await roleManager.CreateAsync(new IdentityRole(role));
 
-            }
+        }
     }
     // ADMIN ÚÈET
     using (var scope = app.Services.CreateScope())
@@ -73,23 +91,21 @@ public class Program {
 
         string email = "jansilak@admin.cz";
         string password = "#Zkouska888";
-            string FirstName = "Jan";
-            string LastName = "Silák";
+        string FirstName = "Jan";
+        string LastName = "Silák";
         if (await userManager.FindByEmailAsync(email) == null)
         {
             var user = new ApplicationUser();
-                user.FirstName = FirstName;
-                user.LastName = LastName;
+            user.FirstName = FirstName;
+            user.LastName = LastName;
             user.UserName = email;
             user.Email = email;
-            
+
             await userManager.CreateAsync(user, password);
 
             await userManager.AddToRoleAsync(user, "Admin");
         }
-           
+
     }
 
-        app.Run();
-    }
-}
+app.Run();

@@ -1,36 +1,40 @@
-body[b-ybe5yi1jvh] {
+body[b-pirlzu5q3t] {
 }
 
-div.row p[b-ybe5yi1jvh] {
+div.row p[b-pirlzu5q3t] {
     margin: 0px;
 }
 
-div.row[b-ybe5yi1jvh] { 
+div.row[b-pirlzu5q3t] {
     margin-top: 5px;
 }
-.no-border[b-ybe5yi1jvh] {
+
+.no-border[b-pirlzu5q3t] {
     border: 0px solid black;
 }
-.text-right-md[b-ybe5yi1jvh] {
+
+.text-right-md[b-pirlzu5q3t] {
     text-align: right;
 }
 
-    .text-right-md p[b-ybe5yi1jvh] {
+    .text-right-md p[b-pirlzu5q3t] {
         margin-right: 0;
     }
 
 
-#toggleFilterButton[b-ybe5yi1jvh] {
+#toggleFilterButton[b-pirlzu5q3t] {
     margin: 15px;
     padding: 15px;
     border: 0;
     background-color: black;
     color: white;
 }
-.button[b-ybe5yi1jvh]{
+
+.button[b-pirlzu5q3t] {
     margin-top: 8px;
 }
-.form-group button[b-ybe5yi1jvh] {
+
+.form-group button[b-pirlzu5q3t] {
     margin: 15px;
     padding: 15px;
     border: 0;
@@ -39,7 +43,7 @@ div.row[b-ybe5yi1jvh] {
 }
 
 /* Style the range slider */
-.form-group #cookTimeRangeFilter[b-ybe5yi1jvh] {
+.form-group #cookTimeRangeFilter[b-pirlzu5q3t] {
     width: 100%;
     height: 10px;
     background: linear-gradient(to right, black, black) no-repeat;
@@ -47,13 +51,13 @@ div.row[b-ybe5yi1jvh] {
     cursor: pointer;
 }
 
-.recipe-text[b-ybe5yi1jvh] {
+.recipe-text[b-pirlzu5q3t] {
     max-height: 50px; /* Change this value as needed */
     overflow: hidden;
     text-overflow: ellipsis;
 }
 /* Style the thumb (the draggable part of the slider) */
-.form-group #cookTimeRangeFilter[b-ybe5yi1jvh]::-webkit-slider-thumb {
+.form-group #cookTimeRangeFilter[b-pirlzu5q3t]::-webkit-slider-thumb {
     -webkit-appearance: none; /* Remove the default styles on Safari */
     width: 20px; /* Set the thumb width as needed */
     height: 20px; /* Set the thumb height as needed */
@@ -64,54 +68,53 @@ div.row[b-ybe5yi1jvh] {
 }
 
 /* Style the range value span */
-.form-group #cookTimeRangeValue[b-ybe5yi1jvh] {
+.form-group #cookTimeRangeValue[b-pirlzu5q3t] {
     color: black; /* Set the text color to black to match the slider */
 }
 
 
 
 
-div h2[b-ybe5yi1jvh] {
+div h2[b-pirlzu5q3t] {
     text-align: center;
 }
 
-[b-ybe5yi1jvh]::placeholder {
+[b-pirlzu5q3t]::placeholder {
     color: gray;
 }
 
-div.row[b-ybe5yi1jvh] {
+div.row[b-pirlzu5q3t] {
     margin-top: 5px;
 }
 
-div #main[b-ybe5yi1jvh] {
+div #main[b-pirlzu5q3t] {
     border: 0px solid black;
 }
 
 
 
-.recipe-name-link a[b-ybe5yi1jvh] {
+.recipe-name-link a[b-pirlzu5q3t] {
     color: black;
     text-decoration: none;
 }
-div h3.recipe-name-link[b-ybe5yi1jvh] {
+
+div h3.recipe-name-link[b-pirlzu5q3t] {
     color: black;
     text-decoration: none;
 }
 
 
-div.col-md-8 h3.recipe-name-link:hover[b-ybe5yi1jvh] {
+div.col-md-8 h3.recipe-name-link:hover[b-pirlzu5q3t] {
     color: darkgray;
 }
 
 
-div.col-md-8 a[b-ybe5yi1jvh] {
+div.col-md-8 a[b-pirlzu5q3t] {
     color: black !important;
     text-decoration: none !important;
 }
 
 
-div.col-md-8 a:hover[b-ybe5yi1jvh] {
-    color: darkgray !important;
-}
-
-
+    div.col-md-8 a:hover[b-pirlzu5q3t] {
+        color: darkgray !important;
+    }

@@ -2,12 +2,12 @@
 div h2 {
     text-align: center;
 }
+
 ::placeholder {
     color: gray;
 }
 
 div.row {
-   
     margin-top: 5px;
 }
 
@@ -141,10 +141,11 @@ div.col-md-8 a {
 .no-border {
     border: 0px solid black;
 }
+
 .text-right-md {
     text-align: right;
 }
 
-.text-right-md p {
-    margin-right: 0; 
-}
+    .text-right-md p {
+        margin-right: 0;
+    }

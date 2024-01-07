@@ -1,0 +1,17 @@
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.csproj.AssemblyReference.cache
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.GeneratedMSBuildEditorConfig.editorconfig
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.AssemblyInfoInputs.cache
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.AssemblyInfo.cs
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.csproj.CoreCompileInputs.cache
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Application.deps.json
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Application.dll
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Application.pdb
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Infrastructure.dll
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Domain.pdb
+A:\kkk\UvarTo\UvarTo.Application\bin\Debug\net7.0\UvarTo.Infrastructure.pdb
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.csproj.CopyComplete
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.dll
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\refint\UvarTo.Application.dll
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\UvarTo.Application.pdb
+A:\kkk\UvarTo\UvarTo.Application\obj\Debug\net7.0\ref\UvarTo.Application.dll
