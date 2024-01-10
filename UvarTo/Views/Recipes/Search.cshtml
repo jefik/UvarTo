@@ -4,7 +4,12 @@
     <link href="@Url.Content("~/css/Search.css")" rel="stylesheet" type="text/css" />
 
 </head>
-
+<style>
+    body {
+        background-color: #F7F7F7;
+    }
+</style>
+<body>
 <div class="container">
     <div class="row justify-content-center" id="main">
         <h2>Find a recipe by ingredient</h2>
@@ -25,9 +30,11 @@
     {
         @if (Model.Any())
         {
-            <div class="col-md-9">
+            <div class="col-md-12">
                 @foreach (var item in Model)
                 {
+                        item.RecipeText = item.RecipeText.Length > 60 ? item.RecipeText.Substring(0, 60) + "..." : item.RecipeText;
+
                     <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
                         <div class="row">
                             <div class="col-md-4">
@@ -35,15 +42,16 @@
                             </div>
 
                             <div class="col-md-8">
-                                <p>@item.RecipeCategory</p>
+                                
                                 @* <h3>@item.RecipeName</h3> *@
                                 @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
                                 <h3 class="recipe-name-link">
                                     <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                                 </h3>
-                                <p class="recipe-text card-text">Popis: @item.RecipeText</p>
-                                <p>Náročnost: @item.Difficulty</p>
-                                <p>Doba přípravy: @item.CookTime Minut</p>
+                                    <p><strong>Kategorie:</strong>@item.RecipeCategory</p>
+                                    <p class="recipe-text card-text"><strong>Popis:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                                    <p><strong>Náročnost:</strong> @item.Difficulty</p>
+                                    <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +68,7 @@
         }
     }
 </div>
-
+</body>
 <script>
     function clearText() {
         var searchInput = document.getElementById('searchInput');

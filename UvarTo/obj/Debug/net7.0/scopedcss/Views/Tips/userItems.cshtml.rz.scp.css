@@ -1,0 +1,93 @@
+/* General styles */
+div h2[b-xgqugxc4ja] {
+    text-align: center;
+}
+
+div.row[b-xgqugxc4ja],
+div.no-border[b-xgqugxc4ja],
+div #main[b-xgqugxc4ja] {
+    border: 0;
+    background-color: #F7F7F7;
+}
+.row p[b-xgqugxc4ja] {
+    word-wrap: break-word;
+}
+div.row[b-xgqugxc4ja] {
+    padding: 16px 5px 5px 5px;
+    margin-top: 15px;
+    border: 0 groove #393E46;
+    background-color: #EEEEEE;
+}
+.col-md-4.right[b-xgqugxc4ja] {
+    padding: 15px 15px 0 0;
+    text-align: right;
+    background-color: #EEEEEE;
+}
+div.right[b-xgqugxc4ja] {
+    background-color: #F7F7F7;
+    text-align: right;
+}
+p.center[b-xgqugxc4ja]{
+    text-align: center;
+}
+div.no-border[b-xgqugxc4ja] {
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles */
+.btn-custom[b-xgqugxc4ja],
+.btn-custom:focus[b-xgqugxc4ja],
+.btn-custom:active[b-xgqugxc4ja],
+.btn-custom:hover[b-xgqugxc4ja] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Text alignment styles */
+.text-right-md[b-xgqugxc4ja] {
+    text-align: right;
+}
+
+.text-right-md p[b-xgqugxc4ja] {
+    margin-right: 0;
+}
+
+/* Add this style block to your existing stylesheet or in a separate CSS file */
+#tipsContainer .row .col-md-8 h3.tips-name-link a[b-xgqugxc4ja] {
+    color: black !important;
+}
+
+#tipsContainer .row .col-md-8 h3.tips-name-link a:hover[b-xgqugxc4ja] {
+    color: darkgray !important;
+}
+
+/* Form control styles */
+.form-control:focus[b-xgqugxc4ja] {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Search form styles */
+.search-form[b-xgqugxc4ja] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input[b-xgqugxc4ja] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-button[b-xgqugxc4ja] {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+/* Placeholder color */
+[b-xgqugxc4ja]::placeholder {
+    color: gray;
+}

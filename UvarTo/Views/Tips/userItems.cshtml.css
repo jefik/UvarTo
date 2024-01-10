@@ -1,0 +1,93 @@
+﻿/* General styles */
+div h2 {
+    text-align: center;
+}
+
+div.row,
+div.no-border,
+div #main {
+    border: 0;
+    background-color: #F7F7F7;
+}
+.row p {
+    word-wrap: break-word;
+}
+div.row {
+    padding: 16px 5px 5px 5px;
+    margin-top: 15px;
+    border: 0 groove #393E46;
+    background-color: #EEEEEE;
+}
+.col-md-4.right {
+    padding: 15px 15px 0 0;
+    text-align: right;
+    background-color: #EEEEEE;
+}
+div.right {
+    background-color: #F7F7F7;
+    text-align: right;
+}
+p.center{
+    text-align: center;
+}
+div.no-border {
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles */
+.btn-custom,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Text alignment styles */
+.text-right-md {
+    text-align: right;
+}
+
+.text-right-md p {
+    margin-right: 0;
+}
+
+/* Add this style block to your existing stylesheet or in a separate CSS file */
+#tipsContainer .row .col-md-8 h3.tips-name-link a {
+    color: black !important;
+}
+
+#tipsContainer .row .col-md-8 h3.tips-name-link a:hover {
+    color: darkgray !important;
+}
+
+/* Form control styles */
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Search form styles */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-button {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+/* Placeholder color */
+::placeholder {
+    color: gray;
+}

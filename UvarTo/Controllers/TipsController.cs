@@ -117,8 +117,7 @@ namespace UvarTo.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+           
                 var result = await _tipsService.UpdateTip(tips);
                 if (result)
                 {
@@ -128,7 +127,7 @@ namespace UvarTo.Controllers
                 {
                     return NotFound();
                 }
-            }
+            
 
             return View(tips);
         }

@@ -1,30 +1,57 @@
 ﻿@model UvarTo.Domain.Entities.Tips
+<style>
+    body {
+        background-color: #F7F7F7;
+    }
+    .right{
+        text-align: right;
+    }
+    /* Button styles */
+    .btn-custom,
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+        box-shadow: none;
+    }
 
+    div.row {
+        padding: 16px 5px 5px 5px;
+        margin-top: 15px;
+        border: 0 groove #393E46;
+        background-color: #EEEEEE;
+    }
+
+    div.right {
+        background-color: #F7F7F7;
+    }
+
+    .row p {
+        word-wrap: break-word;
+    }
+</style>
+<body>
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1> @Html.DisplayFor(model => model.TipName)</h1>
 
-<div>
-    <h4>Tips and tricks</h4>
+<div class="container">
+    <h4>Whats the tip or trick about</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TipName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TipName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TipText)
-        </dt>
-        <dd class="col-sm-10">
+  
+    <div class="row">
+        <p>
             @Html.DisplayFor(model => model.TipText)
-        </dd>
-    </dl>
-
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+        </p>
+    </div>
+    <div class="row right">
+            <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a></p>
+        </div>
 </div>
     
+</body>

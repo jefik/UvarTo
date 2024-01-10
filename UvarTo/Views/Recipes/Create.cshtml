@@ -1,6 +1,17 @@
 ﻿@*@model UvarTo.Models.Recipes *@
 @model UvarTo.Domain.Entities.recipeviewmodel
-
+<style>
+    body {
+        background-color: #F7F7F7;
+    }
+    /* Add this style block to your existing stylesheet or in a separate CSS file */
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none; /* Remove the default blue outline */
+        border-color: #000 !important; /* Set your desired border color when focused */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+    }
+</style>
 @{
     ViewData["Title"] = "Create";
 }
@@ -10,7 +21,7 @@
 <h4>Recipes</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -50,15 +61,16 @@
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>  *@
 
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="row no-border">
+                <div class="col-md-4">
+                    <p><input type="submit" value="Create" class="btn btn-primary btn-custom" /></p>
+                </div>
+                <div class="col-md-4 offset-md-4 text-right-md">
+                    <p> <a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to List</a></p>
+                </div>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

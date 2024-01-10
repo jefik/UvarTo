@@ -1,8 +1,11 @@
 body[b-pirlzu5q3t] {
 }
 
+.row p[b-pirlzu5q3t] {
+    word-wrap: break-word;
+}
 div.row p[b-pirlzu5q3t] {
-    margin: 0px;
+    margin: 10px 0 0 0;
 }
 
 div.row[b-pirlzu5q3t] {

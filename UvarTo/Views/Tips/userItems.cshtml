@@ -1,28 +1,60 @@
 ﻿
 @model List<Tips>
-<head>
-    <link href="@Url.Content("~/css/Search.css")" rel="stylesheet" type="text/css" />
 
-</head>
-
-<h2>User Items</h2>
-<p>User ID: @ViewBag.UserIdString</p>
-<a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a>
-
-
-<ul>
-    @foreach (var item in Model)
-    {
-
-        <div class="col-md-8">
-            <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
-            <p>@item.TipText</p>
-
-            <div class="button">
-                <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
-            </div>
-        </div>
+<style>
+    body {
+        background-color: #F7F7F7;
     }
-</ul>
+    /* Add this style block to your existing stylesheet or in a separate CSS file */
+    #tipsContainer .row .col-md-8 h3.tips-name-link a {
+        color: black !important;
+        text-decoration: none;
+    }
+
+    #tipsContainer .row .col-md-8 h3.tips-name-link a:hover {
+        color: darkgray !important;
+    }
+
+    div.right {
+        background-color: #F7F7F7;
+        text-align: right;
+    }
+
+   
+
+</style>
+
+<body>
+<h2>List of your added Tips and Tricks</h2>
+@* <p>User ID: @ViewBag.UserIdString</p> *@
+<p class="center">By clicking on its name you can edit</p>
+<div class="row right">
+        <p class="right"><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a></p>
+
+ </div>
+
+<div class="container">
+
+
+
+@if (Model.Any())
+{
+    <div id="tipsContainer">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="tips-name-link"><a asp-action="Edit" asp-route-id="@item.Id">@item.TipName</a></h3>
+                    <p>@item.TipText</p>
+                </div>
+                <div class="col-md-4 right">
+                     <p><input type="submit" value="Delete" class="btn btn-primary btn-block btn-custom" /></p>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+</div>
+
+</body>

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "A:\\kkk\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj": {}
+    "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Application\\UvarTo.Application.csproj": {}
   },
   "projects": {
-    "A:\\kkk\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj": {
+    "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Application\\UvarTo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\kkk\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Application\\UvarTo.Application.csproj",
         "projectName": "UvarTo.Application",
-        "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj",
-        "packagesPath": "C:\\Users\\merak\\.nuget\\packages\\",
-        "outputPath": "A:\\kkk\\UvarTo\\UvarTo.Application\\obj\\",
+        "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Application\\UvarTo.Application.csproj",
+        "packagesPath": "C:\\Users\\Honza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\merak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Honza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,11 +34,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj": {
-                "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj"
+              "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj": {
+                "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj"
               },
-              "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
-                "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj"
+              "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj"
               }
             }
           }
@@ -102,21 +102,21 @@
         }
       }
     },
-    "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj": {
+    "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj",
         "projectName": "UvarTo.Domain",
-        "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj",
-        "packagesPath": "C:\\Users\\merak\\.nuget\\packages\\",
-        "outputPath": "A:\\kkk\\UvarTo\\UvarTo.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj",
+        "packagesPath": "C:\\Users\\Honza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\merak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Honza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -173,21 +173,21 @@
         }
       }
     },
-    "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
+    "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj",
         "projectName": "UvarTo.Infrastructure",
-        "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\merak\\.nuget\\packages\\",
-        "outputPath": "A:\\kkk\\UvarTo\\UvarTo.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Honza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\merak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Honza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -203,8 +203,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj": {
-                "projectPath": "A:\\kkk\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj"
+              "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj": {
+                "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo.Domain\\UvarTo.Domain.csproj"
               }
             }
           }

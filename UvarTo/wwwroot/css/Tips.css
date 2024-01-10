@@ -8,15 +8,110 @@ div h2 {
 }
 
 div.row {
-    border: 2px solid black;
-    margin-top: 5px;
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+body {
+    background-color: #F7F7F7;
 }
 
 div #main {
     border: 0px solid black;
+    background-color: #F7F7F7;
 }
 
+div.no-border { /* General styles */
+    div h2
 
+{
+    text-align: center;
+}
+
+div.row,
+div.no-border,
+div #main {
+    border: 0;
+    background-color: #F7F7F7;
+}
+
+div.row {
+    padding: 16px 5px 5px 5px;
+    margin-top: 15px;
+    border: 0 groove #393E46;
+    background-color: #EEEEEE;
+}
+
+div.no-border {
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles */
+.btn-custom,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Text alignment styles */
+.text-right-md {
+    text-align: right;
+}
+
+    .text-right-md p {
+        margin-right: 0;
+    }
+
+/* Link styles */
+div.col-md-8 h3.recipe-name-link,
+div.col-md-8 a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+    div.col-md-8 h3.recipe-name-link:hover,
+    div.col-md-8 a:hover {
+        color: darkgray !important;
+    }
+
+/* Form control styles */
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Search form styles */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-button {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+/* Placeholder color */
+::placeholder {
+    color: gray;
+}
+
+    background-color: #F7F7F7;
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
@@ -77,8 +172,4 @@ div.col-md-8 a {
 .search-button {
     flex-shrink: 0;
     padding-top: 23px;
-}
-
-.no-border {
-    border: 5px solid red;
 }

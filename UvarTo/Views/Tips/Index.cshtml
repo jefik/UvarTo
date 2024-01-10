@@ -10,17 +10,21 @@
     <link href="@Url.Content("~/css/Tips.css")" rel="stylesheet" type="text/css" />
 
 </head>
-
-@{
-    ViewData["Title"] = "Index";
+<body>
+    @{
+        ViewData["Title"] = "Index";
+      
+        
 }
 
 
+
+
 <div class="container">
-    <div class="row justify-content-md-center no-border">
+        <div class="row justify-content-md-center no-border " id="main">
         <h2>Tips and tricks</h2>
         <!-- Search Box -->
-        <div class="col-md-4">
+        <div class="col-md-4" >
             <form asp-action="ShowSearchResults" class="search-form">
                 <div class="form-group search-input">
                     <label for="searchPhrase" class="control-label"></label>
@@ -59,10 +63,12 @@
         <div id="tipsContainer">
             @foreach (var item in Model)
             {
-                <div class="row">
+                    item.TipText = item.TipText.Length > 60 ? item.TipText.Substring(0, 60) + "..." : item.TipText;
+
+                    <div class="row">
                     <div class="col-md-8">
                         <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
-                        <p>@item.TipText</p>
+                            <p> @Html.DisplayFor(model => item.TipText) </p>
                     </div>
                 </div>
             }
@@ -72,8 +78,10 @@
     {
         <!-- Message for No Tips Found -->
         <div style="text-align: center;">
-            <p>Not any tip or trick found</p>
+            <p id="tipText">Not any tip or trick found</p>
         </div>
     }
 </div>
+
+</body>
 

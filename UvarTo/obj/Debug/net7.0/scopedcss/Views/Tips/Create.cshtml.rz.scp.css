@@ -1,0 +1,85 @@
+
+
+div h2[b-8yxpdwvscc] {
+    text-align: center;
+}
+
+div.row[b-8yxpdwvscc] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+
+div #main[b-8yxpdwvscc] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-8yxpdwvscc] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-8yxpdwvscc],
+    .btn-custom:active[b-8yxpdwvscc],
+    .btn-custom:hover[b-8yxpdwvscc] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-8yxpdwvscc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-8yxpdwvscc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-8yxpdwvscc] {
+    text-align: right;
+}
+
+.text-right-md p[b-8yxpdwvscc] {
+    margin-right: 0;
+}
+
+
+[b-8yxpdwvscc]::placeholder {
+    color: gray;
+}
+:-ms-input-placeholder[b-8yxpdwvscc] {
+    color: gray;
+}
+
+[b-8yxpdwvscc]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-8yxpdwvscc],
+.form-group textarea:focus[b-8yxpdwvscc] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+.search-input[b-8yxpdwvscc] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-8yxpdwvscc]::placeholder {
+    color: gray;
+}

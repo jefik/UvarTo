@@ -7,27 +7,12 @@ div h2 {
     color: gray;
 }
 
-div.row {
-    margin-top: 5px;
-}
+
 
 div #main {
     border: 0px solid black;
 }
 
-
-
-
-
-div.col-md-8 h3.recipe-name-link {
-    color: black;
-    text-decoration: none;
-}
-
-
-    div.col-md-8 h3.recipe-name-link:hover {
-        color: darkgray;
-    }
 
 
 div.col-md-8 a {
@@ -36,9 +21,9 @@ div.col-md-8 a {
 }
 
 
-    div.col-md-8 a:hover {
-        color: darkgray !important;
-    }
+div.col-md-8 a:hover {
+    color: darkgray !important;
+}
 
 
 :-ms-input-placeholder {
@@ -58,14 +43,14 @@ div.col-md-8 a {
     border-color: black;
 }
 
-    .btn-custom:focus,
-    .btn-custom:active,
-    .btn-custom:hover {
-        background-color: black;
-        color: white;
-        border-color: black;
-        box-shadow: none;
-    }
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+    box-shadow: none;
+}
 
 
 .form-control:focus {
@@ -94,19 +79,6 @@ div.col-md-8 a {
 .search-button {
     flex-shrink: 0;
     padding-top: 23px;
-}
-
-div h2 {
-    text-align: center;
-}
-
-::placeholder {
-    color: gray;
-}
-
-
-div #main {
-    border: 0px solid black;
 }
 
 
@@ -138,10 +110,6 @@ div.col-md-8 a {
     }
 
 
-.no-border {
-    border: 0px solid black;
-}
-
 .text-right-md {
     text-align: right;
 }
@@ -149,3 +117,4 @@ div.col-md-8 a {
     .text-right-md p {
         margin-right: 0;
     }
+

@@ -50,12 +50,193 @@ h3[b-81a448qa2j] {
 .form-group #cookTimeRangeValue[b-81a448qa2j] {
     color: black; /* Set the text color to black to match the slider */
 }
+/* _content/UvarTo.Web/Views/Recipes/Create.cshtml.rz.scp.css */
+body[b-im1fwmecoi] {
+}
+
+
+div h2[b-im1fwmecoi] {
+    text-align: center;
+}
+
+div.row[b-im1fwmecoi] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+
+div #main[b-im1fwmecoi] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-im1fwmecoi] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-im1fwmecoi],
+    .btn-custom:active[b-im1fwmecoi],
+    .btn-custom:hover[b-im1fwmecoi] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-im1fwmecoi] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-im1fwmecoi] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-im1fwmecoi] {
+    text-align: right;
+}
+
+    .text-right-md p[b-im1fwmecoi] {
+        margin-right: 0;
+    }
+
+
+[b-im1fwmecoi]::placeholder {
+    color: gray;
+}
+
+:-ms-input-placeholder[b-im1fwmecoi] {
+    color: gray;
+}
+
+[b-im1fwmecoi]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-im1fwmecoi],
+.form-group textarea:focus[b-im1fwmecoi] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+
+.search-input[b-im1fwmecoi] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-im1fwmecoi]::placeholder {
+    color: gray;
+}
+/* _content/UvarTo.Web/Views/Recipes/Edit.cshtml.rz.scp.css */
+
+
+div h2[b-lcy672wrxj] {
+    text-align: center;
+}
+
+div.row[b-lcy672wrxj] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+
+div #main[b-lcy672wrxj] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-lcy672wrxj] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-lcy672wrxj],
+    .btn-custom:active[b-lcy672wrxj],
+    .btn-custom:hover[b-lcy672wrxj] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-lcy672wrxj] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-lcy672wrxj] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-lcy672wrxj] {
+    text-align: right;
+}
+
+    .text-right-md p[b-lcy672wrxj] {
+        margin-right: 0;
+    }
+
+
+[b-lcy672wrxj]::placeholder {
+    color: gray;
+}
+
+:-ms-input-placeholder[b-lcy672wrxj] {
+    color: gray;
+}
+
+[b-lcy672wrxj]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-lcy672wrxj],
+.form-group textarea:focus[b-lcy672wrxj] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+
+.search-input[b-lcy672wrxj] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-lcy672wrxj]::placeholder {
+    color: gray;
+}
 /* _content/UvarTo.Web/Views/Recipes/Index.cshtml.rz.scp.css */
 body[b-pirlzu5q3t] {
 }
 
+.row p[b-pirlzu5q3t] {
+    word-wrap: break-word;
+}
 div.row p[b-pirlzu5q3t] {
-    margin: 0px;
+    margin: 10px 0 0 0;
 }
 
 div.row[b-pirlzu5q3t] {
@@ -175,6 +356,7 @@ div.col-md-8 a[b-pirlzu5q3t] {
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
 a.navbar-brand[b-5m88q5hqm9] {
   white-space: normal;
   text-align: center;
@@ -214,11 +396,191 @@ button.accept-policy[b-5m88q5hqm9] {
 }
 
 .footer[b-5m88q5hqm9] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+/* _content/UvarTo.Web/Views/Tips/Create.cshtml.rz.scp.css */
+
+
+div h2[b-8yxpdwvscc] {
+    text-align: center;
+}
+
+div.row[b-8yxpdwvscc] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+
+div #main[b-8yxpdwvscc] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-8yxpdwvscc] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-8yxpdwvscc],
+    .btn-custom:active[b-8yxpdwvscc],
+    .btn-custom:hover[b-8yxpdwvscc] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-8yxpdwvscc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-8yxpdwvscc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-8yxpdwvscc] {
+    text-align: right;
+}
+
+.text-right-md p[b-8yxpdwvscc] {
+    margin-right: 0;
+}
+
+
+[b-8yxpdwvscc]::placeholder {
+    color: gray;
+}
+:-ms-input-placeholder[b-8yxpdwvscc] {
+    color: gray;
+}
+
+[b-8yxpdwvscc]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-8yxpdwvscc],
+.form-group textarea:focus[b-8yxpdwvscc] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+.search-input[b-8yxpdwvscc] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-8yxpdwvscc]::placeholder {
+    color: gray;
+}
+/* _content/UvarTo.Web/Views/Tips/Details.cshtml.rz.scp.css */
+body[b-sr51u6dsvl] {
+}
+/* _content/UvarTo.Web/Views/Tips/Edit.cshtml.rz.scp.css */
+
+
+div h2[b-j125bcocpc] {
+    text-align: center;
+}
+
+div.row[b-j125bcocpc] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+.row p[b-j125bcocpc] {
+    word-wrap: break-word;
+}
+
+div #main[b-j125bcocpc] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-j125bcocpc] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-j125bcocpc],
+    .btn-custom:active[b-j125bcocpc],
+    .btn-custom:hover[b-j125bcocpc] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-j125bcocpc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-j125bcocpc] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-j125bcocpc] {
+    text-align: right;
+}
+
+    .text-right-md p[b-j125bcocpc] {
+        margin-right: 0;
+    }
+
+
+[b-j125bcocpc]::placeholder {
+    color: gray;
+}
+
+:-ms-input-placeholder[b-j125bcocpc] {
+    color: gray;
+}
+
+[b-j125bcocpc]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-j125bcocpc],
+.form-group textarea:focus[b-j125bcocpc] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+
+.search-input[b-j125bcocpc] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-j125bcocpc]::placeholder {
+    color: gray;
 }
 /* _content/UvarTo.Web/Views/Tips/Index.cshtml.rz.scp.css */
 
@@ -230,27 +592,12 @@ div h2[b-sglxkwq506] {
     color: gray;
 }
 
-div.row[b-sglxkwq506] {
-    margin-top: 5px;
-}
+
 
 div #main[b-sglxkwq506] {
     border: 0px solid black;
 }
 
-
-
-
-
-div.col-md-8 h3.recipe-name-link[b-sglxkwq506] {
-    color: black;
-    text-decoration: none;
-}
-
-
-    div.col-md-8 h3.recipe-name-link:hover[b-sglxkwq506] {
-        color: darkgray;
-    }
 
 
 div.col-md-8 a[b-sglxkwq506] {
@@ -259,9 +606,9 @@ div.col-md-8 a[b-sglxkwq506] {
 }
 
 
-    div.col-md-8 a:hover[b-sglxkwq506] {
-        color: darkgray !important;
-    }
+div.col-md-8 a:hover[b-sglxkwq506] {
+    color: darkgray !important;
+}
 
 
 :-ms-input-placeholder[b-sglxkwq506] {
@@ -281,14 +628,14 @@ div.col-md-8 a[b-sglxkwq506] {
     border-color: black;
 }
 
-    .btn-custom:focus[b-sglxkwq506],
-    .btn-custom:active[b-sglxkwq506],
-    .btn-custom:hover[b-sglxkwq506] {
-        background-color: black;
-        color: white;
-        border-color: black;
-        box-shadow: none;
-    }
+.btn-custom:focus[b-sglxkwq506],
+.btn-custom:active[b-sglxkwq506],
+.btn-custom:hover[b-sglxkwq506] {
+    background-color: black;
+    color: white;
+    border-color: black;
+    box-shadow: none;
+}
 
 
 .form-control:focus[b-sglxkwq506] {
@@ -317,19 +664,6 @@ div.col-md-8 a[b-sglxkwq506] {
 .search-button[b-sglxkwq506] {
     flex-shrink: 0;
     padding-top: 23px;
-}
-
-div h2[b-sglxkwq506] {
-    text-align: center;
-}
-
-[b-sglxkwq506]::placeholder {
-    color: gray;
-}
-
-
-div #main[b-sglxkwq506] {
-    border: 0px solid black;
 }
 
 
@@ -361,10 +695,6 @@ div.col-md-8 a[b-sglxkwq506] {
     }
 
 
-.no-border[b-sglxkwq506] {
-    border: 0px solid black;
-}
-
 .text-right-md[b-sglxkwq506] {
     text-align: right;
 }
@@ -372,3 +702,98 @@ div.col-md-8 a[b-sglxkwq506] {
     .text-right-md p[b-sglxkwq506] {
         margin-right: 0;
     }
+
+/* _content/UvarTo.Web/Views/Tips/userItems.cshtml.rz.scp.css */
+/* General styles */
+div h2[b-xgqugxc4ja] {
+    text-align: center;
+}
+
+div.row[b-xgqugxc4ja],
+div.no-border[b-xgqugxc4ja],
+div #main[b-xgqugxc4ja] {
+    border: 0;
+    background-color: #F7F7F7;
+}
+.row p[b-xgqugxc4ja] {
+    word-wrap: break-word;
+}
+div.row[b-xgqugxc4ja] {
+    padding: 16px 5px 5px 5px;
+    margin-top: 15px;
+    border: 0 groove #393E46;
+    background-color: #EEEEEE;
+}
+.col-md-4.right[b-xgqugxc4ja] {
+    padding: 15px 15px 0 0;
+    text-align: right;
+    background-color: #EEEEEE;
+}
+div.right[b-xgqugxc4ja] {
+    background-color: #F7F7F7;
+    text-align: right;
+}
+p.center[b-xgqugxc4ja]{
+    text-align: center;
+}
+div.no-border[b-xgqugxc4ja] {
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles */
+.btn-custom[b-xgqugxc4ja],
+.btn-custom:focus[b-xgqugxc4ja],
+.btn-custom:active[b-xgqugxc4ja],
+.btn-custom:hover[b-xgqugxc4ja] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Text alignment styles */
+.text-right-md[b-xgqugxc4ja] {
+    text-align: right;
+}
+
+.text-right-md p[b-xgqugxc4ja] {
+    margin-right: 0;
+}
+
+/* Add this style block to your existing stylesheet or in a separate CSS file */
+#tipsContainer .row .col-md-8 h3.tips-name-link a[b-xgqugxc4ja] {
+    color: black !important;
+}
+
+#tipsContainer .row .col-md-8 h3.tips-name-link a:hover[b-xgqugxc4ja] {
+    color: darkgray !important;
+}
+
+/* Form control styles */
+.form-control:focus[b-xgqugxc4ja] {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Search form styles */
+.search-form[b-xgqugxc4ja] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input[b-xgqugxc4ja] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-button[b-xgqugxc4ja] {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+/* Placeholder color */
+[b-xgqugxc4ja]::placeholder {
+    color: gray;
+}

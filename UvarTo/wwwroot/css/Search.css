@@ -6,15 +6,16 @@ div h2 {
 ::placeholder {
     color: gray;
 }
-
+div #main {
+    margin-bottom: 25px;
+    background-color: #F7F7F7;
+}
 div.row {
-    border: 2px solid black;
+    background-color: #EEEEEE;
     margin-top: 5px;
 }
 
-div #main {
-    border: 0px solid black;
-}
+
 
 
 
@@ -26,9 +27,9 @@ div.col-md-8 h3.recipe-name-link {
 }
 
 
-    div.col-md-8 h3.recipe-name-link:hover {
-        color: darkgray;
-    }
+div.col-md-8 h3.recipe-name-link:hover {
+    color: darkgray;
+}
 
 
 div.col-md-8 a {
@@ -37,9 +38,9 @@ div.col-md-8 a {
 }
 
 
-    div.col-md-8 a:hover {
-        color: darkgray !important;
-    }
+div.col-md-8 a:hover {
+    color: darkgray !important;
+}
 
 
 :-ms-input-placeholder {

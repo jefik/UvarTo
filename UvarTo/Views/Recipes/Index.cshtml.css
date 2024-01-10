@@ -1,8 +1,11 @@
 ﻿body {
 }
 
+.row p {
+    word-wrap: break-word;
+}
 div.row p {
-    margin: 0px;
+    margin: 10px 0 0 0;
 }
 
 div.row {
