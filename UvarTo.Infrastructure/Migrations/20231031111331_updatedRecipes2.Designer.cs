@@ -9,7 +9,7 @@ using UvarTo.Infrastructure.Database;
 
 #nullable disable
 
-namespace UvarTo.Data.Migrations
+namespace UvarTo.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20231031111331_updatedRecipes2")]

@@ -48,7 +48,11 @@
                     <p>@item.TipText</p>
                 </div>
                 <div class="col-md-4 right">
-                     <p><input type="submit" value="Delete" class="btn btn-primary btn-block btn-custom" /></p>
+                            @using (Html.BeginForm("DeleteTips", "Tips", new { id = item.Id }, FormMethod.Post))
+                            {
+                                <button class="btn btn-primary btn-block btn-custom" type="submit">Delete My Tip</button>
+                            }
+                     @* <p><input type="submit" value="Delete" class="btn btn-primary btn-block btn-custom" /></p> *@
                 </div>
             </div>
         }

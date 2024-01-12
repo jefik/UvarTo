@@ -131,35 +131,51 @@ namespace UvarTo.Controllers
 
             return View(tips);
         }
-        public async Task<IActionResult> Delete(int? id)
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteTips(int id)
         {
-            if (id == null)
+            var userId = _tipsService.GetCurrentId();
+
+            var isDeleted = await _tipsService.DeleteTip(userId, id);
+
+            if (!isDeleted)
             {
                 return NotFound();
             }
 
-            var tips = await _tipsService.GetTipById(id.Value);
-            if (tips == null)
-            {
-                return NotFound();
-            }
-
-            return View(tips);
+            TempData["SuccessMessage"] = "Tip deleted successfully.";
+            return RedirectToAction("Index");
         }
+        //public async Task<IActionResult> Delete(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var result = await _tipsService.DeleteTip(id);
-            if (result)
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            else
-            {
-                return Problem("Entity set 'ApplicationDbContext.Tips' is null.");
-            }
-        }
+        //    var tips = await _tipsService.GetTipById(id.Value);
+        //    if (tips == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(tips);
+        //}
+
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    var result = await _tipsService.DeleteTip(id);
+        //    if (result)
+        //    {
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    else
+        //    {
+        //        return Problem("Entity set 'ApplicationDbContext.Tips' is null.");
+        //    }
+        //}
     }
 }

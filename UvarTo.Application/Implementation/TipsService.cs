@@ -70,31 +70,49 @@ namespace UvarTo.Application.Implementation
         // Tips/Edit
         public async Task<bool> UpdateTip(Tips tips)
         {
-            var existingTip = await _context.Tips.FindAsync(tips.Id);
-            if (existingTip == null)
+            var existingTips = await _context.Tips.FindAsync(tips.Id);
+            if (existingTips == null)
             {
                 return false;
             }
 
-            existingTip.TipName = tips.TipName;
-            existingTip.TipText = tips.TipText;
+            existingTips.TipName = tips.TipName;
+            existingTips.TipText = tips.TipText;
 
-            _context.Update(existingTip);
+            _context.Update(existingTips);
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> DeleteTip(int id)
+        public async Task<bool> DeleteTip(string userId, int Id)
         {
-            var tips = await _context.Tips.FindAsync(id);
+
+            var tips = await _context.Tips
+                .FirstOrDefaultAsync(s => s.userId == userId && s.Id == Id);
+
             if (tips == null)
             {
                 return false;
             }
 
+
             _context.Tips.Remove(tips);
             await _context.SaveChangesAsync();
+
             return true;
         }
+
+        //public async Task<bool> DeleteTip(int id)
+        //{
+        //    var tips = await _context.Tips.FindAsync(id);
+        //    if (tips == null)
+        //    {
+        //        return false;
+        //    }
+
+        //    _context.Tips.Remove(tips);
+        //    await _context.SaveChangesAsync();
+        //    return true;
+        //}
     }
 }

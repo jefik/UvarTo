@@ -22,3 +22,15 @@ C:\Users\Honza\source\repos\UvarToMarkovaStruktura\UvarTo-master\UvarTo.Domain\o
 C:\Users\Honza\source\repos\UvarToMarkovaStruktura\UvarTo-master\UvarTo.Domain\obj\Debug\net7.0\refint\UvarTo.Domain.dll
 C:\Users\Honza\source\repos\UvarToMarkovaStruktura\UvarTo-master\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.pdb
 C:\Users\Honza\source\repos\UvarToMarkovaStruktura\UvarTo-master\UvarTo.Domain\obj\Debug\net7.0\ref\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.deps.json
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.pdb
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.csproj.AssemblyReference.cache
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.AssemblyInfoInputs.cache
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.AssemblyInfo.cs
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.csproj.CoreCompileInputs.cache
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\refint\UvarTo.Domain.dll
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.pdb
+A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\ref\UvarTo.Domain.dll

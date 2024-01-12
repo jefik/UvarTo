@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using UvarTo.Infrastructure.Database;
 
-namespace UvarTo.Data.Migrations
+namespace UvarTo.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]

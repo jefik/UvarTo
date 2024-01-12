@@ -35,6 +35,8 @@ builder.Services.AddScoped<ISearchTService, SearchTService>();
 
 builder.Services.AddScoped<ITipsService, TipsService>();
 
+builder.Services.AddScoped<IFoodmenuService, FoodmenuService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -70,6 +72,10 @@ app.MapControllerRoute(
     pattern: "Tips/{action=Index}/{id?}",
     defaults: new { controller = "Tips" });
 
+app.MapControllerRoute(
+    name: "foodmenu",
+    pattern: "Foodmenu/{action=Index}/{id?}",
+    defaults: new { controller = "Foodmenu" });
 app.MapRazorPages();
 
     // ROLE

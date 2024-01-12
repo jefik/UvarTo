@@ -1,375 +1,383 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UvarTo.Web.bundle.scp.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\UvarTo.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\UvarTo.Web.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\css\\Search.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\Foodmenu.css",
+      "PackagePath": "staticwebassets\\css\\Foodmenu.css"
+    },
+    {
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\Search.css",
       "PackagePath": "staticwebassets\\css\\Search.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\css\\Tips.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\Tips.css",
       "PackagePath": "staticwebassets\\css\\Tips.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\css\\site.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\favicon.ico",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\0f650cec-6b9a-4432-8f62-17edb7edadff_dream_TradingCard (1).jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\0f650cec-6b9a-4432-8f62-17edb7edadff_dream_TradingCard (1).jpg",
       "PackagePath": "staticwebassets\\images\\0f650cec-6b9a-4432-8f62-17edb7edadff_dream_TradingCard (1).jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\125797d2-1b08-4c20-a749-0e95c4490703_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\125797d2-1b08-4c20-a749-0e95c4490703_voda.jpg",
       "PackagePath": "staticwebassets\\images\\125797d2-1b08-4c20-a749-0e95c4490703_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\1724443b-e2ee-471d-8915-ae57672b09eb_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\1724443b-e2ee-471d-8915-ae57672b09eb_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\1724443b-e2ee-471d-8915-ae57672b09eb_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\233f23f6-3678-4b0e-8bd5-0c3560b3ced4_lasagne.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\233f23f6-3678-4b0e-8bd5-0c3560b3ced4_lasagne.jpg",
       "PackagePath": "staticwebassets\\images\\233f23f6-3678-4b0e-8bd5-0c3560b3ced4_lasagne.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\30b9f99a-785d-4279-b2ee-4ab4a84829fd_karbanatek.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\30b9f99a-785d-4279-b2ee-4ab4a84829fd_karbanatek.jpg",
       "PackagePath": "staticwebassets\\images\\30b9f99a-785d-4279-b2ee-4ab4a84829fd_karbanatek.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg",
       "PackagePath": "staticwebassets\\images\\3394a067-0987-4ae5-9ff4-6aae434cbf1f_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\376029c9-5744-4c45-b365-c7e2fe3e2a46_landa.JPG",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\376029c9-5744-4c45-b365-c7e2fe3e2a46_landa.JPG",
       "PackagePath": "staticwebassets\\images\\376029c9-5744-4c45-b365-c7e2fe3e2a46_landa.JPG"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\49cf3ae5-ad6d-477c-9e77-89baaffb42ae_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\49cf3ae5-ad6d-477c-9e77-89baaffb42ae_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\49cf3ae5-ad6d-477c-9e77-89baaffb42ae_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\4c6db542-bf6a-4729-87ef-fe6cbb27437d_0164fb8f7a89180bda88369f9e4e67a5.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\4c6db542-bf6a-4729-87ef-fe6cbb27437d_0164fb8f7a89180bda88369f9e4e67a5.jpg",
       "PackagePath": "staticwebassets\\images\\4c6db542-bf6a-4729-87ef-fe6cbb27437d_0164fb8f7a89180bda88369f9e4e67a5.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\52aaffda-dff5-43b3-af01-ac330d356b11_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\52aaffda-dff5-43b3-af01-ac330d356b11_voda.jpg",
       "PackagePath": "staticwebassets\\images\\52aaffda-dff5-43b3-af01-ac330d356b11_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\57ffdc27-433d-46b1-8058-056569bc1d8f_karbanatek.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\57ffdc27-433d-46b1-8058-056569bc1d8f_karbanatek.jpg",
       "PackagePath": "staticwebassets\\images\\57ffdc27-433d-46b1-8058-056569bc1d8f_karbanatek.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\6882f399-f53f-481b-86aa-7cc85619cfa2_0164fb8f7a89180bda88369f9e4e67a5.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\6882f399-f53f-481b-86aa-7cc85619cfa2_0164fb8f7a89180bda88369f9e4e67a5.jpg",
       "PackagePath": "staticwebassets\\images\\6882f399-f53f-481b-86aa-7cc85619cfa2_0164fb8f7a89180bda88369f9e4e67a5.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\6cf4a428-7a95-47b1-ab8a-27fcea17b0b3_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\6cf4a428-7a95-47b1-ab8a-27fcea17b0b3_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\6cf4a428-7a95-47b1-ab8a-27fcea17b0b3_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\7253a935-c318-4650-b58f-b1e3e87a9def_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\7253a935-c318-4650-b58f-b1e3e87a9def_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\7253a935-c318-4650-b58f-b1e3e87a9def_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\78a10f4d-fc3a-466f-9c48-d8b95cd29f05_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\78a10f4d-fc3a-466f-9c48-d8b95cd29f05_voda.jpg",
       "PackagePath": "staticwebassets\\images\\78a10f4d-fc3a-466f-9c48-d8b95cd29f05_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\79cd704e-6847-4a24-975b-d27074e055fd_karbanatek.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\79cd704e-6847-4a24-975b-d27074e055fd_karbanatek.jpg",
       "PackagePath": "staticwebassets\\images\\79cd704e-6847-4a24-975b-d27074e055fd_karbanatek.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\805c9c6c-37cd-4e77-8202-a81be16f6253_lasagne.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\805c9c6c-37cd-4e77-8202-a81be16f6253_lasagne.jpg",
       "PackagePath": "staticwebassets\\images\\805c9c6c-37cd-4e77-8202-a81be16f6253_lasagne.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\939f7f8d-6c49-4b28-94ce-30587e8ae051_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\939f7f8d-6c49-4b28-94ce-30587e8ae051_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\939f7f8d-6c49-4b28-94ce-30587e8ae051_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\947f3445-03ee-4e03-849d-a4ae88ae12c7_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\947f3445-03ee-4e03-849d-a4ae88ae12c7_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\947f3445-03ee-4e03-849d-a4ae88ae12c7_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\a5a47ea1-0b7b-4de5-a650-bef47e9e0f57_0164fb8f7a89180bda88369f9e4e67a5.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\a5a47ea1-0b7b-4de5-a650-bef47e9e0f57_0164fb8f7a89180bda88369f9e4e67a5.jpg",
       "PackagePath": "staticwebassets\\images\\a5a47ea1-0b7b-4de5-a650-bef47e9e0f57_0164fb8f7a89180bda88369f9e4e67a5.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\a8ec11a5-dc57-4d25-8967-69e89d9e09fe_lasagne.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\a8ec11a5-dc57-4d25-8967-69e89d9e09fe_lasagne.jpg",
       "PackagePath": "staticwebassets\\images\\a8ec11a5-dc57-4d25-8967-69e89d9e09fe_lasagne.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\b5a9ff4d-c3ec-4af6-880b-c1343750324b_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\b5a9ff4d-c3ec-4af6-880b-c1343750324b_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\b5a9ff4d-c3ec-4af6-880b-c1343750324b_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\c5888d21-70b5-464c-ba12-61e2aee266c6_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\b901e37b-ed3a-4087-97d5-5a7e78be9279_svickova.jpg",
+      "PackagePath": "staticwebassets\\images\\b901e37b-ed3a-4087-97d5-5a7e78be9279_svickova.jpg"
+    },
+    {
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\c5888d21-70b5-464c-ba12-61e2aee266c6_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\c5888d21-70b5-464c-ba12-61e2aee266c6_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\ca6a7eb7-ffee-423f-bddf-14a586e5cd84_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\ca6a7eb7-ffee-423f-bddf-14a586e5cd84_voda.jpg",
       "PackagePath": "staticwebassets\\images\\ca6a7eb7-ffee-423f-bddf-14a586e5cd84_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\da43869e-b0ad-4b1d-afc0-9ba36033b136_polevka.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\da43869e-b0ad-4b1d-afc0-9ba36033b136_polevka.jpg",
       "PackagePath": "staticwebassets\\images\\da43869e-b0ad-4b1d-afc0-9ba36033b136_polevka.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\e9c663a5-686c-47ca-940e-64dce44c6567_0164fb8f7a89180bda88369f9e4e67a5.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\e9c663a5-686c-47ca-940e-64dce44c6567_0164fb8f7a89180bda88369f9e4e67a5.jpg",
       "PackagePath": "staticwebassets\\images\\e9c663a5-686c-47ca-940e-64dce44c6567_0164fb8f7a89180bda88369f9e4e67a5.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\ece5b792-1628-4722-8085-32617a04282d_polevka.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\ece5b792-1628-4722-8085-32617a04282d_polevka.jpg",
       "PackagePath": "staticwebassets\\images\\ece5b792-1628-4722-8085-32617a04282d_polevka.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\fa305e01-7a4a-4884-ab09-ae35bc99618f_voda.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\fa305e01-7a4a-4884-ab09-ae35bc99618f_voda.jpg",
       "PackagePath": "staticwebassets\\images\\fa305e01-7a4a-4884-ab09-ae35bc99618f_voda.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\fbb5189a-cfe5-4a60-b3f8-39b45bd309de_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\fbb5189a-cfe5-4a60-b3f8-39b45bd309de_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\fbb5189a-cfe5-4a60-b3f8-39b45bd309de_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\images\\fcdc9954-111d-474a-93e4-f7080b67212b_svickova.jpg",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\fcdc9954-111d-474a-93e4-f7080b67212b_svickova.jpg",
       "PackagePath": "staticwebassets\\images\\fcdc9954-111d-474a-93e4-f7080b67212b_svickova.jpg"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\js\\site.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Honza\\source\\repos\\UvarToMarkovaStruktura\\UvarTo-master\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

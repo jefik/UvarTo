@@ -1,43 +1,59 @@
-﻿@model UvarTo.Domain.Entities.Recipes
+﻿@model UvarTo.Domain.Entities.Foodmenu
 
-@{
-    ViewData["Title"] = "Details";
-}
+<style>
+    body {
+        background-color: #F7F7F7;
+    }
 
-<h1>Details</h1>
+    .right {
+        text-align: right;
+    }
+    /* Button styles */
+    .btn-custom,
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+        box-shadow: none;
+    }
 
-<div>
-    <h4>Food menu</h4>
-    <hr />
-    @*<dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Difficulty)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Difficulty)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CookTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CookTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RecipeName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RecipeName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RecipeCategory)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RecipeCategory)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
-    *@
+    div.row {
+        padding: 16px 5px 5px 5px;
+        margin-top: 15px;
+        border: 0 groove #393E46;
+        background-color: #EEEEEE;
+    }
+
+    div.right {
+        background-color: #F7F7F7;
+    }
+
+    .row p {
+        word-wrap: break-word;
+    }
+</style>
+<body>
+    @{
+        ViewData["Title"] = "Details";
+    }
+
+    <h1> @Html.DisplayFor(model => model.FoodmenuName)</h1>
+
+    <div class="container">
+        <h4>What is this foodmenu about</h4>
+        <hr />
+
+        <div class="row">
+            <p>
+                @Html.DisplayFor(model => model.FoodmenuText)
+            </p>
+        </div>
+        <div class="row right">
+            <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Foodmenu</a></p>
+        </div>
+    </div>
+
+</body>

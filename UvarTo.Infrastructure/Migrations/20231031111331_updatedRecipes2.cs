@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace UvarTo.Data.Migrations
+namespace UvarTo.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class updatedRecipes2 : Migration

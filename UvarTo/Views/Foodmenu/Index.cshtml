@@ -1,16 +1,86 @@
-﻿@model IEnumerable<UvarTo.Domain.Entities.Foodmenu>
+﻿@using Microsoft.AspNetCore.Identity
+@using UvarTo.Infrastructure.Identity;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@model IEnumerable<UvarTo.Domain.Entities.Foodmenu>
+
+<head>
+    <link href="@Url.Content("~/css/Foodmenu.css")" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    @{
+        ViewData["Title"] = "Index";
+
+
+    }
 
 
 
 
-@{
-    ViewData["Title"] = "Index";
-}
+    <div class="container">
+        <div class="row justify-content-md-center no-border " id="main">
+            <h2>Foodmenus</h2>
+            @* <!-- Search Box -->
+            <div class="col-md-4">
+                <form asp-action="ShowSearchResults" class="search-form">
+                    <div class="form-group search-input">
+                        <label for="searchPhrase" class="control-label"></label>
+                        <input name="SearchPhrase" class="form-control" placeholder="Any time-saving tip or trick hmm.." />
+                    </div>
+                    <div class="form-group search-button">
+                        <input type="submit" value="Search" class="btn btn-primary btn-block btn-custom" />
+                    </div>
+                </form>
+            </div> *@
+        </div>
+        <div class="row no-border">
+            @if (User.IsInRole("Admin") || User.IsInRole("User"))
+            {
+                <div class="col-md-4">
+                    <p class="no-border">
+                        <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
+                    </p>
+                </div>
+            }
 
-<h1>Food menu</h1>
+            @if (User.IsInRole("Admin") || User.IsInRole("User"))
+            {
+                <div class="col-md-4 offset-md-4 text-right-md">
+                    <!-- Add offset for the second column -->
+                    <p>
+                        <a asp-action="UserItems" asp-controller="Foodmenu" class="btn btn-primary btn-block btn-custom">View My Foodmenus</a>
+                    </p>
+                </div>
+            }
+        </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+        <!-- Display Filtered Tips -->
+        @if (Model.Any())
+        {
+            <div id="foodmenuContainer">
+                @foreach (var item in Model)
+                {
+                    item.FoodmenuText = item.FoodmenuText.Length > 60 ? item.FoodmenuText.Substring(0, 60) + "..." : item.FoodmenuText;
 
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="foodmenu-name-link"><a asp-action="Details" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
+                            <p> @Html.DisplayFor(model => item.FoodmenuText) </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <!-- Message for No Tips Found -->
+            <div style="text-align: center;">
+                <p id="foodmenuText">Not any foodmenu found</p>
+            </div>
+        }
+    </div>
 
+</body>

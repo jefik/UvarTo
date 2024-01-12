@@ -15,6 +15,6 @@ namespace UvarTo.Application.Abstraction
         List<Tips> UserItems(string userId);
         Task AddTip(Tips tips);
         Task<bool> UpdateTip(Tips tips);
-        Task<bool> DeleteTip(int id);
+        Task<bool> DeleteTip(string userId, int Id);
     }
 }

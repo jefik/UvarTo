@@ -50,6 +50,100 @@ h3[b-81a448qa2j] {
 .form-group #cookTimeRangeValue[b-81a448qa2j] {
     color: black; /* Set the text color to black to match the slider */
 }
+/* _content/UvarTo.Web/Views/Foodmenu/userItems.cshtml.rz.scp.css */
+/* General styles */
+div h2[b-5bqknlrikf] {
+    text-align: center;
+}
+
+div.row[b-5bqknlrikf],
+div.no-border[b-5bqknlrikf],
+div #main[b-5bqknlrikf] {
+    border: 0;
+    background-color: #F7F7F7;
+}
+.row p[b-5bqknlrikf] {
+    word-wrap: break-word;
+}
+div.row[b-5bqknlrikf] {
+    padding: 16px 5px 5px 5px;
+    margin-top: 15px;
+    border: 0 groove #393E46;
+    background-color: #EEEEEE;
+}
+.col-md-4.right[b-5bqknlrikf] {
+    padding: 15px 15px 0 0;
+    text-align: right;
+    background-color: #EEEEEE;
+}
+div.right[b-5bqknlrikf] {
+    background-color: #F7F7F7;
+    text-align: right;
+}
+p.center[b-5bqknlrikf]{
+    text-align: center;
+}
+div.no-border[b-5bqknlrikf] {
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styles */
+.btn-custom[b-5bqknlrikf],
+.btn-custom:focus[b-5bqknlrikf],
+.btn-custom:active[b-5bqknlrikf],
+.btn-custom:hover[b-5bqknlrikf] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Text alignment styles */
+.text-right-md[b-5bqknlrikf] {
+    text-align: right;
+}
+
+.text-right-md p[b-5bqknlrikf] {
+    margin-right: 0;
+}
+
+/* Add this style block to your existing stylesheet or in a separate CSS file */
+#tipsContainer .row .col-md-8 h3.tips-name-link a[b-5bqknlrikf] {
+    color: black !important;
+}
+
+#tipsContainer .row .col-md-8 h3.tips-name-link a:hover[b-5bqknlrikf] {
+    color: darkgray !important;
+}
+
+/* Form control styles */
+.form-control:focus[b-5bqknlrikf] {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Search form styles */
+.search-form[b-5bqknlrikf] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input[b-5bqknlrikf] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-button[b-5bqknlrikf] {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+/* Placeholder color */
+[b-5bqknlrikf]::placeholder {
+    color: gray;
+}
 /* _content/UvarTo.Web/Views/Recipes/Create.cshtml.rz.scp.css */
 body[b-im1fwmecoi] {
 }
