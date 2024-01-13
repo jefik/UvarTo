@@ -6,12 +6,12 @@
         background-color: #F7F7F7;
     }
     /* Add this style block to your existing stylesheet or in a separate CSS file */
-    #tipsContainer .row .col-md-8 h3.tips-name-link a {
+    #foodmenuContainer .row .col-md-8 h3.foodmenu-name-link a {
         color: black !important;
         text-decoration: none;
     }
 
-    #tipsContainer .row .col-md-8 h3.tips-name-link a:hover {
+    #foodmenuContainer .row .col-md-8 h3.foodmenu-name-link a:hover {
         color: darkgray !important;
     }
 
@@ -19,8 +19,6 @@
         background-color: #F7F7F7;
         text-align: right;
     }
-
-   
 
 </style>
 
@@ -39,12 +37,12 @@
 
 @if (Model.Any())
 {
-    <div id="tipsContainer">
+    <div id="foodmenuContainer">
         @foreach (var item in Model)
         {
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="tips-name-link"><a asp-action="Edit" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
+                    <h3 class="foodmenu-name-link"><a asp-action="Edit" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
                     <p>@item.FoodmenuText</p>
                 </div>
                 <div class="col-md-4 right">

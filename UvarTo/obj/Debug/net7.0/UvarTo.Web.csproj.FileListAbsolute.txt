@@ -827,3 +827,5 @@ A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.Web.pdb
 A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.Web.genruntimeconfig.cache
 A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\ref\UvarTo.Web.dll
 A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Foodmenu\userItems.cshtml.rz.scp.css
+A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Admin\Edit.cshtml.rz.scp.css
+A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Admin\Index.cshtml.rz.scp.css

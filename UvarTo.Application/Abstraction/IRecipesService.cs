@@ -17,8 +17,9 @@ namespace UvarTo.Application.Abstraction
         Task <recipeviewmodel>GetRecipeForEdit(int? id);
         Task UpdateRecipe(recipeviewmodel recipes);
 
-        Task<bool> DeleteRecipe(int id);
+        Task<bool> DeleteRecipe(string userId, int id);
 
-        
+
+
     }
 }

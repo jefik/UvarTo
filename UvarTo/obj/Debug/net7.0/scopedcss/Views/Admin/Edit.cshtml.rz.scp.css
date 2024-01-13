@@ -1,0 +1,90 @@
+
+
+div h2[b-gmzjxq2kgt] {
+    text-align: center;
+}
+
+div.row[b-gmzjxq2kgt] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+.row p[b-gmzjxq2kgt] {
+    word-wrap: break-word;
+}
+
+div #main[b-gmzjxq2kgt] {
+    border: 0px solid black;
+    background-color: #F7F7F7;
+}
+
+
+.btn-custom[b-gmzjxq2kgt] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-gmzjxq2kgt],
+    .btn-custom:active[b-gmzjxq2kgt],
+    .btn-custom:hover[b-gmzjxq2kgt] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-gmzjxq2kgt] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-gmzjxq2kgt] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.text-right-md[b-gmzjxq2kgt] {
+    text-align: right;
+}
+
+    .text-right-md p[b-gmzjxq2kgt] {
+        margin-right: 0;
+    }
+
+
+[b-gmzjxq2kgt]::placeholder {
+    color: gray;
+}
+
+:-ms-input-placeholder[b-gmzjxq2kgt] {
+    color: gray;
+}
+
+[b-gmzjxq2kgt]::-ms-input-placeholder {
+    color: gray;
+}
+
+.form-group input:focus[b-gmzjxq2kgt],
+.form-group textarea:focus[b-gmzjxq2kgt] {
+    outline: none; /* Remove the default blue outline */
+    border-color: #EEEEEE !important; /* Set your desired border color when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+}
+
+.search-input[b-gmzjxq2kgt] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+[b-gmzjxq2kgt]::placeholder {
+    color: gray;
+}

@@ -5,9 +5,6 @@
         background-color: #F7F7F7;
     }
 
-    .right {
-        text-align: right;
-    }
     /* Button styles */
     .btn-custom,
     .btn-custom:focus,
@@ -27,8 +24,12 @@
         background-color: #EEEEEE;
     }
 
-    div.right {
-        background-color: #F7F7F7;
+        div.row.no-border {
+            background-color: #F7F7F7;
+        }
+
+    div.text-right-md {
+        text-align: right;
     }
 
     .row p {
@@ -51,8 +52,16 @@
                 @Html.DisplayFor(model => model.FoodmenuText)
             </p>
         </div>
-        <div class="row right">
-            <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Foodmenu</a></p>
+        <div class="row no-border">
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-md-4">
+                    <p><a asp-action="Edit" asp-route-id="@Model.id" class="btn btn-primary btn-block btn-custom">Edit</a></p>
+                </div>
+            }
+            <div class="col-md-4 offset-md-4 text-right-md">
+                <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a></p>
+            </div>
         </div>
     </div>
 

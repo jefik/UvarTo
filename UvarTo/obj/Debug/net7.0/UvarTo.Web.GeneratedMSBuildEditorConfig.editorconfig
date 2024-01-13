@@ -120,6 +120,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-gmzjxq2kgt
+
+[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jw2kdpsn95
+
 [A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-81a448qa2j

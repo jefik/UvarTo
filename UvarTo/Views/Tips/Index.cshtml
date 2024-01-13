@@ -10,6 +10,20 @@
     <link href="@Url.Content("~/css/Tips.css")" rel="stylesheet" type="text/css" />
 
 </head>
+<style>
+    div.right {
+        background-color: #EEEEEE;
+        text-align: right;
+        margin-top: 65px;
+    }
+
+    div.row.no-border {
+        margin: 0;
+        padding: 0;
+        background-color: #F7F7F7;
+    }
+
+</style>
 <body>
     @{
         ViewData["Title"] = "Index";
@@ -69,6 +83,13 @@
                     <div class="col-md-8">
                         <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
                             <p> @Html.DisplayFor(model => item.TipText) </p>
+                    </div>
+                    <div class="col-md-4 right">
+                        @using (Html.BeginForm("DeleteTips", "Tips", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <button class="btn btn-primary btn-block btn-custom" type="submit">Delete Tip</button>
+                        }
+                        
                     </div>
                 </div>
             }

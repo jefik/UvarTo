@@ -4,6 +4,11 @@
 </head>
 
 <style>
+    div.right {
+        background-color: #EEEEEE;
+        text-align: right;
+        margin-top: 65px;
+    }
     body {
         background-color: #F7F7F7;
     }
@@ -12,10 +17,19 @@
         margin-bottom: 25px;
         background-color: #F7F7F7;
     }
-
-    div.right {
+    
+    div.row.right {
         background-color: #F7F7F7;
         text-align: right;
+    }
+
+    div.col-md-4 h3.recipe-name-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+    div.col-md-4 h3.recipe-name-link a:hover {
+        color: darkgray;
     }
 </style>
 
@@ -34,13 +48,13 @@
                 {
                     item.RecipeText = item.RecipeText.Length > 60 ? item.RecipeText.Substring(0, 60) + "..." : item.RecipeText;
 
-                    <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
+                   
                         <div class="row">
                             <div class="col-md-4">
                                 <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
                             </div>
 
-                            <div class="col-md-8">
+                            <div class="col-md-4">
 
                                 @* <h3>@item.RecipeName</h3> *@
                                 @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
@@ -49,11 +63,22 @@
                                 </h3>
                                 <p><strong>Kategorie:</strong>@item.RecipeCategory</p>
                                 <p class="recipe-text card-text"><strong>Popis:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                                
                                 <p><strong>Náročnost:</strong> @item.Difficulty</p>
                                 <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
+                            
                             </div>
+                        <div class="col-md-4 right">
+                            <p>
+                            @using (Html.BeginForm("DeleteRecipes", "Recipes", new { id = item.Id }, FormMethod.Post))
+                            {
+                                <button class="btn btn-primary btn-block btn-custom" type="submit">Delete My Recipe</button>
+                            }
+                            </p>
                         </div>
-                    </div>
+                        </div>
+                    
+                    
                 }
             </div>
 

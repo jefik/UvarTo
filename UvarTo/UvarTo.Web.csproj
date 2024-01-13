@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <None Include="Properties\serviceDependencies.local.json.user" />
+    <None Include="Views\Admin\Edit.cshtml" />
+    <None Include="Views\Admin\Index.cshtml" />
     <None Include="Views\Foodmenu\Create.cshtml" />
     <None Include="Views\Foodmenu\Delete.cshtml" />
     <None Include="Views\Foodmenu\Details.cshtml" />

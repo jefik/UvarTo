@@ -142,16 +142,21 @@ namespace UvarTo.Application.Implementation
         }
 
         // GET: Recipes/Delete/5
-        public async Task<bool> DeleteRecipe(int id)
+        public async Task<bool> DeleteRecipe(string userId, int id)
         {
-            var recept = await _context.Recept.FindAsync(id);
-            if (recept != null)
+            var recipes = await _context.Recept
+                .FirstOrDefaultAsync(s => s.userId == userId && s.Id == id);
+
+            if (recipes == null)
             {
-                _context.Recept.Remove(recept);
-                await _context.SaveChangesAsync();
-                return true;
+                return false;
             }
-            return false;
+
+
+            _context.Recept.Remove(recipes);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
     }

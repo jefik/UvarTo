@@ -4,6 +4,11 @@
 </head>
 
 <style>
+    div.right {
+        background-color: #EEEEEE;
+        text-align: right;
+        margin-top: 65px;
+    }
     body {
         background-color: #F7F7F7;
     }
@@ -11,6 +16,16 @@
     div #main {
         margin-bottom: 25px;
         background-color: #F7F7F7;
+    }
+
+    div.col-md-4 h3.recipe-name-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    div.col-md-4 h3.recipe-name-link a:hover {
+        color: darkgray;
     }
     
 </style>
@@ -92,7 +107,7 @@
                                     <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
                                 </div>
 
-                                <div class="col-md-8">
+                                <div class="col-md-4">
 
                                     @* <h3>@item.RecipeName</h3> *@
                                     @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
@@ -104,6 +119,16 @@
                                     <p><strong>Náročnost:</strong> @item.Difficulty</p>
                                     <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
                                 </div>
+                                @if (User.IsInRole("Admin")){
+                                <div class="col-md-4 right">
+                                    <p>
+                                        @using (Html.BeginForm("DeleteRecipes", "Recipes", new { id = item.Id }, FormMethod.Post))
+                                        {
+                                            <button class="btn btn-primary btn-block btn-custom" type="submit">Delete Recipe</button>
+                                        }
+                                    </p>
+                                </div>
+                                    }
                             </div>
                         </div>
                     }

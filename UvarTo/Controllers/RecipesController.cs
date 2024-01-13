@@ -135,34 +135,51 @@ namespace UvarTo.Web.Controllers
 
             return View(recipes);
         }
-        public async Task<IActionResult> Delete(int? id)
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteRecipes(int id)
         {
-            if (id == null)
+            var userId = _recipeService.GetCurrentId();
+
+            var isDeleted = await _recipeService.DeleteRecipe(userId, id);
+
+            if (!isDeleted)
             {
                 return NotFound();
             }
 
-            var recept = await _recipeService.GetRecipeById(id.Value);
-            if (recept == null)
-            {
-                return NotFound();
-            }
-
-            return View(recept);
+            TempData["SuccessMessage"] = "Recipe deleted successfully.";
+            return RedirectToAction("Index");
         }
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var deleted = await _recipeService.DeleteRecipe(id);
-            if (!deleted)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Recept' is null.");
-            }
+        //public async Task<IActionResult> Delete(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return RedirectToAction(nameof(Index));
-        }
+        //    var recept = await _recipeService.GetRecipeById(id.Value);
+        //    if (recept == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(recept);
+        //}
+
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    var deleted = await _recipeService.DeleteRecipe(id);
+        //    if (!deleted)
+        //    {
+        //        return Problem("Entity set 'ApplicationDbContext.Recept' is null.");
+        //    }
+
+        //    return RedirectToAction(nameof(Index));
+        //}
 
         // idk why is this function here, but here we go YAAAHOOO
 

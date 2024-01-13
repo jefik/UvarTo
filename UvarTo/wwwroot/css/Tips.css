@@ -7,32 +7,12 @@ div h2 {
     color: gray;
 }
 
-div.row {
-    padding: 16px 5px 5px 5px;
-    border: 0px groove #393E46;
-    margin-top: 15px;
-    background-color: #EEEEEE;
-}
 body {
     background-color: #F7F7F7;
 }
 
 div #main {
     border: 0px solid black;
-    background-color: #F7F7F7;
-}
-
-div.no-border { /* General styles */
-    div h2
-
-{
-    text-align: center;
-}
-
-div.row,
-div.no-border,
-div #main {
-    border: 0;
     background-color: #F7F7F7;
 }
 
@@ -43,9 +23,11 @@ div.row {
     background-color: #EEEEEE;
 }
 
-div.no-border {
+div.row.no-border {
     margin: 0;
     padding: 0;
+    background-color: #F7F7F7;
+    
 }
 
 /* Button styles */
@@ -108,10 +90,6 @@ div.col-md-8 a {
     color: gray;
 }
 
-    background-color: #F7F7F7;
-    margin: 0px;
-    padding: 0px;
-}
 
 
 
@@ -141,16 +119,10 @@ div.col-md-8 a {
     color: gray;
 }
 
-::-ms-input-placeholder {
-    color: gray;
-}
-
-
 .form-control:focus {
     box-shadow: none;
     border-color: black;
 }
-
 
 .btn-custom:focus {
     box-shadow: none;

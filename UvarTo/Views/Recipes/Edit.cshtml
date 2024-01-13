@@ -57,9 +57,19 @@
                 <div class="col-md-4">
                     <p><input type="submit" value="Save" class="btn btn-primary btn-custom" /></p>
                 </div>
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="col-md-4 offset-md-4 text-right-md">
+                        <p> <a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Recipes</a></p>
+                    </div>
+                }
+                else if (User.IsInRole("User"))
+                {
                 <div class="col-md-4 offset-md-4 text-right-md">
                     <p> <a asp-action="userItems" class="btn btn-primary btn-block btn-custom">Back to List</a></p>
                 </div>
+                }
+                
             </div>
         </form>
     </div>

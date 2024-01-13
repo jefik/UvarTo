@@ -1,0 +1,95 @@
+
+div h2[b-jw2kdpsn95] {
+    text-align: center;
+}
+
+[b-jw2kdpsn95]::placeholder {
+    color: gray;
+}
+
+
+
+div #main[b-jw2kdpsn95] {
+    border: 0px solid black;
+}
+
+div.row[b-jw2kdpsn95] {
+    padding: 16px 5px 5px 5px;
+    border: 0px groove #393E46;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+}
+
+
+div.col-md-8 a[b-jw2kdpsn95] {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+    div.col-md-8 a:hover[b-jw2kdpsn95] {
+        color: darkgray !important;
+    }
+
+
+:-ms-input-placeholder[b-jw2kdpsn95] {
+    color: gray;
+}
+
+.btn-custom[b-jw2kdpsn95] {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+}
+
+    .btn-custom:focus[b-jw2kdpsn95],
+    .btn-custom:active[b-jw2kdpsn95],
+    .btn-custom:hover[b-jw2kdpsn95] {
+        background-color: black;
+        color: white;
+        border-color: black;
+        box-shadow: none;
+    }
+
+
+.form-control:focus[b-jw2kdpsn95] {
+    box-shadow: none;
+    border-color: black;
+}
+
+
+.btn-custom:focus[b-jw2kdpsn95] {
+    box-shadow: none;
+    border-color: black;
+}
+
+.search-form[b-jw2kdpsn95] {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search-input[b-jw2kdpsn95] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+.search-button[b-jw2kdpsn95] {
+    flex-shrink: 0;
+    padding-top: 23px;
+}
+
+
+
+.text-right-md[b-jw2kdpsn95] {
+    text-align: right;
+    margin-top: 50px;
+}
+
+    .text-right-md p[b-jw2kdpsn95] {
+        margin-right: 0;
+    }

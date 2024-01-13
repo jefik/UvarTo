@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NyHbShlVJhh0tELSMiAlp9xpzcBF87uu/XJOwphP4bY=",
+  "Hash": "gFnUzlzriIC0u1WmS4YKsnal7++R+CrJ7FgiHoEJxJE=",
   "Source": "UvarTo.Web",
   "BasePath": "_content/UvarTo.Web",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Foodmenu.css"
+    },
+    {
+      "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\FoodmenuEdit.css",
+      "SourceId": "UvarTo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\",
+      "BasePath": "_content/UvarTo.Web",
+      "RelativePath": "css/FoodmenuEdit.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\FoodmenuEdit.css"
     },
     {
       "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\css\\Search.css",
@@ -255,6 +272,40 @@
       "OriginalItemSpec": "wwwroot\\images\\376029c9-5744-4c45-b365-c7e2fe3e2a46_landa.JPG"
     },
     {
+      "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\3d25e0b7-648d-4ee8-a147-19f7d2992955_polevka.jpg",
+      "SourceId": "UvarTo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\",
+      "BasePath": "_content/UvarTo.Web",
+      "RelativePath": "images/3d25e0b7-648d-4ee8-a147-19f7d2992955_polevka.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3d25e0b7-648d-4ee8-a147-19f7d2992955_polevka.jpg"
+    },
+    {
+      "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\41d94d2f-b79b-4cf0-b98a-7885b7148611_polevka.jpg",
+      "SourceId": "UvarTo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\",
+      "BasePath": "_content/UvarTo.Web",
+      "RelativePath": "images/41d94d2f-b79b-4cf0-b98a-7885b7148611_polevka.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\41d94d2f-b79b-4cf0-b98a-7885b7148611_polevka.jpg"
+    },
+    {
       "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\49cf3ae5-ad6d-477c-9e77-89baaffb42ae_svickova.jpg",
       "SourceId": "UvarTo.Web",
       "SourceType": "Discovered",
@@ -338,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6882f399-f53f-481b-86aa-7cc85619cfa2_0164fb8f7a89180bda88369f9e4e67a5.jpg"
+    },
+    {
+      "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\6af2a23f-89e7-41fb-852e-0d5a14743851_voda.jpg",
+      "SourceId": "UvarTo.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\",
+      "BasePath": "_content/UvarTo.Web",
+      "RelativePath": "images/6af2a23f-89e7-41fb-852e-0d5a14743851_voda.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6af2a23f-89e7-41fb-852e-0d5a14743851_voda.jpg"
     },
     {
       "Identity": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\wwwroot\\images\\6cf4a428-7a95-47b1-ab8a-27fcea17b0b3_svickova.jpg",

@@ -6,10 +6,47 @@
 
 @model IEnumerable<UvarTo.Domain.Entities.Foodmenu>
 
-<head>
+
+@*<head>
     <link href="@Url.Content("~/css/Foodmenu.css")" rel="stylesheet" type="text/css"/>
 
 </head>
+*@
+<style>
+    div.right {
+        background-color: #EEEEEE;
+        text-align: right;
+        margin-top: 5px;
+    }
+    div.row.no-border {
+        margin: 0;
+        padding: 0;
+        background-color: #F7F7F7;
+    }
+
+    div.col-md-8 h3.foodmenu-name-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    div.col-md-8 h3.foodmenu-name-link a:hover {
+        color: darkgray;
+    }
+
+
+    div.col-md-8 a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+
+    div.col-md-8 a:hover {
+        color: darkgray !important;
+    }
+
+
+</style>
 <body>
     @{
         ViewData["Title"] = "Index";
@@ -17,11 +54,8 @@
 
     }
 
-
-
-
     <div class="container">
-        <div class="row justify-content-md-center no-border " id="main">
+        <div class="row justify-content-md-center no-border" id="main">
             <h2>Foodmenus</h2>
             @* <!-- Search Box -->
             <div class="col-md-4">
@@ -40,7 +74,7 @@
             @if (User.IsInRole("Admin") || User.IsInRole("User"))
             {
                 <div class="col-md-4">
-                    <p class="no-border">
+                    <p>
                         <a asp-action="Create" class="btn btn-primary btn-block btn-custom">Create New</a>
                     </p>
                 </div>
@@ -70,6 +104,17 @@
                             <h3 class="foodmenu-name-link"><a asp-action="Details" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
                             <p> @Html.DisplayFor(model => item.FoodmenuText) </p>
                         </div>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="col-md-4 right">
+                                <p>
+                                    @using (Html.BeginForm("DeleteFoodmenu", "Foodmenu", new { id = item.id }, FormMethod.Post))
+                                    {
+                                        <button class="btn btn-primary btn-block btn-custom" type="submit">Delete Foodmenu</button>
+                                    }
+                                </p>
+                            </div>
+                        }
                     </div>
                 }
             </div>

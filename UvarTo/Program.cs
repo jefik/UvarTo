@@ -37,6 +37,8 @@ builder.Services.AddScoped<ITipsService, TipsService>();
 
 builder.Services.AddScoped<IFoodmenuService, FoodmenuService>();
 
+builder.Services.AddScoped<IAdminService, AdminService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
