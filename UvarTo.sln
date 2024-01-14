@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvarTo.Web", "UvarTo\UvarTo.Web.csproj", "{5CFD40B0-98BD-4F10-8EDF-CF410F4EDB84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UvarTo.Web", "UvarTo\UvarTo.Web.csproj", "{5CFD40B0-98BD-4F10-8EDF-CF410F4EDB84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvarTo.Domain", "UvarTo.Domain\UvarTo.Domain.csproj", "{9AB39318-3874-45B1-94CC-28C183CBDBC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UvarTo.Domain", "UvarTo.Domain\UvarTo.Domain.csproj", "{9AB39318-3874-45B1-94CC-28C183CBDBC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvarTo.Application", "UvarTo.Application\UvarTo.Application.csproj", "{6C58C0AE-B495-440A-976D-CF1F4C6A55ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UvarTo.Application", "UvarTo.Application\UvarTo.Application.csproj", "{6C58C0AE-B495-440A-976D-CF1F4C6A55ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvarTo.Infrastructure", "UvarTo.Infrastructure\UvarTo.Infrastructure.csproj", "{3AC3EEB0-7B7B-4B44-8D8D-5EFEDCA8FDB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UvarTo.Infrastructure", "UvarTo.Infrastructure\UvarTo.Infrastructure.csproj", "{3AC3EEB0-7B7B-4B44-8D8D-5EFEDCA8FDB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvarTo.Test", "UvarTo.Test\UvarTo.Test.csproj", "{94E21F08-1435-4273-8A09-EAFB11B43323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3AC3EEB0-7B7B-4B44-8D8D-5EFEDCA8FDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC3EEB0-7B7B-4B44-8D8D-5EFEDCA8FDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC3EEB0-7B7B-4B44-8D8D-5EFEDCA8FDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E21F08-1435-4273-8A09-EAFB11B43323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E21F08-1435-4273-8A09-EAFB11B43323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E21F08-1435-4273-8A09-EAFB11B43323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E21F08-1435-4273-8A09-EAFB11B43323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
