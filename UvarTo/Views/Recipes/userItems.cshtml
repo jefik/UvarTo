@@ -4,6 +4,7 @@
 </head>
 
 <style>
+  
     div.right {
         background-color: #EEEEEE;
         text-align: right;
@@ -31,6 +32,10 @@
     div.col-md-4 h3.recipe-name-link a:hover {
         color: darkgray;
     }
+    div#recipe-item{
+        margin-bottom: 25px;
+        background-color: #EEEEEE;
+    }
 </style>
 
 <h2>User Items</h2>
@@ -48,25 +53,20 @@
                     item.RecipeText = item.RecipeText.Length > 60 ? item.RecipeText.Substring(0, 60) + "..." : item.RecipeText;
 
                    
-                        <div class="row">
+                        <div class="row" id="recipe-item">
                             <div class="col-md-4">
-                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
+                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 250px;">
                             </div>
 
-                            <div class="col-md-4">
-
-                                @* <h3>@item.RecipeName</h3> *@
-                                @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
-                                <h3 class="recipe-name-link">
-                                    <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
-                                </h3>
-                                <p><strong>Kategorie:</strong>@item.RecipeCategory</p>
-                                <p class="recipe-text card-text"><strong>Popis:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
-                                
-                                <p><strong>Náročnost:</strong> @item.Difficulty</p>
-                                <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
-                            
-                            </div>
+                    <div class="col-md-4">
+                        <h3 class="recipe-name-link">
+                            <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
+                        </h3>
+                        <p><strong>Category:</strong> @item.RecipeCategory</p>
+                        <p class="recipe-text card-text"><strong>Recipe description:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                        <p><strong>Difficulty:</strong> @item.Difficulty from 10</p>
+                        <p><strong>Cook time:</strong> @item.CookTime minutes</p>
+                    </div>
                         <div class="col-md-4 right">
                             <p>
                             @using (Html.BeginForm("DeleteRecipes", "Recipes", new { id = item.Id }, FormMethod.Post))
