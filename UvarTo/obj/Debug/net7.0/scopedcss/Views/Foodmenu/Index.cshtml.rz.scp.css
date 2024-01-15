@@ -23,13 +23,12 @@ div.row[b-81a448qa2j] {
     background-color: #EEEEEE;
 }
 
-    div.row.no-border[b-81a448qa2j] {
-        margin: 0;
-        padding: 0;
-        background-color: #F7F7F7;
-    }
+div.row.no-border[b-81a448qa2j] {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
 
-/* Button styles */
 .btn-custom[b-81a448qa2j],
 .btn-custom:focus[b-81a448qa2j],
 .btn-custom:active[b-81a448qa2j],
@@ -41,22 +40,19 @@ div.row[b-81a448qa2j] {
     box-shadow: none;
 }
 
-/* Text alignment styles */
 .text-right-md[b-81a448qa2j] {
     text-align: right;
 }
 
-    .text-right-md p[b-81a448qa2j] {
-        margin-right: 0;
-    }
+.text-right-md p[b-81a448qa2j] {
+    margin-right: 0;
+}
 
-/* Form control styles */
 .form-control:focus[b-81a448qa2j] {
     box-shadow: none;
     border-color: black;
 }
 
-/* Search form styles */
 .search-form[b-81a448qa2j] {
     display: flex;
     justify-content: space-between;
@@ -72,63 +68,6 @@ div.row[b-81a448qa2j] {
     padding-top: 23px;
 }
 
-/* Placeholder color */
 [b-81a448qa2j]::placeholder {
     color: gray;
-}
-
-
-
-
-div.col-md-8 h3.foodmenu-name-link a[b-81a448qa2j] {
-    color: black;
-    text-decoration: none;
-}
-
-
-    div.col-md-8 h3.foodmenu-name-link a:hover[b-81a448qa2j] {
-        color: darkgray;
-    }
-
-
-div.col-md-8 a[b-81a448qa2j] {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-
-    div.col-md-8 a:hover[b-81a448qa2j] {
-        color: darkgray !important;
-    }
-
-
-:-ms-input-placeholder[b-81a448qa2j] {
-    color: gray;
-}
-
-.form-control:focus[b-81a448qa2j] {
-    box-shadow: none;
-    border-color: black;
-}
-
-.btn-custom:focus[b-81a448qa2j] {
-    box-shadow: none;
-    border-color: black;
-}
-
-.search-form[b-81a448qa2j] {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.search-input[b-81a448qa2j] {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-
-.search-button[b-81a448qa2j] {
-    flex-shrink: 0;
-    padding-top: 23px;
 }

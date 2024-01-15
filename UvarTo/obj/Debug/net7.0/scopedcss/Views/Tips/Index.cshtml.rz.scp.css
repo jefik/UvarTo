@@ -7,8 +7,6 @@ div h2[b-sglxkwq506] {
     color: gray;
 }
 
-
-
 div #main[b-sglxkwq506] {
     border: 0px solid black;
 }
@@ -30,9 +28,6 @@ div.col-md-8 a:hover[b-sglxkwq506] {
     color: gray;
 }
 
-[b-sglxkwq506]::-ms-input-placeholder {
-    color: gray;
-}
 
 .btn-custom[b-sglxkwq506] {
     background-color: black;
@@ -82,39 +77,11 @@ div.col-md-8 a:hover[b-sglxkwq506] {
 }
 
 
-
-.tips-name-link a[b-sglxkwq506] {
-    color: black;
-    text-decoration: none;
-}
-
-div h3.tips-name-link[b-sglxkwq506] {
-    color: black;
-    text-decoration: none;
-}
-
-
-div.col-md-8 h3.tips-name-link:hover[b-sglxkwq506] {
-    color: darkgray;
-}
-
-
-div.col-md-8 a[b-sglxkwq506] {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-
-    div.col-md-8 a:hover[b-sglxkwq506] {
-        color: darkgray !important;
-    }
-
-
 .text-right-md[b-sglxkwq506] {
     text-align: right;
 }
 
-    .text-right-md p[b-sglxkwq506] {
-        margin-right: 0;
-    }
+.text-right-md p[b-sglxkwq506] {
+    margin-right: 0;
+}
 

@@ -7,46 +7,45 @@
     body {
         background-color: #F7F7F7;
     }
-    /* Add this style block to your existing stylesheet or in a separate CSS file */
     .form-group input:focus,
     .form-group textarea:focus {
-        outline: none; /* Remove the default blue outline */
-        border-color: #000 !important; /* Set your desired border color when focused */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; /* Add a subtle box shadow when focused */
+        outline: none;
+        border-color: #000 !important; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; 
     }
 </style>
 <body>
-<h1>Editing user with id:</h1><br />
-<p>@Model.Id</p>
-<hr />
-<div class="row">
-    <div class="col-md-12">
-        <form asp-action="Update" asp-controller="Admin" method="post" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-            <h5><label asp-for="FirstName" class="control-label"></label></h5>
-                    <input type="text" asp-for="FirstName" class="form-control"  />
-            <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
+    <h1>Editing user with id:</h1><br />
+    <p>@Model.Id</p>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Update" asp-controller="Admin" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
                 <div class="form-group">
-            <h5><label asp-for="LastName" class="control-label"></label></h5>
-                    <input type="text" asp-for="LastName" class="form-control"  />
-            <span asp-validation-for="LastName" class="text-danger"></span>
+                    <h5><label asp-for="FirstName" class="control-label"></label></h5>
+                            <input type="text" asp-for="FirstName" class="form-control"  />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <h5><label asp-for="LastName" class="control-label"></label></h5>
+                            <input type="text" asp-for="LastName" class="form-control"  />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <h5><label asp-for="Email" class="control-label"></label></h5>
+                            <input type="text" asp-for="Email" class="form-control "/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="row no-border">
+                    <div class="col-md-4">
+                        <p><input type="submit" value="Update" class="btn btn-primary btn-custom" /></p>
+                    </div>
+                    <div class="col-md-4 offset-md-4 text-right-md">
+                        <p> <a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to List of users</a></p>
+                    </div>
+                </div>
+            </form>
         </div>
-                <div class="form-group">
-            <h5><label asp-for="Email" class="control-label"></label></h5>
-                    <input type="text" asp-for="Email" class="form-control "/>
-            <span asp-validation-for="Email" class="text-danger"></span>
     </div>
-            <div class="row no-border">
-                <div class="col-md-4">
-                    <p><input type="submit" value="Update" class="btn btn-primary btn-custom" /></p>
-                </div>
-                <div class="col-md-4 offset-md-4 text-right-md">
-                    <p> <a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to List of users</a></p>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 </body>

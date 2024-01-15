@@ -211,13 +211,12 @@ div.row[b-81a448qa2j] {
     background-color: #EEEEEE;
 }
 
-    div.row.no-border[b-81a448qa2j] {
-        margin: 0;
-        padding: 0;
-        background-color: #F7F7F7;
-    }
+div.row.no-border[b-81a448qa2j] {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
 
-/* Button styles */
 .btn-custom[b-81a448qa2j],
 .btn-custom:focus[b-81a448qa2j],
 .btn-custom:active[b-81a448qa2j],
@@ -229,22 +228,19 @@ div.row[b-81a448qa2j] {
     box-shadow: none;
 }
 
-/* Text alignment styles */
 .text-right-md[b-81a448qa2j] {
     text-align: right;
 }
 
-    .text-right-md p[b-81a448qa2j] {
-        margin-right: 0;
-    }
+.text-right-md p[b-81a448qa2j] {
+    margin-right: 0;
+}
 
-/* Form control styles */
 .form-control:focus[b-81a448qa2j] {
     box-shadow: none;
     border-color: black;
 }
 
-/* Search form styles */
 .search-form[b-81a448qa2j] {
     display: flex;
     justify-content: space-between;
@@ -260,68 +256,10 @@ div.row[b-81a448qa2j] {
     padding-top: 23px;
 }
 
-/* Placeholder color */
 [b-81a448qa2j]::placeholder {
     color: gray;
 }
-
-
-
-
-div.col-md-8 h3.foodmenu-name-link a[b-81a448qa2j] {
-    color: black;
-    text-decoration: none;
-}
-
-
-    div.col-md-8 h3.foodmenu-name-link a:hover[b-81a448qa2j] {
-        color: darkgray;
-    }
-
-
-div.col-md-8 a[b-81a448qa2j] {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-
-    div.col-md-8 a:hover[b-81a448qa2j] {
-        color: darkgray !important;
-    }
-
-
-:-ms-input-placeholder[b-81a448qa2j] {
-    color: gray;
-}
-
-.form-control:focus[b-81a448qa2j] {
-    box-shadow: none;
-    border-color: black;
-}
-
-.btn-custom:focus[b-81a448qa2j] {
-    box-shadow: none;
-    border-color: black;
-}
-
-.search-form[b-81a448qa2j] {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.search-input[b-81a448qa2j] {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-
-.search-button[b-81a448qa2j] {
-    flex-shrink: 0;
-    padding-top: 23px;
-}
 /* _content/UvarTo.Web/Views/Foodmenu/userItems.cshtml.rz.scp.css */
-/* General styles */
 div h2[b-5bqknlrikf] {
     text-align: center;
 }
@@ -358,7 +296,6 @@ div.no-border[b-5bqknlrikf] {
     padding: 0;
 }
 
-/* Button styles */
 .btn-custom[b-5bqknlrikf],
 .btn-custom:focus[b-5bqknlrikf],
 .btn-custom:active[b-5bqknlrikf],
@@ -370,7 +307,6 @@ div.no-border[b-5bqknlrikf] {
     box-shadow: none;
 }
 
-/* Text alignment styles */
 .text-right-md[b-5bqknlrikf] {
     text-align: right;
 }
@@ -379,7 +315,6 @@ div.no-border[b-5bqknlrikf] {
     margin-right: 0;
 }
 
-/* Add this style block to your existing stylesheet or in a separate CSS file */
 #tipsContainer .row .col-md-8 h3.tips-name-link a[b-5bqknlrikf] {
     color: black !important;
 }
@@ -388,13 +323,11 @@ div.no-border[b-5bqknlrikf] {
     color: darkgray !important;
 }
 
-/* Form control styles */
 .form-control:focus[b-5bqknlrikf] {
     box-shadow: none;
     border-color: black;
 }
 
-/* Search form styles */
 .search-form[b-5bqknlrikf] {
     display: flex;
     justify-content: space-between;
@@ -410,9 +343,64 @@ div.no-border[b-5bqknlrikf] {
     padding-top: 23px;
 }
 
-/* Placeholder color */
 [b-5bqknlrikf]::placeholder {
     color: gray;
+}
+/* _content/UvarTo.Web/Views/Home/Index.cshtml.rz.scp.css */
+body[b-ye1d97pjfb] {
+}
+
+.row p[b-ye1d97pjfb] {
+    word-wrap: break-word;
+}
+
+div.row p[b-ye1d97pjfb] {
+    margin: 10px 0 0 0;
+}
+
+div.row[b-ye1d97pjfb] {
+    padding: 16px 5px 15px 5px;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+    border: 0px solid black;
+}
+
+div.row.main[b-ye1d97pjfb] {
+    margin-top: 25px;
+    background-color: #EEEEEE;
+    border: 0px solid black;
+}
+
+.no-border[b-ye1d97pjfb] {
+    border: 0px solid black;
+}
+
+.button[b-ye1d97pjfb] {
+    margin-top: 8px;
+}
+
+.form-group button[b-ye1d97pjfb] {
+    margin-top: 15px;
+    padding: 10px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+div h2[b-ye1d97pjfb] {
+    text-align: center;
+}
+
+[b-ye1d97pjfb]::placeholder {
+    color: gray;
+}
+
+div.row[b-ye1d97pjfb] {
+    margin-top: 5px;
+}
+
+div #main[b-ye1d97pjfb] {
+    border: 0px solid black;
 }
 /* _content/UvarTo.Web/Views/Recipes/Create.cshtml.rz.scp.css */
 body[b-im1fwmecoi] {
@@ -604,7 +592,10 @@ div.row p[b-pirlzu5q3t] {
 }
 
 div.row[b-pirlzu5q3t] {
-    margin-top: 5px;
+    padding: 16px 5px 15px 5px;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+    border: 0px solid black;
 }
 
 .no-border[b-pirlzu5q3t] {
@@ -615,14 +606,13 @@ div.row[b-pirlzu5q3t] {
     text-align: right;
 }
 
-    .text-right-md p[b-pirlzu5q3t] {
-        margin-right: 0;
-    }
-
+.text-right-md p[b-pirlzu5q3t] {
+    margin-right: 0;
+}
 
 #toggleFilterButton[b-pirlzu5q3t] {
-    margin: 15px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px;
     border: 0;
     background-color: black;
     color: white;
@@ -633,8 +623,8 @@ div.row[b-pirlzu5q3t] {
 }
 
 .form-group button[b-pirlzu5q3t] {
-    margin: 15px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px;
     border: 0;
     background-color: black;
     color: white;
@@ -650,28 +640,25 @@ div.row[b-pirlzu5q3t] {
 }
 
 .recipe-text[b-pirlzu5q3t] {
-    max-height: 50px; /* Change this value as needed */
+    max-height: 50px; 
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/* Style the thumb (the draggable part of the slider) */
+/* Style the the draggable part of the slider */
 .form-group #cookTimeRangeFilter[b-pirlzu5q3t]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove the default styles on Safari */
-    width: 20px; /* Set the thumb width as needed */
-    height: 20px; /* Set the thumb height as needed */
-    background: black; /* Set the thumb color to black */
-    border: 10px solid #000000; /* Add a border for the thumb */
-    border-radius: 50%; /* Create a round thumb */
-    cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    -webkit-appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    background: black; 
+    border: 10px solid #000000;
+    border-radius: 50%; 
+    cursor: pointer; 
 }
 
 /* Style the range value span */
 .form-group #cookTimeRangeValue[b-pirlzu5q3t] {
-    color: black; /* Set the text color to black to match the slider */
+    color: black; 
 }
-
-
-
 
 div h2[b-pirlzu5q3t] {
     text-align: center;
@@ -689,8 +676,6 @@ div #main[b-pirlzu5q3t] {
     border: 0px solid black;
 }
 
-
-
 .recipe-name-link a[b-pirlzu5q3t] {
     color: black;
     text-decoration: none;
@@ -701,21 +686,18 @@ div h3.recipe-name-link[b-pirlzu5q3t] {
     text-decoration: none;
 }
 
-
 div.col-md-8 h3.recipe-name-link:hover[b-pirlzu5q3t] {
     color: darkgray;
 }
-
 
 div.col-md-8 a[b-pirlzu5q3t] {
     color: black !important;
     text-decoration: none !important;
 }
 
-
-    div.col-md-8 a:hover[b-pirlzu5q3t] {
-        color: darkgray !important;
-    }
+div.col-md-8 a:hover[b-pirlzu5q3t] {
+    color: darkgray !important;
+}
 /* _content/UvarTo.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -956,8 +938,6 @@ div h2[b-sglxkwq506] {
     color: gray;
 }
 
-
-
 div #main[b-sglxkwq506] {
     border: 0px solid black;
 }
@@ -979,9 +959,6 @@ div.col-md-8 a:hover[b-sglxkwq506] {
     color: gray;
 }
 
-[b-sglxkwq506]::-ms-input-placeholder {
-    color: gray;
-}
 
 .btn-custom[b-sglxkwq506] {
     background-color: black;
@@ -1031,41 +1008,13 @@ div.col-md-8 a:hover[b-sglxkwq506] {
 }
 
 
-
-.tips-name-link a[b-sglxkwq506] {
-    color: black;
-    text-decoration: none;
-}
-
-div h3.tips-name-link[b-sglxkwq506] {
-    color: black;
-    text-decoration: none;
-}
-
-
-div.col-md-8 h3.tips-name-link:hover[b-sglxkwq506] {
-    color: darkgray;
-}
-
-
-div.col-md-8 a[b-sglxkwq506] {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-
-    div.col-md-8 a:hover[b-sglxkwq506] {
-        color: darkgray !important;
-    }
-
-
 .text-right-md[b-sglxkwq506] {
     text-align: right;
 }
 
-    .text-right-md p[b-sglxkwq506] {
-        margin-right: 0;
-    }
+.text-right-md p[b-sglxkwq506] {
+    margin-right: 0;
+}
 
 /* _content/UvarTo.Web/Views/Tips/userItems.cshtml.rz.scp.css */
 /* General styles */

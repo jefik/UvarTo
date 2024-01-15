@@ -4,7 +4,6 @@
         background-color: #F7F7F7;
     }
 
-    /* Button styles */
     .btn-custom,
     .btn-custom:focus,
     .btn-custom:active,
@@ -19,7 +18,6 @@
     div.row {
         padding: 16px 5px 5px 5px;
         margin-top: 15px;
-        border: 0 groove #393E46;
         background-color: #EEEEEE;
     }
 
@@ -53,12 +51,15 @@
         </p>
     </div>
     <div class="row no-border">
+            <div class="col-md-4">
+            
             @if (User.IsInRole("Admin"))
             {
                 <div class="col-md-4">
                     <p><a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-block btn-custom">Edit</a></p>
-        </div>
-        }
+                 </div>
+            }
+            </div>
         <div class="col-md-4 offset-md-4 text-right-md">
             <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a></p>
         </div>

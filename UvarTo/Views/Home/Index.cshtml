@@ -1,73 +1,164 @@
-﻿@{
+﻿@model UvarTo.Domain.Entities.Together
+
+
+@{
     ViewData["Title"] = "Home Page";
     var userFirstName = ViewData["UserFirstName"] as string;
+    var counter = 0;
+    var counter1 = 0;
+    var counter2 = 0;
+
 }
 <style>
     body {
         background-color: #F7F7F7;
     }
+    .name-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+    div h3.name-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+    div h3.name-link a:hover {
+        color: darkgray;
+    }
+
+    div a {
+        color: white;
+        text-decoration: none !important;
+    }
+
+    div a:hover {
+        color: darkgray !important;
+    }
+
+    div .text-center {
+        text-align: center;
+    }
 </style>
 <body>
 <div class="text-center">
     <h1 class="display-4">
-        Welcome on UvarTo
-
+        Welcome on UvarTo - Your Culinary Haven
     </h1>
-    <p>Welcome! @userFirstName</p>
+        @if (User.IsInRole("User"))
+        {
+            <h5>Welcome! @userFirstName</h5>
+        }
+        @if (User.IsInRole("Admin"))
+        {
+            <h5>Welcome Admin! @userFirstName</h5>
+        }
+    <p>
+        Discover a world of flavors, where every dish tells a unique story.<br /> Whether you're a passionate chef, a food enthusiast, or just someone looking for a delightful culinary experience, you're in the right place.
+    </p>
+    <p>
+            Explore mouthwatering food menus, dive into creative recipes, and uncover valuable tricks and tips from our vibrant community.<br /> Join us on a delicious journey and let the aroma of good food fill your senses.
+        </p>
+    <p>
+        Happy cooking and savoring!
+    </p>
+       
 </div>
-@*
-    POKUS O ZOBRAZENÍ 3 TABLES VE 3 SLOUPCÍCH NEFUNKČNÍ
-    <div class="row">
-        <div class="col-md-4">
-            @if (Model != null)
-            {
-                for (int i = 0; i<4; i++){
-                    var item = Model;
-                    <div class="col-md-12">
-                        <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="max-width: auto; height: 258px;">
-                                </div>
 
-                                <div class="col-md-12">
-                                    <p>@item.RecipeCategory</p>
-                                    <h3 class="recipe-name-link">
-                                        <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
-                                    </h3>
-                                    <p>Popis: @item.RecipeText</p>
-                                    <p>Náročnost: @item.Difficulty</p>
-                                    <p>Doba přípravy: @item.CookTime Minut</p>
-                                </div>
-                            </div>
+    
+<div class="row main">
+        <div class="col-md-12">
+            <h2>Recipes</h2>
+                @foreach (var item in Model.Recipes)
+                {
+                    item.RecipeText = item.RecipeText.Length > 60 ? item.RecipeText.Substring(0, 60) + "..." : item.RecipeText;
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
+                        </div>
+
+                        <div class="col-md-4">
+         
+                            <h3 class="name-link">
+                            <a asp-controller="Recipes" asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
+                            </h3>
+                            <p><strong>Category:</strong> @item.RecipeCategory</p>
+                            <p class="recipe-text card-text"><strong>Recipe describtion:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                            <p><strong>Difficulty:</strong> @item.Difficulty from 10</p>
+                            <p><strong>Cook time:</strong> @item.CookTime Minut</p>
                         </div>
                     </div>
+                    counter++;
+
+                    if (counter >= 3)
+                    {
+                        break;
+                    }
                 }
-
-            }
+            <div class="text-center">
+                <p>
+                    <a asp-controller="Recipes" asp-action="Index" class="btn btn-primary btn-block btn-custom">View more recipes</a>
+                </p>
+            </div>
         </div>
-        <div class="col-md-4">
-            @if (Model != null)
+        
+        
+</div>
+<div class="row main">
+        <div class="col-md-6">
+            <h2>Tips and tricks</h2>
+            @foreach (var tip in Model.Tips)
             {
-            for (int i = 0; i<4; i++) {
-                var item=Model;
+                tip.TipText = tip.TipText.Length > 60 ? tip.TipText.Substring(0, 60) + "..." : tip.TipText;
+
                 <div class="row">
-
-
                     <div class="col-md-8">
-                        <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
-                        <p>@item.TipText</p>
-
-                        <div class="button">
-                            <a asp-action="Edit" asp-route-id="@item.Id" style="color: black">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id" style="color: black">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id" style="color: black">Delete</a>
-                        </div>
+                        <h3 class="name-link"><a asp-controller="Tips" asp-action="Details" asp-route-id="@tip.Id">@tip.TipName</a></h3>
+                        <p> @Html.DisplayFor(model => tip.TipText) </p>
                     </div>
                 </div>
+                counter1++;
+
+                if (counter1 >= 3)
+                {
+                    break;
+                }
             }
-            }
+            
+            <div class="text-center">
+                <p>
+                    <a asp-controller="Tips" asp-action="Index" class="btn btn-primary btn-block btn-custom">View more tips</a>
+                </p>
+            </div>
         </div>
-        <div class="col-sm-4">.col</div>
-</div>*@
+
+        <div class="col-md-6">
+            <h2>Foodmenus</h2>
+            @foreach (var item in Model.Foodmenus)
+            {
+                        item.FoodmenuText = item.FoodmenuText.Length > 60 ? item.FoodmenuText.Substring(0, 60) + "..." : item.FoodmenuText;
+
+                        <div class="row">
+                            <div class="col-md-8">
+                        <h3 class="name-link"><a asp-controller="Foodmenu" asp-action="Details" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
+                                <p> @Html.DisplayFor(model => item.FoodmenuText) </p>
+                            </div>
+                       
+                        </div>
+                    counter2++;
+
+                    if (counter2 >= 3)
+                    {
+                        break;
+                    }
+            }
+            
+            <div class="text-center">
+                <p>
+                    <a asp-controller="Foodmenu" asp-action="Index" class="btn btn-primary btn-block btn-custom">View more foodmenus</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>

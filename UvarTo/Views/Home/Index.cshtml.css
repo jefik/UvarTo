@@ -1,0 +1,55 @@
+﻿body {
+}
+
+.row p {
+    word-wrap: break-word;
+}
+
+div.row p {
+    margin: 10px 0 0 0;
+}
+
+div.row {
+    padding: 16px 5px 15px 5px;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+    border: 0px solid black;
+}
+
+div.row.main {
+    margin-top: 25px;
+    background-color: #EEEEEE;
+    border: 0px solid black;
+}
+
+.no-border {
+    border: 0px solid black;
+}
+
+.button {
+    margin-top: 8px;
+}
+
+.form-group button {
+    margin-top: 15px;
+    padding: 10px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+div h2 {
+    text-align: center;
+}
+
+::placeholder {
+    color: gray;
+}
+
+div.row {
+    margin-top: 5px;
+}
+
+div #main {
+    border: 0px solid black;
+}

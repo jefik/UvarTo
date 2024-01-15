@@ -1,5 +1,7 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace UvarTo.Domain.Entities
 { 
     public class Recipes

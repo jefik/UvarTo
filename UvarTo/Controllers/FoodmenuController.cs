@@ -9,10 +9,12 @@ namespace UvarTo.Web.Controllers
     public class FoodmenuController : Controller
     {
         private readonly IFoodmenuService _foodmenuService;
+        private readonly ISearchFService _searchFService;
 
-        public FoodmenuController(IFoodmenuService foodmenuService)
-        {
+        public FoodmenuController(IFoodmenuService foodmenuService, ISearchFService searchFService)
+        {      
             _foodmenuService = foodmenuService;
+            _searchFService = searchFService;
         }
         public async Task<IActionResult> UserItems()
         {
@@ -24,13 +26,19 @@ namespace UvarTo.Web.Controllers
             return View("userItems", userItems);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> ShowSearchResults(string searchPhrase)
+        {
+            var searchResults = await _searchFService.GetFSearchResults(searchPhrase);
+            return View("Index", searchResults);
+        }
         public async Task<IActionResult> Index()
         {
-            var tips = await _foodmenuService.GetAllFoodmenus();
+            var foodmenus = await _foodmenuService.GetAllFoodmenus();
 
-            if (tips != null)
+            if (foodmenus != null)
             {
-                return View(tips);
+                return View(foodmenus);
             }
             else
             {

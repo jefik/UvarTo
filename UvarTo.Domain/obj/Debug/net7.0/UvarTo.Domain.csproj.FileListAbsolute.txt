@@ -34,3 +34,15 @@ A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.dll
 A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\refint\UvarTo.Domain.dll
 A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.pdb
 A:\kkk\UvarTo\UvarTo\UvarTo.Domain\obj\Debug\net7.0\ref\UvarTo.Domain.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.deps.json
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\bin\Debug\net7.0\UvarTo.Domain.pdb
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.csproj.AssemblyReference.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.AssemblyInfoInputs.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.AssemblyInfo.cs
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\refint\UvarTo.Domain.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\UvarTo.Domain.pdb
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Domain\obj\Debug\net7.0\ref\UvarTo.Domain.dll

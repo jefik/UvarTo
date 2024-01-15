@@ -1,27 +1,12 @@
 ﻿
-div h2 {
-    text-align: center;
-}
-
 ::placeholder {
     color: gray;
-}
-div #main {
-    margin-bottom: 25px;
-    background-color: #F7F7F7;
-}
-div.row {
-    background-color: #EEEEEE;
-    margin-top: 5px;
 }
 
 :-ms-input-placeholder {
     color: gray;
 }
 
-::-ms-input-placeholder {
-    color: gray;
-}
 
 .btn-custom {
     background-color: black;
@@ -32,14 +17,14 @@ div.row {
     border-color: black;
 }
 
-    .btn-custom:focus,
-    .btn-custom:active,
-    .btn-custom:hover {
-        background-color: black;
-        color: white;
-        border-color: black;
-        box-shadow: none;
-    }
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+    box-shadow: none;
+}
 
 
 .form-control:focus {

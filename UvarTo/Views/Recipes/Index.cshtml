@@ -14,6 +14,7 @@
     }
 
     div #main {
+        padding: 0px;
         margin-bottom: 25px;
         background-color: #F7F7F7;
     }
@@ -28,13 +29,19 @@
         color: darkgray;
     }
     
+    div.row {
+        margin-bottom: 15px;
+    }
+    h2 {
+        text-align: center;
+    }
 </style>
 
 @{
     ViewData["Title"] = "Index";
 }
 <body>
-<h1>Recipes</h1>
+<h2>Recipes</h2>
 <div class="container">
     <div class="row no-border" id="main">
         @if (User.IsInRole("Admin") || User.IsInRole("User"))
@@ -49,75 +56,68 @@
         @if (User.IsInRole("Admin") || User.IsInRole("User"))
         {
             <div class="col-md-4 offset-md-4 text-right-md">
-                <!-- Add offset for the second column -->
                 <p>
                     <a asp-action="UserItems" asp-controller="Recipes" class="btn btn-primary btn-block btn-custom">View My Recipes</a>
                 </p>
             </div>
         }
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <!-- Toggle Filter Button -->
-            <button id="toggleFilterButton" class="btn btn-primary" onclick="toggleFilterForm()">Toggle Filter</button>
-            <form id="filterForm" style="display: none;">
-                <!-- Filter Form -->
+    <div class="row" id="main">
+            <div class="col-md-12">
+                <button id="toggleFilterButton" class="btn btn-primary" onclick="toggleFilterForm()">Toggle Filter</button>
+                <form id="filterForm" style="display: none;">
 
-                <div class="form-group">
-                    <label for="difficultyFilter">Náročnost:</label>
-                    <select id="difficultyFilter" class="form-control">
-                        <option value="">Všechny</option>
-                        @for (int i = 1; i <= 10; i++)
-                        {
-                            <option value="@i">@i</option>
-                        }
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="cookTimeRangeFilter">Doba přípravy (minuty):</label>
-                    <input type="range" id="cookTimeRangeFilter" min="0" max="240" step="1">
-                    <span id="cookTimeRangeValue">0</span> minut
-                </div>
+                    <div class="form-group">
+                        <label for="difficultyFilter">Difficulty:</label>
+                        <select id="difficultyFilter" class="form-control">
+                            <option value="">All</option>
+                            @for (int i = 1; i <= 10; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cookTimeRangeFilter">Cook time (minutes):</label>
+                        <input type="range" id="cookTimeRangeFilter" min="0" max="240" step="1">
+                        <span id="cookTimeRangeValue">0</span> minutes
+                    </div>
 
-                <div class="form-group">
-                    <label for="categoryFilter">Kategorie:</label>
-                    <select id="categoryFilter" class="form-control">
-                        <option value="">Všechny</option>
-                        <!-- Replace with your category options -->
-                        <option value="Vegan">Veganské</option>
-                        <option value="Vegetariánské">Vegetariánské</option>
-                        <option value="Bezlepkové">Bezlepkové</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <button id="filtrovat" type="button" class="btn btn-primary" onclick="filterRecipes()">Filtrovat</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-9">
-            <!-- Display Filtered Recipes -->
-                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="categoryFilter">Category:</label>
+                        <select id="categoryFilter" class="form-control">
+                            <option value="">All</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Vegetariánské">Vegetarian</option>
+                            <option value="Bezlepkové">Gluten free</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button id="filtrovat" type="button" class="btn btn-primary" onclick="filterRecipes()">Filter</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    
+        
+        <div class="col-md-12">
                     @foreach (var item in Model)
                     {
                         item.RecipeText = item.RecipeText.Length > 60 ? item.RecipeText.Substring(0, 60) + "..." : item.RecipeText;
 
-                        <div class="recipe mb-4" data-difficulty="@item.Difficulty" data-cook-time="@item.CookTime" data-category="@item.RecipeCategory">
                             <div class="row">
                                 <div class="col-md-4">
                                     <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
                                 </div>
 
-                                <div class="col-md-4">
-
-                                    @* <h3>@item.RecipeName</h3> *@
-                                    @* <h3 class="recipe-name-link">@Html.ActionLink(@item.RecipeName, "Edit", "Recipes")</h3>> *@
+                                <div class="col-md-4">                               
                                     <h3 class="recipe-name-link">
                                         <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                                     </h3>
-                                    <p><strong>Kategorie:</strong> @item.RecipeCategory</p>
-                                    <p class="recipe-text card-text"><strong>Popis:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
-                                    <p><strong>Náročnost:</strong> @item.Difficulty</p>
-                                    <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
+                                    <p><strong>Category:</strong> @item.RecipeCategory</p>
+                                    <p class="recipe-text card-text"><strong>Recipe describtion:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                                    <p><strong>Difficulty:</strong> @item.Difficulty from 10</p>
+                                    <p><strong>Cook time:</strong> @item.CookTime Minut</p>
                                 </div>
                                 @if (User.IsInRole("Admin")){
                                 <div class="col-md-4 right">
@@ -130,11 +130,8 @@
                                 </div>
                                     }
                             </div>
-                        </div>
-                    }
-                </div>
-        </div>
-    </div>
+                    }        
+        </div> 
 </div>
 </body>
 

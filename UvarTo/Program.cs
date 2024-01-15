@@ -33,6 +33,9 @@ builder.Services.AddScoped<ISearchRService, SearchRService>();
 
 builder.Services.AddScoped<ISearchTService, SearchTService>();
 
+builder.Services.AddScoped<ISearchFService, SearchFService>();
+
+
 builder.Services.AddScoped<ITipsService, TipsService>();
 
 builder.Services.AddScoped<IFoodmenuService, FoodmenuService>();

@@ -21,17 +21,14 @@
     <None Include="Views\Admin\Edit.cshtml" />
     <None Include="Views\Admin\Index.cshtml" />
     <None Include="Views\Foodmenu\Create.cshtml" />
-    <None Include="Views\Foodmenu\Delete.cshtml" />
     <None Include="Views\Foodmenu\Details.cshtml" />
     <None Include="Views\Foodmenu\Edit.cshtml" />
     <None Include="Views\Foodmenu\Index.cshtml" />
-    <None Include="Views\Foodmenu\ShowSearchForm.cshtml" />
     <None Include="Views\Tips\Create.cshtml" />
     <None Include="Views\Tips\Delete.cshtml" />
     <None Include="Views\Tips\Details.cshtml" />
     <None Include="Views\Tips\Edit.cshtml" />
     <None Include="Views\Tips\Index.cshtml" />
-    <None Include="Views\Tips\ShowSearchForm.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

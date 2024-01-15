@@ -46,11 +46,18 @@ namespace UvarTo.Application.Implementation
             var userItems = _context.Recept.Where(item => item.userId == userId).ToList();
             return userItems;
         }
+        public string GetUserName()
+        {
+            var userName = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
+            return userName;
+        }
 
         // GET: Recipes/Create
         public async Task AddRecipe(recipeviewmodel recipes)
         {
             var userId = GetCurrentId();
+            var userName = GetUserName();
+
             if (recipes.photo != null)
             {
                 string uploadFolder = Path.Combine(hostingenvironment.WebRootPath, "images");
@@ -100,7 +107,7 @@ namespace UvarTo.Application.Implementation
                 RecipeName = existingRecipe.RecipeName,
                 RecipeCategory = existingRecipe.RecipeCategory,
                 RecipeText = existingRecipe.RecipeText,
-                photo = null // Initialize PhotoModel with null or any default values as needed
+                photo = null 
             };
 
             return viewModel;
@@ -128,7 +135,6 @@ namespace UvarTo.Application.Implementation
                 }
 
                 string imageUrl = @"\images\" + uniqueFileName;
-                // Update other properties
                 existingRecipe.Difficulty = recipes.Difficulty;
                 existingRecipe.CookTime = recipes.CookTime;
                 existingRecipe.RecipeName = recipes.RecipeName;

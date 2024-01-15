@@ -22,9 +22,16 @@ namespace UvarTo.Application.Implementation
 
         public async Task<List<Recipes>> GetRSearchResults(string searchPhrase)
         {
-            return await _context.Recept
-                .Where(j => j.RecipeText.Contains(searchPhrase))
-                .ToListAsync();
+            if (string.IsNullOrEmpty(searchPhrase))
+            {
+                return await _context.Recept.ToListAsync();
+            }
+            else
+            {
+                return await _context.Recept
+                    .Where(j => j.RecipeText.Contains(searchPhrase))
+                    .ToListAsync();
+            }
         }
 
     }

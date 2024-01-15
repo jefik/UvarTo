@@ -6,12 +6,6 @@
 
 @model IEnumerable<UvarTo.Domain.Entities.Foodmenu>
 
-
-@*<head>
-    <link href="@Url.Content("~/css/Foodmenu.css")" rel="stylesheet" type="text/css"/>
-
-</head>
-*@
 <style>
     div.right {
         background-color: #EEEEEE;
@@ -29,46 +23,58 @@
         text-decoration: none;
     }
 
-
     div.col-md-8 h3.foodmenu-name-link a:hover {
         color: darkgray;
     }
-
 
     div.col-md-8 a {
         color: black !important;
         text-decoration: none !important;
     }
 
-
     div.col-md-8 a:hover {
         color: darkgray !important;
     }
 
+    .search-form {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .search-input {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .search-button {
+        flex-shrink: 0;
+        padding-top: 23px;
+    }
+
+
+    ::placeholder {
+        color: gray;
+    }
 </style>
 <body>
     @{
         ViewData["Title"] = "Index";
-
-
     }
 
     <div class="container">
         <div class="row justify-content-md-center no-border" id="main">
-            <h2>Foodmenus</h2>
-            @* <!-- Search Box -->
+            <h2>Foodmenus</h2>           
             <div class="col-md-4">
                 <form asp-action="ShowSearchResults" class="search-form">
                     <div class="form-group search-input">
                         <label for="searchPhrase" class="control-label"></label>
-                        <input name="SearchPhrase" class="form-control" placeholder="Any time-saving tip or trick hmm.." />
+                        <input name="SearchPhrase" class="form-control" placeholder="Any diet for weight loss.." />
                     </div>
                     <div class="form-group search-button">
                         <input type="submit" value="Search" class="btn btn-primary btn-block btn-custom" />
                     </div>
                 </form>
-            </div> *@
+            </div>
         </div>
         <div class="row no-border">
             @if (User.IsInRole("Admin") || User.IsInRole("User"))
@@ -83,7 +89,6 @@
             @if (User.IsInRole("Admin") || User.IsInRole("User"))
             {
                 <div class="col-md-4 offset-md-4 text-right-md">
-                    <!-- Add offset for the second column -->
                     <p>
                         <a asp-action="UserItems" asp-controller="Foodmenu" class="btn btn-primary btn-block btn-custom">View My Foodmenus</a>
                     </p>
@@ -91,7 +96,6 @@
             }
         </div>
 
-        <!-- Display Filtered Tips -->
         @if (Model.Any())
         {
             <div id="foodmenuContainer">
@@ -121,7 +125,6 @@
         }
         else
         {
-            <!-- Message for No Tips Found -->
             <div style="text-align: center;">
                 <p id="foodmenuText">Not any foodmenu found</p>
             </div>

@@ -338,3 +338,12 @@ A:\kkk\UvarTo\UvarTo\UvarTo.Test\obj\Debug\net7.0\ref\UvarTo.Test.dll
 A:\kkk\UvarTo\UvarTo\UvarTo.Test\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 A:\kkk\UvarTo\UvarTo\UvarTo.Test\bin\Debug\net7.0\xunit.runner.reporters.netcoreapp10.dll
 A:\kkk\UvarTo\UvarTo\UvarTo.Test\bin\Debug\net7.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.csproj.AssemblyReference.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.AssemblyInfoInputs.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.AssemblyInfo.cs
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.csproj.CoreCompileInputs.cache
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\refint\UvarTo.Test.dll
+C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo.Test\obj\Debug\net7.0\UvarTo.Test.pdb

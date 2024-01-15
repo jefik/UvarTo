@@ -23,9 +23,16 @@ namespace UvarTo.Application.Implementation
         //Same as the SearchRService if we could make into one method would be really cool)
         public async Task<List<Tips>> GetTSearchResults(string searchPhrase)
         {
-            return await _context.Tips
-                .Where(j => j.TipName.Contains(searchPhrase))
-                .ToListAsync();
+            if (string.IsNullOrEmpty(searchPhrase))
+            {
+                return await _context.Tips.ToListAsync();
+            }
+            else
+            {
+                return await _context.Tips
+                    .Where(j => j.TipName.Contains(searchPhrase))
+                    .ToListAsync();
+            }
         }
     }
 }

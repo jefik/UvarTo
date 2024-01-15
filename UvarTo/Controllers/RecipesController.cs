@@ -19,7 +19,7 @@ namespace UvarTo.Web.Controllers
 
         public async Task<IActionResult> UserItems()
         {
-            var userId = _recipeService.GetCurrentId(); // Implement the logic to get the current user's ID here
+            var userId = _recipeService.GetCurrentId();
 
             var userItems = _recipeService.GetUserRecipes(userId);
 
@@ -60,12 +60,13 @@ namespace UvarTo.Web.Controllers
             }
 
             var recept = await _recipeService.GetRecipeById(id.Value);
+            var userName = _recipeService.GetUserName();
 
             if (recept == null)
             {
                 return NotFound();
             }
-
+            ViewBag.UserName = userName;
             return View(recept);
         }
 

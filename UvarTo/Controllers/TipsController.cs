@@ -20,7 +20,7 @@ namespace UvarTo.Controllers
 
         public async Task<IActionResult> UserItems()
         {
-            var userId = _tipsService.GetCurrentId(); // Implement the logic to get the current user's ID here
+            var userId = _tipsService.GetCurrentId();
 
             var userItems = _tipsService.UserItems(userId);
 
@@ -147,35 +147,6 @@ namespace UvarTo.Controllers
             TempData["SuccessMessage"] = "Tip deleted successfully.";
             return RedirectToAction("Index");
         }
-        //public async Task<IActionResult> Delete(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var tips = await _tipsService.GetTipById(id.Value);
-        //    if (tips == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(tips);
-        //}
-
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> DeleteConfirmed(int id)
-        //{
-        //    var result = await _tipsService.DeleteTip(id);
-        //    if (result)
-        //    {
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    else
-        //    {
-        //        return Problem("Entity set 'ApplicationDbContext.Tips' is null.");
-        //    }
-        //}
+        
     }
 }

@@ -5,7 +5,6 @@
     body {
         background-color: #F7F7F7;
     }
-    /* Add this style block to your existing stylesheet or in a separate CSS file */
     #foodmenuContainer .row .col-md-8 h3.foodmenu-name-link a {
         color: black !important;
         text-decoration: none;
@@ -23,41 +22,33 @@
 </style>
 
 <body>
-<h2>List of your added Foodmenus</h2>
-@* <p>User ID: @ViewBag.UserIdString</p> *@
-<p class="center">By clicking on its name you can edit</p>
-<div class="row right">
-        <p class="right"><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Foodmenu</a></p>
+    <h2>List of your added Foodmenus</h2>
+    <p class="center">By clicking on its name you can edit</p>
 
- </div>
+    <div class="row right">
+            <p class="right"><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Foodmenu</a></p>
+     </div>
 
-<div class="container">
-
-
-
-@if (Model.Any())
-{
-    <div id="foodmenuContainer">
-        @foreach (var item in Model)
-        {
-            <div class="row">
-                <div class="col-md-8">
-                    <h3 class="foodmenu-name-link"><a asp-action="Edit" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
-                    <p>@item.FoodmenuText</p>
+    <div class="container">
+    @if (Model.Any())
+    {
+        <div id="foodmenuContainer">
+            @foreach (var item in Model)
+            {
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="foodmenu-name-link"><a asp-action="Edit" asp-route-id="@item.id">@item.FoodmenuName</a></h3>
+                        <p>@item.FoodmenuText</p>
+                    </div>
+                    <div class="col-md-4 right">
+                         @using (Html.BeginForm("DeleteFoodmenu", "Foodmenu", new { id = item.id }, FormMethod.Post))
+                         {
+                            <button class="btn btn-primary btn-block btn-custom" type="submit">Delete My Foodmenu</button>
+                         }    
+                    </div>
                 </div>
-                <div class="col-md-4 right">
-                            @using (Html.BeginForm("DeleteFoodmenu", "Foodmenu", new { id = item.id }, FormMethod.Post))
-                            {
-                                <button class="btn btn-primary btn-block btn-custom" type="submit">Delete My Foodmenu</button>
-                            }
-                    @* <a class="btn btn-primary btn-block btn-custom" asp-controller="Foodmenu" asp-route-id="@item.id" asp-action="Delete">Delete</a> *@
-                            
-                </div>
-            </div>
-        }
+            }
+        </div>
+    }
     </div>
-}
-
-</div>
-
 </body>

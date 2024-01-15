@@ -23,13 +23,12 @@ div.row {
     background-color: #EEEEEE;
 }
 
-    div.row.no-border {
-        margin: 0;
-        padding: 0;
-        background-color: #F7F7F7;
-    }
+div.row.no-border {
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
 
-/* Button styles */
 .btn-custom,
 .btn-custom:focus,
 .btn-custom:active,
@@ -41,22 +40,19 @@ div.row {
     box-shadow: none;
 }
 
-/* Text alignment styles */
 .text-right-md {
     text-align: right;
 }
 
-    .text-right-md p {
-        margin-right: 0;
-    }
+.text-right-md p {
+    margin-right: 0;
+}
 
-/* Form control styles */
 .form-control:focus {
     box-shadow: none;
     border-color: black;
 }
 
-/* Search form styles */
 .search-form {
     display: flex;
     justify-content: space-between;
@@ -72,63 +68,6 @@ div.row {
     padding-top: 23px;
 }
 
-/* Placeholder color */
 ::placeholder {
     color: gray;
-}
-
-
-
-
-div.col-md-8 h3.foodmenu-name-link a {
-    color: black;
-    text-decoration: none;
-}
-
-
-    div.col-md-8 h3.foodmenu-name-link a:hover {
-        color: darkgray;
-    }
-
-
-div.col-md-8 a {
-    color: black !important;
-    text-decoration: none !important;
-}
-
-
-    div.col-md-8 a:hover {
-        color: darkgray !important;
-    }
-
-
-:-ms-input-placeholder {
-    color: gray;
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border-color: black;
-}
-
-.btn-custom:focus {
-    box-shadow: none;
-    border-color: black;
-}
-
-.search-form {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.search-input {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-
-.search-button {
-    flex-shrink: 0;
-    padding-top: 23px;
 }

@@ -12,6 +12,7 @@ namespace UvarTo.Application.Abstraction
         Task<List<Recipes>> GetAllRecipes();
         Task<Recipes> GetRecipeById(int id);
         public string GetCurrentId();
+        public string GetUserName();
         List<Recipes> GetUserRecipes(string userId);
         Task AddRecipe(recipeviewmodel recipes);
         Task <recipeviewmodel>GetRecipeForEdit(int? id);

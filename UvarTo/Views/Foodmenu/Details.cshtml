@@ -53,12 +53,15 @@
             </p>
         </div>
         <div class="row no-border">
+            <div class="col-md-4">
+            
             @if (User.IsInRole("Admin"))
             {
                 <div class="col-md-4">
                     <p><a asp-action="Edit" asp-route-id="@Model.id" class="btn btn-primary btn-block btn-custom">Edit</a></p>
                 </div>
             }
+            </div>
             <div class="col-md-4 offset-md-4 text-right-md">
                 <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Tips and Tricks</a></p>
             </div>

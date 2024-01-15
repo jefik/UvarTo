@@ -14,7 +14,7 @@
     div.right {
         background-color: #EEEEEE;
         text-align: right;
-        margin-top: 65px;
+        margin-top: 20px;
     }
 
     div.row.no-border {
@@ -22,7 +22,6 @@
         padding: 0;
         background-color: #F7F7F7;
     }
-
 </style>
 <body>
     @{
@@ -31,13 +30,9 @@
         
 }
 
-
-
-
 <div class="container">
-    <div class="row justify-content-md-center no-border " id="main">
+    <div class="row justify-content-md-center no-border" id="main">
         <h2>Tips and tricks</h2>
-        <!-- Search Box -->
         <div class="col-md-4" >
             <form asp-action="ShowSearchResults" class="search-form">
                 <div class="form-group search-input">
@@ -50,7 +45,7 @@
             </form>
         </div>
     </div>
-    <div class="row no-border">
+        <div class="row no-border">
         @if (User.IsInRole("Admin") || User.IsInRole("User"))
         {
             <div class="col-md-4">
@@ -63,7 +58,6 @@
         @if (User.IsInRole("Admin") || User.IsInRole("User"))
         {
             <div class="col-md-4 offset-md-4 text-right-md">
-                <!-- Add offset for the second column -->
                 <p>
                     <a asp-action="UserItems" asp-controller="Tips" class="btn btn-primary btn-block btn-custom">View My Tips and Tricks</a>
                 </p>
@@ -71,7 +65,6 @@
         }
     </div>
 
-    <!-- Display Filtered Tips -->
     @if (Model.Any())
     {
         <div id="tipsContainer">
@@ -79,17 +72,18 @@
             {
                     item.TipText = item.TipText.Length > 60 ? item.TipText.Substring(0, 60) + "..." : item.TipText;
 
-                    <div class="row">
+                <div class="row">
                     <div class="col-md-8">
                         <h3 class="tips-name-link"><a asp-action="Details" asp-route-id="@item.Id">@item.TipName</a></h3>
                             <p> @Html.DisplayFor(model => item.TipText) </p>
                     </div>
                     <div class="col-md-4 right">
-                        @using (Html.BeginForm("DeleteTips", "Tips", new { id = item.Id }, FormMethod.Post))
+                        @if (User.IsInRole("Admin")) {
+                        using (Html.BeginForm("DeleteTips", "Tips", new { id = item.Id }, FormMethod.Post))
                         {
                             <button class="btn btn-primary btn-block btn-custom" type="submit">Delete Tip</button>
                         }
-                        
+                        }
                     </div>
                 </div>
             }
@@ -97,7 +91,6 @@
     }
     else
     {
-        <!-- Message for No Tips Found -->
         <div style="text-align: center;">
             <p id="tipText">Not any tip or trick found</p>
         </div>
