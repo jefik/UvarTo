@@ -107,7 +107,7 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
+                                    <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 250px;">
                                 </div>
 
                                 <div class="col-md-4">                               
@@ -115,9 +115,9 @@
                                         <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                                     </h3>
                                     <p><strong>Category:</strong> @item.RecipeCategory</p>
-                                    <p class="recipe-text card-text"><strong>Recipe describtion:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                                    <p class="recipe-text card-text"><strong>Recipe description:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
                                     <p><strong>Difficulty:</strong> @item.Difficulty from 10</p>
-                                    <p><strong>Cook time:</strong> @item.CookTime Minut</p>
+                                    <p><strong>Cook time:</strong> @item.CookTime minutes</p>
                                 </div>
                                 @if (User.IsInRole("Admin")){
                                 <div class="col-md-4 right">

@@ -1111,3 +1111,4 @@ C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo
 C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo\obj\Debug\net7.0\UvarTo.Web.genruntimeconfig.cache
 C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo\obj\Debug\net7.0\ref\UvarTo.Web.dll
 C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+A:\kkk\UvarTo\UvarTo\UvarTo\obj\Debug\net7.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css

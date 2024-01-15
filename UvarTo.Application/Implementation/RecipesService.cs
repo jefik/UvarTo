@@ -37,7 +37,7 @@ namespace UvarTo.Application.Implementation
         }
         public string GetCurrentId()
         {
-            var userId = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userId = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
             return userId;
         }
 

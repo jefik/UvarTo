@@ -61,16 +61,17 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
+                                <img src="@item.ImageUrl" alt="Image" class="img-fluid" style="width: 400px; height: 250px;">
                             </div>
                             <div class="col-md-8">
+
                                 <h3 class="recipe-name-link">
-                                    <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
+                                    <a asp-controller="Recipes" asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
                                 </h3>
-                                    <p><strong>Kategorie:</strong> @item.RecipeCategory</p>
-                                    <p class="recipe-text card-text"><strong>Popis:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
-                                    <p><strong>Náročnost:</strong> @item.Difficulty</p>
-                                    <p><strong>Doba přípravy:</strong> @item.CookTime Minut</p>
+                                <p><strong>Category:</strong> @item.RecipeCategory</p>
+                                <p class="recipe-text card-text"><strong>Recipe description:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
+                                <p><strong>Difficulty:</strong> @item.Difficulty from 10</p>
+                                <p><strong>Cook time:</strong> @item.CookTime minutes</p>
                             </div>
                         </div>
                 }
