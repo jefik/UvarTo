@@ -12347,25 +12347,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\merak\\.nuget\\packages\\": {},
+    "C:\\Users\\Honza\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\UvarTo.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo\\UvarTo.Web.csproj",
       "projectName": "UvarTo.Web",
-      "projectPath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\UvarTo.Web.csproj",
-      "packagesPath": "C:\\Users\\merak\\.nuget\\packages\\",
-      "outputPath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo\\obj\\",
+      "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo\\UvarTo.Web.csproj",
+      "packagesPath": "C:\\Users\\Honza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\merak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Honza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -12381,14 +12381,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj": {
-              "projectPath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj"
+            "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj": {
+              "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Application\\UvarTo.Application.csproj"
             },
-            "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj": {
-              "projectPath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj"
+            "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj": {
+              "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Domain\\UvarTo.Domain.csproj"
             },
-            "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
-              "projectPath": "A:\\kkk\\UvarTo\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj"
+            "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Honza\\source\\repos\\UvarToGitFinal\\UvarTo\\UvarTo.Infrastructure\\UvarTo.Infrastructure.csproj"
             }
           }
         }

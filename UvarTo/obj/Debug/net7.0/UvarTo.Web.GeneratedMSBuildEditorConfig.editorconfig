@@ -9,145 +9,145 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UvarTo.Web
 build_property.RootNamespace = UvarTo.Web
-build_property.ProjectDir = A:\kkk\UvarTo\UvarTo\UvarTo\
+build_property.ProjectDir = C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = A:\kkk\UvarTo\UvarTo\UvarTo
+build_property.MSBuildProjectDirectory = C:\Users\Honza\source\repos\UvarToGitFinal\UvarTo\UvarTo
 build_property._RazorSourceGeneratorDebug = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/_AuthLayout.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX0F1dGhMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/Create.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Foodmenu/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/Details.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Foodmenu/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/Edit.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Foodmenu/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Home/Privacy.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/Details.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/Search.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/userItems.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/userItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1x1c2VySXRlbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Shared/Error.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/Delete.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/_ViewImports.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/_ViewStart.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Admin/Edit.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-gmzjxq2kgt
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Admin/Index.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jw2kdpsn95
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/Index.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Foodmenu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-81a448qa2j
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Foodmenu/userItems.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Foodmenu/userItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZG1lbnVcdXNlckl0ZW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-5bqknlrikf
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Home/Index.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-ye1d97pjfb
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/Create.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-im1fwmecoi
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/Edit.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-lcy672wrxj
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Recipes/Index.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Recipes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-pirlzu5q3t
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Shared/_Layout.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5m88q5hqm9
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/Create.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8yxpdwvscc
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/Details.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-sr51u6dsvl
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/Edit.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-j125bcocpc
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/Index.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-sglxkwq506
 
-[A:/kkk/UvarTo/UvarTo/UvarTo/Views/Tips/userItems.cshtml]
+[C:/Users/Honza/source/repos/UvarToGitFinal/UvarTo/UvarTo/Views/Tips/userItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwc1x1c2VySXRlbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xgqugxc4ja

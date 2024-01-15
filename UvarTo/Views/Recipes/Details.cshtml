@@ -4,11 +4,32 @@
     ViewData["Title"] = "Details";
 }
 
+<style>
+    body {
+        background-color: #F7F7F7;
+    }
+
+    .btn-custom,
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+        box-shadow: none;
+    }
+
+    div.text-right-md {
+        text-align: right;
+    }
+
+</style>
 <div class="container">
     <h1>@Html.DisplayFor(model => model.RecipeName)</h1>
     @*<p>Recipe added by user: @ViewBag.UserName</p>*@
 
-    <div>
+    <div class="container">
         <hr/>
         <div class="row">
             <div class="col-md-7">
@@ -19,17 +40,26 @@
                 <h4 class="my-3">Category: @Html.DisplayFor(model => model.RecipeCategory)</h4>
                 <h4 class="my-3">Cooking time: <span>@Html.DisplayFor(model => model.CookTime) minut</span></h4>
                 <h4 class="my-3">Difficulty: <span>@Html.DisplayFor(model => model.Difficulty)/10</span></h4>
-                <hr/>
-                <h3 class="my-3">Recipe description</h3>
-                <p>@Html.DisplayFor(model => model.RecipeText)</p>    
+            </div>     
+        </div>
+        <div class="row">
+            <h3 class="my-3">Recipe description</h3>
+            <p>@Html.DisplayFor(model => model.RecipeText)</p>
+        </div>
+        <div class="row no-border">
+            <div class="col-md-4">
 
-                <div class="btn btn-primary btn-custom col-md-5" style="margin-top: 8px;">
-                    <a asp-action="Edit" asp-route-id="@Model?.Id" style="color: white; text-decoration: none">Edit</a> |
-                    <a asp-action="Index" style="color: white; text-decoration: none">Back to List</a>
-                </div>
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="col-md-4">
+                        <p><a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary btn-block btn-custom">Edit</a></p>
+                    </div>
+                }
             </div>
-        
-    </div>
+            <div class="col-md-4 offset-md-4 text-right-md">
+                <p><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Recipes</a></p>
+            </div>
+        </div>
         
     </div>
 </div>

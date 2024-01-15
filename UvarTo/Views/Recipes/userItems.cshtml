@@ -36,9 +36,16 @@
         margin-bottom: 25px;
         background-color: #EEEEEE;
     }
+    h2 {
+        text-align: center;
+    }
+    p.center {
+        text-align: center;
+    }
 </style>
 
-<h2>User Items</h2>
+<h2>List of your added Foodmenus</h2>
+<p class="center">By clicking on its name you can edit</p>
 <div class="row right">
     <p class="right"><a asp-action="Index" class="btn btn-primary btn-block btn-custom">Back to Recipes</a></p>
 
@@ -60,7 +67,7 @@
 
                     <div class="col-md-4">
                         <h3 class="recipe-name-link">
-                            <a asp-action="Details" asp-route-id="@item.Id">@item.RecipeName</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id">@item.RecipeName</a>
                         </h3>
                         <p><strong>Category:</strong> @item.RecipeCategory</p>
                         <p class="recipe-text card-text"><strong>Recipe description:</strong> @Html.DisplayFor(model => item.RecipeText)</p>
